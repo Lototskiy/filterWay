@@ -85,6 +85,12 @@ h4 {
 
 
 .simple-title {
+	font-weight: bold;
+	font-size: 3.6rem;
+	line-height: 4.3rem;
+	color: #0166B0;
+	text-transform: uppercase;
+	text-align: center;
 	@media screen and (max-width:$large_tablet) {}
 }
 

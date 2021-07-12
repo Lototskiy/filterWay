@@ -1,0 +1,75 @@
+// bg-call-now.png
+.call-now {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 7.5rem;
+    
+    &__left,
+    &__right {
+        background: #0166B0;
+        width: 100%;
+        min-height: 7.5rem;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        padding-left: 14.7rem;
+        position: relative;
+
+        .background {
+            position: absolute;
+            bottom: 0rem;
+            left: 0rem;
+        }
+
+        h6 {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            text-transform: uppercase;
+            span {
+                text-transform: none;
+            }
+        }
+    }
+    &__right {
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-right: 1.4rem;
+
+        &:last-child {
+            margin-right: 0rem;
+        }
+        img {
+            margin-right: 0.8rem;
+        }
+
+        ul {
+            width: 20.3rem;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                line-height: 13px;
+                span {
+                    text-transform: none;
+                }
+            }
+        }
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+}
