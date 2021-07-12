@@ -1,15 +1,164 @@
 .footer {
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-weight: 300;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            color: #465157;
+        }
+        &-list {
+            display: flex;
+        }
+
+        &-item {
+            margin-left: 1rem;
+        }
+
+        .logo-footer {
+            margin-bottom: 1rem;
+        }
+    }
+
+    form {
+        h4 {
+            margin-bottom: 0.6rem;
+        }
+
+        .inputs__field {
+            font-weight: normal;
+            font-size: 1rem;
+            min-width: 13.4rem;
+            &::placeholder {
+                color: rgba(3, 127, 201, 0.5);
+            }
+
+            &-wrap {
+                position: relative;
+            }
+        }
+        button {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            height: 100%;
+            top: 0rem;
+            right: 0rem;
+            padding-right: 0.6rem;
+            outline: none;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.8rem 0rem 2.5rem 0rem;
+
+        &__item {
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            color: #313131;
+            transition: all 0.5s;
+            margin-bottom: 0.3rem;
+
+            &:hover {
+                color: #3293D0;
+            }
+        }
+
+        &__nav {
+            display: flex;
+
+            &-item {
+                margin-right: 5.2rem;
+
+                
+
+                &:last-child {
+                    margin-right: 0rem;
+                }
+            }
+
+            
+        }
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        margin-bottom: 1.2rem;
+        text-transform: uppercase;
+    }
     .connection {
         background: #3293D0;
+        padding: 1.7rem 0rem 1rem 0rem;
 
         &__wrap {
             color: #ffffff;
             display: flex;
             align-items: center;
         }
+
+        &__left,
+        &__right {
+            display: flex;
+            align-items: center;
+            width: 50%;
+
+            .call-now__item {
+                margin-right: 4.7rem;
+
+                span {
+                    font-weight: normal;
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                }
+            }
+        }
     }
     .center-wrap {
         max-width: 78.8rem;
     }
+
+    
+    .icon {
+        svg {
+            path {
+                fill: #3293D0;
+            }
+        }
+    }
    
+}
+
+.socials {
+    &__list {
+        display: inline-flex;
+    }
+    &__link {
+        padding: 0rem 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        
+        
+    }
 }
