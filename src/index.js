@@ -19,9 +19,6 @@ import './assets/css/blocks/icon-btn.scss';
 import './assets/css/blocks/drop-down.scss';
 import './assets/css/blocks/main-block.scss';
 import './assets/css/blocks/product-cards.scss';
-import './assets/css/blocks/how-it-work.scss';
-import './assets/css/blocks/call-now.scss';
-import './assets/css/blocks/find.scss';
 
 
 
