@@ -19,6 +19,13 @@ import './assets/css/blocks/drop-down.scss';
 
 
 
+import './assets/css/blocks/advantages.scss';
+
+
+
+
+// JS
+
 // JS
 import './assets/js/drop-down';
 import './assets/js/popup';
