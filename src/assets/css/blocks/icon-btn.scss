@@ -1,0 +1,45 @@
+.icon-btn {
+    display: block;
+    margin-left: auto;
+
+    &__list {
+        display: flex;
+      
+    }
+
+    &__item {
+        border-right: 1px solid #E5E5E5;
+        padding: 0rem 0.9rem;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center; 
+
+        &.basket {
+            position: relative;
+
+            span {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background: #0166B0;
+                font-size: 0.9rem;
+                line-height: 1.1rem;
+                color: #fff;
+                font-weight: bold;
+                top: -6px;
+                right: -6px;
+            }
+        }
+    }
+}

@@ -16,9 +16,10 @@ header.header
           li.header__nav-item
             a.header__nav-link(href="") Replacement Filter Cartridges
           li.header__nav-item
-            a.header__nav-link(href="") All Products
+            a.header__nav-link.drop-down__btn(href="#") All Products
+              img(src="assets/images/svg/nav-menu-arrow.svg", alt="")
       .header__icons
-        a(href="tel:18007535327").header__icons-item
+        a(href="tel:").header__icons-item
           svg(viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg')
             path(d='M14.4481 11.0085L12.3732 8.91518C11.6321 8.16758 10.3724 8.46665 10.0759 9.43851C9.85363 10.1114 9.11258 10.4852 8.44564 10.3356C6.96354 9.96183 4.96272 8.01806 4.5922 6.44809C4.36988 5.77522 4.81451 5.02761 5.48145 4.80336C6.44481 4.50432 6.74123 3.23339 6.00018 2.48578L3.92525 0.392492C3.33242 -0.130831 2.44316 -0.130831 1.92443 0.392492L0.51644 1.81294C-0.891548 3.30815 0.66465 7.27045 4.14757 10.7842C7.63049 14.2979 11.558 15.9427 13.0401 14.4475L14.4481 13.027C14.9669 12.4289 14.9669 11.5318 14.4481 11.0085Z')
         .header__icons-item
@@ -34,3 +35,21 @@ header.header
             path(d='M13.9686 9.64415H4.72253L4.54159 8.5947H12.1411C12.3646 8.59537 12.5657 8.45888 12.6477 8.25091L14.4571 3.69123C14.567 3.41232 14.43 3.09709 14.1511 2.98719C14.0872 2.96199 14.0191 2.94916 13.9505 2.94937H3.6007L3.16645 0.452403C3.12185 0.18838 2.89136 -0.00369216 2.62363 5.38553e-05H0.542819C0.243032 5.38553e-05 0 0.243086 0 0.542873C0 0.842661 0.243032 1.08569 0.542819 1.08569H2.17128L3.72736 10.2774C3.77196 10.5415 4.00245 10.7335 4.27018 10.7298H13.9686C14.2683 10.7298 14.5114 10.4868 14.5114 10.187C14.5114 9.88718 14.2683 9.64415 13.9686 9.64415Z')
           .header__icons-value 
             span 2
+  .drop-down 
+    .drop-down__container
+      .drop-down__aside 
+        h6.drop-down__title 
+          |whole house system
+        ul 
+          li.drop-down__item
+            a(href="#")
+              |10 x 4.5 
+          li.drop-down__item
+            a(href="#")
+              |20 x 4.5 
+        a(href="#").drop-down__all
+          |See all whole house systems 
+      .drop-down__content
+        .img-wrap 
+          div 
+            img(src="assets/images/png/all-system.png", alt="")
