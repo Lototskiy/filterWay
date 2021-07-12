@@ -6,6 +6,7 @@ import './assets/css/main.scss';
 
 import './assets/css/blocks/breadcrumb.scss';
 import './assets/css/blocks/content.scss';
+import './assets/css/blocks/toogles.scss';
 
 import './assets/css/blocks/btn.scss';
 import './assets/css/blocks/mobile-menu.scss';
@@ -18,12 +19,14 @@ import './assets/css/blocks/main-screen.scss';
 
 
 import './assets/css/blocks/advantages.scss';
+import './assets/css/blocks/product-info.scss';
 
 
 
 
 // JS
 
+import './assets/js/toogles';
 import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/inputs-mask';
