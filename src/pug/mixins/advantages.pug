@@ -10,4 +10,5 @@ mixin advantages(items)
                         .advantages__item-text 
                             .content 
                                 p=item.text
+                                    a.advantages__item-link(href=item.href)=item.link
 
