@@ -1,0 +1,60 @@
+.drop-down {
+    position: absolute;
+    background: #fff;
+    top: 8rem;
+    left: 0rem;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+
+    &__container {
+        display: flex;
+        width: 100%;
+        max-width: 74.4rem;
+        margin: 0rem auto;
+    }
+
+    &__aside {
+        margin-right: 3.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        text-transform: uppercase;
+        margin-bottom: 1.3rem;
+    }
+
+    &__item {
+       margin-bottom: 0.7rem;
+       text-decoration: underline;
+       transition: all 0.5s;
+
+       &:last-child {
+           margin-bottom: 0rem;
+       }
+
+       &:hover {
+           color: #3293D0;
+       }
+    }
+
+    &__content {
+        .img-wrap {
+            width: 34.5rem;
+            >div {
+                padding-bottom: 38.55%;
+            }
+        }
+    }
+
+    &__all {
+        font-weight: 500;
+        color: #038CC9;
+        text-decoration: underline;
+        margin-top: auto;
+    }
+}
