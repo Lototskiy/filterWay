@@ -6,9 +6,16 @@
 	display: inline-block;
 	white-space: nowrap;
 	text-align: center;
-	background: #FBFBFB;
-	border-radius: 1px;
 	font-weight: bold;
 	padding: 0 5rem;
 	transition: all 0.5s;
+	text-transform: uppercase;
+	background: #0166B0;
+	color: #ffffff;
+	border: 1px solid #0166B0;
+
+	&:hover {
+		background: transparent;
+		color: #0166B0;
+	}
 }

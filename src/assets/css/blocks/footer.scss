@@ -1,1 +1,15 @@
-.footer {}
+.footer {
+    .connection {
+        background: #3293D0;
+
+        &__wrap {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .center-wrap {
+        max-width: 78.8rem;
+    }
+   
+}

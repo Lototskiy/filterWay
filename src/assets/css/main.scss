@@ -58,7 +58,7 @@ body {
 	min-height: 100vh;
 	font-size: 1.6rem;
 	font-weight: 400;
-	user-select: none;
+	// user-select: none;
 
 }
 
@@ -92,6 +92,14 @@ h4 {
 	text-transform: uppercase;
 	text-align: center;
 	@media screen and (max-width:$large_tablet) {}
+}
+
+.simple-sub_title {
+	display: block;
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 1.9rem;
+	text-align: center;
 }
 
 
