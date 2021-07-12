@@ -1,0 +1,64 @@
+.find {
+    padding: 4.7rem 0rem 2.9rem 0rem;
+    
+    .center-wrap {
+        max-width: 78.8rem;
+    }
+
+    .product-info__content {
+        position: relative;
+        padding: 1rem 2rem 1rem 2.5rem;
+
+        .btn {
+            position: absolute;
+            left: 2.7rem;
+            bottom: 2.8rem;
+        }
+    }
+
+  
+    .product-info__img {
+        width: 50%;
+        .img-wrap {
+            height: 100%;
+            div {
+                padding-bottom:  75.83%;
+                height: 100%;
+            }
+        }
+    }
+
+    .simple-sub_title {
+        margin-bottom: 3.4rem;
+    }
+
+    .content {
+        h6 {
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__list {
+        font-weight: bold;
+        margin-bottom: 3.2rem;
+        display: flex;
+        text-transform: uppercase;
+
+        &-title {
+            padding: 0rem 6rem;
+            white-space: nowrap;
+            color: #0166B0;
+            font-size: 1.3rem;
+            line-height: 5.5rem;
+            border: 1px solid #0166B0;
+            cursor: pointer;
+            &.toogles__item-title--active {
+                color: #ffffff;
+                background: #0166B0;
+            }
+        }
+    }
+}
