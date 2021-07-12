@@ -2,20 +2,35 @@
 	border: none;
 	cursor: pointer;
 	text-decoration: none;
-	line-height: 5.5rem;
+	line-height: 5.1rem;
 	display: inline-block;
 	white-space: nowrap;
 	text-align: center;
+	background: $secondary-c;
 	font-weight: bold;
 	padding: 0 5rem;
 	transition: all 0.5s;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.3rem;
 	text-transform: uppercase;
-	background: #0166B0;
-	color: #ffffff;
-	border: 1px solid #0166B0;
+	font-family: $secondary-f;
+	border: 1px solid rgba($secondary-c, 0);
 
 	&:hover {
-		background: transparent;
-		color: #0166B0;
+		background-color: inherit;
+		color: $secondary-c;
+		border: 1px solid $secondary-c;
+	}
+
+	&--empty {
+		background-color: inherit;
+		color: $secondary-c;
+		border: 1px solid $secondary-c;
+
+		&:hover {
+			border: 1px solid rgba($secondary-c, 0);
+			color: #fff;
+		}
 	}
 }
