@@ -1,0 +1,13 @@
+mixin advantages(items)
+    section.advantages
+        .center-wrap
+            .advantages__list
+                each item in items
+                    .advantages__item
+                        .advantages__item-img
+                            img(src=item.src alt='')
+                        .advantages__item-title=item.title
+                        .advantages__item-text 
+                            .content 
+                                p=item.text
+

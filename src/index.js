@@ -16,6 +16,12 @@ import './assets/css/blocks/main-screen.scss';
 
 
 
+
+import './assets/css/blocks/advantages.scss';
+
+
+
+
 // JS
 
 import './assets/js/popup';
