@@ -2,4 +2,17 @@
     font-weight: normal;
     font-size: 1.3rem;
     line-height: 16/13*1;
+
+    h6 {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    ol {
+        font-weight: normal;
+        font-size: 1.3rem;
+        line-height: 19/13*1;
+        padding-left: 1.5rem;
+    }
 }
