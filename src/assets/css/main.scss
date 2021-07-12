@@ -96,6 +96,21 @@ h4 {
 	text-align: center;
 }
 
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.4rem;
+	height: 2.4rem;
+	background: #fff;
+	border-radius: 50%;
+
+	svg {
+		path {
+			fill: #0166B0;
+		}
+	}
+}
 
 
 .img-wrap {
