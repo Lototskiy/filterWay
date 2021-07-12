@@ -55,5 +55,42 @@
             text-align: center;
             width: 100%;
         }
+
+        &-link {
+            position: relative;
+            color: $secondary-c;
+            margin: 0 0.5rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: 2px;
+                width: 100%;
+                height: 1px;
+                background: $secondary-c;
+                opacity: 1;
+                transition: opacity .5s, width .5s;
+            }
+
+            &:hover::before {
+                width: 0%;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.main-screen~.advantages {
+    .center-wrap {
+        max-width: 1170px;
+    }
+
+    .advantages__item-title {
+        max-width: 18rem;
+    }
+
+    .advantages__item-text {
+        max-width: 100%;
     }
 }
