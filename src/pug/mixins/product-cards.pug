@@ -1,0 +1,11 @@
+mixin productCards(items)
+  a(href=items.src).product-cards__item 
+    .img-wrap 
+      div 
+        img(src=items.srcImg, alt="")
+    .product-cards__name
+      = items.name
+      br
+      = items.name2
+    .product-cards__price $
+      span=items.price

@@ -1,0 +1,46 @@
+section.product-info
+  .toogles.toogles--fade
+      .center-wrap
+        .product-info__list
+          .toogles__item-title.product-info__list-title(data-toogles='1')
+            | Whole House Filters
+          .toogles__item-title.product-info__list-title(data-toogles='2')
+            |  Refrigerator Filters
+          .toogles__item-title.product-info__list-title.toogles__item-title--active(data-toogles='3') 
+            | Replacement 
+          .toogles__item-title.product-info__list-title(data-toogles='4')
+            | SALE
+          .toogles__item-title.product-info__list-title(data-toogles='5')
+            | TOP RATED
+      .toogles__item(data-toogles='1')
+        .toogles__item-content
+          div 
+            p WHOLE HOUSE FILTERS
+      .toogles__item(data-toogles='2')
+        .toogles__item-content
+          div
+            p CONTENT
+      .toogles__item.toogles__item--active(data-toogles='3')
+        .toogles__item-content(style='display: block;')
+          div
+            .product-cards
+              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+              a(href="#").product-cards__item.product-cards__all-item
+                h6 ALL PRODUCTS
+                span.arrow 
+                  img(src="assets/images/svg/all-arrow.svg", alt="")
+
+      .toogles__item(data-toogles='4')
+        .toogles__item-content
+          div
+            p CONTENT
+      .toogles__item(data-toogles='5')
+        .toogles__item-content
+          div
+            p CONTENT
