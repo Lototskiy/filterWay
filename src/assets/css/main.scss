@@ -57,13 +57,14 @@ body {
 	justify-content: space-between;
 	min-height: 100vh;
 	font-size: 1.6rem;
+	font-weight: 400;
 	user-select: none;
 
 }
 
 main {
 	flex-grow: 1;
-
+	padding-top: 7.8rem;
 }
 
 .center-wrap {

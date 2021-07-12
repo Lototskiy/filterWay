@@ -4,6 +4,9 @@ import './assets/css/main.scss';
 
 //BLOCKS 
 
+import './assets/css/blocks/breadcrumb.scss';
+import './assets/css/blocks/content.scss';
+
 import './assets/css/blocks/btn.scss';
 import './assets/css/blocks/mobile-menu.scss';
 import './assets/css/blocks/popup.scss';
@@ -20,4 +23,4 @@ import './assets/js/inputs';
 import './assets/js/inputs-mask';
 import './assets/js/header';
 import './assets/js/mobile-menu';
-import './assets/js/anchors';
+// import './assets/js/anchors';
