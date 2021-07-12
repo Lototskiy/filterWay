@@ -1,5 +1,6 @@
 .header {
-	padding-top: 4rem;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
 	position: absolute;
 	top: 0px;
 	width: 100%;
@@ -67,16 +68,22 @@
 		}
 	}
 
-	&__logo {}
+	&__logo {
+		margin-right: 1.6rem;
+		margin-left: 1.6rem;
+	}
 
 	&__nav {
 		&-list {
 			display: flex;
 			align-items: center;
+			padding-top: 0.5rem;
 		}
 
 		&-item {
 			margin-right: 3.2rem;
+			display: flex;
+			align-items: center;
 
 			&:last-child {
 				margin-right: 0px;
@@ -87,6 +94,7 @@
 			position: relative;
 			font-weight: 700;
 			font-size: 1.3rem;
+			line-height: 1;
 			text-transform: uppercase;
 
 			&::before {
@@ -110,6 +118,7 @@
 	&__icons {
 		margin-left: auto;
 		display: flex;
+		padding-top: 0.5rem;
 
 		&-item {
 			padding-right: 1rem;
@@ -126,7 +135,10 @@
 				border-right: none;
 			}
 
-			span {}
+			svg {
+				fill: $primary-c;
+				width: 1.5rem;
+			}
 		}
 
 		&-value {
