@@ -17,6 +17,8 @@ import './assets/css/blocks/footer.scss';
 import './assets/css/blocks/main-screen.scss';
 import './assets/css/blocks/icon-btn.scss';
 import './assets/css/blocks/drop-down.scss';
+import './assets/css/blocks/main-block.scss';
+import './assets/css/blocks/product-cards.scss';
 
 
 

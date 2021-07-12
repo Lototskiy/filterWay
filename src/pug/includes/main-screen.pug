@@ -1,8 +1,5 @@
 section.main-screen#main-screen
-    .center-wrap
-        h1.main-screen__title
-
-        h2.main-screen__subtitle
-
-        .main-screen__btn
-            .btn
+    +breadcrumb([{href:'index.html',text:'Home'},{href:'index.html',text:'Water for Life®'}])
+    include ./main-block
+    +advantages([{src:'assets/images/svg/advantages-icon1.svg',title:'Certification',text:'NSF, WQA, IAPMO'},{src:'assets/images/svg/advantages-icon2.svg',title:'FREE SHIPPING',text:'Free shipping with no order minimum required'},{src:'assets/images/svg/advantages-icon3.svg',title:'Exclusive Offers',text:'Subscribe and save big'},{src:'assets/images/svg/advantages-icon4.svg',title:'30-day Return',text:'No-worries guarantee'}])
+    include ../includes/product-cards
