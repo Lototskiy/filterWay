@@ -29,6 +29,8 @@ import './assets/css/blocks/radio.scss';
 import './assets/css/blocks/amount.scss';
 import './assets/css/blocks/tooltip.scss';
 import './assets/css/blocks/star-rating.scss';
+import './assets/css/blocks/checkout.scss';
+
 
 
 
