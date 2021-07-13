@@ -1,12 +1,11 @@
 .product {
     padding-top: 2.5rem;
-
-    .center-wrap {
-        max-width: 1020px;
-    }
+    padding-bottom: 4.5rem;
 
     &__wrap {
         display: flex;
+        max-width: 930px;
+        margin: 0 auto;
     }
 
     &__left {
@@ -55,7 +54,8 @@
         margin-bottom: 2rem;
 
         &-rating {
-            margin-bottom: 1rem;
+            // margin-bottom: 1rem;
+            margin-right: 2rem;
         }
 
         &-value {
@@ -175,6 +175,40 @@
         &-sale {
             font-size: 1rem;
             margin-top: 0.5rem;
+        }
+    }
+
+    &__radio {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__select {
+        margin-bottom: 1.5rem;
+    }
+
+    &__amount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-text {
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+        }
+
+        &-btn {
+            width: 50%;
+
+
+            .btn {
+                padding: 0 1rem;
+                width: 100%;
+                line-height: 5rem;
+            }
+
+
         }
     }
 }

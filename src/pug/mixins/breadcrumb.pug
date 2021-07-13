@@ -1,7 +1,8 @@
 mixin breadcrumb(items)
     .breadcrumb
         .center-wrap
-            ul.breadcrumb__list
-                each item in items
-                    li.breadcrumb__item
-                        a.breadcrumb__link(href=item.href)=item.text
+            .breadcrumb__wrap
+                ul.breadcrumb__list
+                    each item in items
+                        li.breadcrumb__item
+                            a.breadcrumb__link(href=item.href)=item.text

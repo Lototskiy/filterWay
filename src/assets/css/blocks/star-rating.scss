@@ -1,0 +1,29 @@
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.5rem;
+    line-height: 1;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 11.5rem;
+    width: 100%;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #E7E8E3;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.star-rating :checked~label {
+    color: $secondary-c;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: $secondary-c;
+}

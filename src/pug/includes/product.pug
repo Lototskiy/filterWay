@@ -101,6 +101,17 @@ section.product
                             li Compatible with Maytag UKF8001AXX, 46-9992, 9005, Filter 4, PURICLEAN II, MFI2568AES APF-1100
                 .product__reviews
                     .product__reviews-rating
+                        .star-rating
+                            input#5-stars(type='radio' name='rating' value='5')
+                            label.star(for='5-stars') ★
+                            input#4-stars(type='radio' name='rating' value='4')
+                            label.star(for='4-stars') ★
+                            input#3-stars(type='radio' name='rating' value='3' checked)
+                            label.star(for='3-stars') ★
+                            input#2-stars(type='radio' name='rating' value='2')
+                            label.star(for='2-stars') ★
+                            input#1-star(type='radio' name='rating' value='1')
+                            label.star(for='1-star') ★
                     a(href="#").product__reviews-value 173 reviews
                     a(href="#").product__reviews-write Write a review
                 .product__descr
@@ -140,4 +151,54 @@ section.product
                         .product__list-sale ( each $9.33 You save 38%)
                     .product__list-item.product__list-item--hide
                     .product__list-item.product__list-item--hide
+                .product__radio
+                    .radio
+                        .radio__box
+                            label.radio__label
+                                input.radio__input(type='radio' name='radio-delivery' checked)
+                                .radio__content
+                                    span
+                                | Buy Once
+                            .radio__price
+                                span.radio__price-new $99.99
+                                span.radio__price-old $199.99
+                                | MSRP
+                        .radio__box
+                            label.radio__label
+                                input.radio__input(type='radio' name='radio-delivery')
+                                .radio__content
+                                    span
+                                | Subscribe
+                            .radio__price
+                                span.radio__price-new $90.99 
+                                | save 10%
+                            .radio__tooltip
+                                .tooltip
+                                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
+
+
+                .product__select
+                    .select
+                        .select__value 3 Months
+                        .select__variants
+                            label.select__variant.select__variant--active(for='')
+                                span 3 Months
+                            label.select__variant(for='')
+                                span 4 Months
+                            label.select__variant(for='')
+                                span 5 Months
+                .product__amount
+                    .product__amount-text Quantity:
+                    .amount
+                        span.amount__minus
+                            svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                rect(y='0.458336' width='13' height='1.08333')
+                        input.amount__input(type='text' value='1')
+                        span.amount__plus
+                            svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                rect(y='5.49961' width='12' height='1')
+                                rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
+                    .product__amount-btn
+                        .btn add to cart
+
 //- 

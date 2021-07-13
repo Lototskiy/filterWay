@@ -1,0 +1,95 @@
+.radio {
+    display: flex;
+    align-items: center;
+
+    &__tooltip {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__box {
+        position: relative;
+
+        &+.radio__box {
+            margin-left: 5rem;
+        }
+    }
+
+    &__price {
+        display: flex;
+        font-size: 1.3rem;
+        text-transform: lowercase;
+        padding-left: 3rem;
+
+        &-new {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $secondary-c;
+            margin-right: 0.5rem;
+        }
+
+        &-old {
+            text-decoration: line-through;
+            margin-right: 0.5rem;
+
+        }
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: $secondary-c;
+        padding-left: 3rem;
+        position: relative;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        border: 1px solid $secondary-c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            width: 0.9rem;
+            height: 0.9rem;
+            background-color: rgba($secondary-c, 0);
+            display: block;
+            border-radius: 50%;
+            transition: background-color, .5s;
+        }
+
+        &__input {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            padding-left: 2rem;
+
+            &:checked+.radio__content span {
+                background-color: rgba($secondary-c, 1);
+            }
+
+            &:checked+.radio__checkbox::before,
+            &:checked+.radio__checkbox::after {
+                opacity: 1;
+            }
+        }
+    }
+}

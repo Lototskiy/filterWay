@@ -3,7 +3,7 @@ if (document.querySelector('.product-slider')) {
         slidesPerView: 1,
         spaceBetween: 30,
         speed: 1000,
-        autoHeight: true,
+        // autoHeight: true,
         loop: true,
         navigation: {
             nextEl: '.product-slider__big .swiper-button-next',
@@ -14,17 +14,17 @@ if (document.querySelector('.product-slider')) {
                 el: '.product-slider__mini .swiper-container',
                 slidesPerView: 4,
                 direction: 'vertical',
-                spaceBetween: 20,
-                autoHeight: false,
+                spaceBetween: 13,
+                // autoHeight: false,
                 speed: 1000,
-                breakpoints: {
-                    320: {
-                        slidesPerView: 3,
-                    },
-                    1000: {
-                        slidesPerView: 4,
-                    },
-                }
+                // breakpoints: {
+                //     320: {
+                //         slidesPerView: 3,
+                //     },
+                //     1000: {
+                //         slidesPerView: 4,
+                //     },
+                // }
             }
         },
         // pagination: {

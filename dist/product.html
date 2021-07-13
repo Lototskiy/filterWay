@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Filterway-product</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&amp;family=PT+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link href="assets/css/app.css?v=1626166521045" rel="stylesheet"></head>
+  <body id="product-page">
+<header class="header">
+  <div class="center-wrap">
+    <div class="header__wrap anchors">
+      <div class="header__burger desktop--hide">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div><a class="header__logo" href="index.html"><img src="assets/images/svg/logo.svg" alt=""></a>
+      <nav class="header__nav mobile--hide">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="">Whole House System</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="">Refrigerator Filters</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="">Replacement Filter Cartridges</a></li>
+          <li class="header__nav-item"><a class="header__nav-link drop-down__btn" href="#">All Products<img src="assets/images/svg/nav-menu-arrow.svg" alt=""></a></li>
+        </ul>
+      </nav>
+      <div class="header__icons"><a class="header__icons-item" href="tel:">
+          <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4481 11.0085L12.3732 8.91518C11.6321 8.16758 10.3724 8.46665 10.0759 9.43851C9.85363 10.1114 9.11258 10.4852 8.44564 10.3356C6.96354 9.96183 4.96272 8.01806 4.5922 6.44809C4.36988 5.77522 4.81451 5.02761 5.48145 4.80336C6.44481 4.50432 6.74123 3.23339 6.00018 2.48578L3.92525 0.392492C3.33242 -0.130831 2.44316 -0.130831 1.92443 0.392492L0.51644 1.81294C-0.891548 3.30815 0.66465 7.27045 4.14757 10.7842C7.63049 14.2979 11.558 15.9427 13.0401 14.4475L14.4481 13.027C14.9669 12.4289 14.9669 11.5318 14.4481 11.0085Z"></path>
+          </svg></a>
+        <div class="header__icons-item">
+          <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.1646 13.6626L9.86921 9.94962C10.7165 8.85844 11.1808 7.48552 11.1808 6.05624C11.1808 2.71688 8.67287 0 5.59038 0C2.50789 0 0 2.71688 0 6.05624C0 9.3956 2.50789 12.1125 5.59038 12.1125C6.74759 12.1125 7.85035 11.7344 8.79318 11.0166L12.1136 14.7578C12.2524 14.9139 12.4391 15 12.6391 15C12.8285 15 13.0081 14.9218 13.1444 14.7796C13.4342 14.4776 13.4434 13.9768 13.1646 13.6626ZM5.59038 1.57989C7.86882 1.57989 9.7224 3.58793 9.7224 6.05624C9.7224 8.52456 7.86882 10.5326 5.59038 10.5326C3.31194 10.5326 1.45836 8.52456 1.45836 6.05624C1.45836 3.58793 3.31194 1.57989 5.59038 1.57989Z"></path>
+          </svg>
+        </div>
+        <div class="header__icons-item">
+          <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.588 10.108L9.401 9.67C9.169 9.624 9 9.418 9 9.18V8.678C9.144 8.478 9.279 8.211 9.419 7.932C9.526 7.721 9.687 7.403 9.759 7.328C10.183 6.913 10.635 6.398 10.773 5.727C10.898 5.119 10.773 4.803 10.628 4.553C10.628 4.064 10.628 3.169 10.458 2.524C10.441 1.745 10.298 1.305 9.939 0.913C9.685 0.639 9.311 0.575 9.011 0.524C8.892 0.504 8.729 0.476 8.672 0.445C8.153 0.158 7.626 0.016 6.981 0C5.661 0.05 4.041 0.887 3.499 2.392C3.334 2.849 3.35 3.599 3.362 4.202L3.348 4.553C3.221 4.803 3.096 5.119 3.222 5.726C3.36 6.4 3.812 6.914 4.234 7.327C4.307 7.403 4.47 7.723 4.578 7.934C4.72 8.212 4.856 8.479 5 8.679V9.18C5 9.418 4.831 9.624 4.598 9.67L2.411 10.108C1.014 10.387 0 11.624 0 13.049V14C0 14.551 0.449 15 1 15H13C13.551 15 14 14.551 14 14V13.049C14 11.624 12.986 10.387 11.588 10.108Z"></path>
+          </svg>
+        </div>
+        <div class="header__icons-item"> 
+          <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.77223 15C6.75155 15 7.54544 14.2061 7.54544 13.2268C7.54544 12.2474 6.75155 11.4536 5.77223 11.4536C4.79292 11.4536 3.99902 12.2474 3.99902 13.2268C3.99902 14.2061 4.79292 15 5.77223 15Z"></path>
+            <path d="M10.947 11.4536C9.96774 11.4536 9.17383 12.2475 9.17383 13.2268C9.17383 14.2061 9.96774 15 10.947 15C11.9263 15 12.7202 14.2061 12.7202 13.2268C12.7202 12.2475 11.9263 11.4536 10.947 11.4536Z"></path>
+            <path d="M13.9686 9.64415H4.72253L4.54159 8.5947H12.1411C12.3646 8.59537 12.5657 8.45888 12.6477 8.25091L14.4571 3.69123C14.567 3.41232 14.43 3.09709 14.1511 2.98719C14.0872 2.96199 14.0191 2.94916 13.9505 2.94937H3.6007L3.16645 0.452403C3.12185 0.18838 2.89136 -0.00369216 2.62363 5.38553e-05H0.542819C0.243032 5.38553e-05 0 0.243086 0 0.542873C0 0.842661 0.243032 1.08569 0.542819 1.08569H2.17128L3.72736 10.2774C3.77196 10.5415 4.00245 10.7335 4.27018 10.7298H13.9686C14.2683 10.7298 14.5114 10.4868 14.5114 10.187C14.5114 9.88718 14.2683 9.64415 13.9686 9.64415Z"></path>
+          </svg>
+          <div class="header__icons-value"> <span>2</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="drop-down"> 
+    <div class="drop-down__container">
+      <div class="drop-down__aside"> 
+        <h6 class="drop-down__title">
+           whole house system</h6>
+        <ul> 
+          <li class="drop-down__item"><a href="#">10 x 4.5 </a></li>
+          <li class="drop-down__item"><a href="#">20 x 4.5 </a></li>
+        </ul><a class="drop-down__all" href="#">See all whole house systems </a>
+      </div>
+      <div class="drop-down__content">
+        <div class="img-wrap"> 
+          <div> <img src="assets/images/png/all-system.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <main>
+      <div class="breadcrumb">
+        <div class="center-wrap">
+          <div class="breadcrumb__wrap">
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Home</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Products</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Refrigerator Filters</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Amana</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<section class="product">
+  <div class="center-wrap">
+    <div class="product__wrap"> 
+      <div class="product__left">
+        <div class="product-slider">
+          <div class="product-slider__mini">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-slider__mini-img img-wrap">
+                    <div><img src="assets/images/png/product__img--small1.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-slider__mini-img img-wrap">
+                    <div><img src="assets/images/png/product__img--small2.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-slider__mini-img img-wrap">
+                    <div><img src="assets/images/png/product__img--small3.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="swiper-slide"><a class="video fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/YRTrS7CJ3uM">
+                    <div class="video__play video__play--static">
+                      <svg viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 7L-5.70966e-07 13.0622L-4.09935e-08 0.937822L9 7Z" fill="white"></path>
+                      </svg>
+                      <iframe class="video__video" width="100%" height="100%" data-src="https://www.youtube.com/embed/YRTrS7CJ3uM?autoplay=1&amp;mute=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div></a>
+                  <div class="product-slider__mini-img img-wrap">
+                    <div><img src="assets/images/png/product__img--small4.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-slider__mini-img img-wrap">
+                    <div><img src="assets/images/png/product__img--small1.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-slider__big">
+            <div class="swiper-button-prev">
+              <svg viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.332056 8.43941C-0.0584679 8.04888 -0.0584679 7.41572 0.332056 7.02519L6.69602 0.661232C7.08654 0.270708 7.71971 0.270708 8.11023 0.661232C8.50076 1.05176 8.50076 1.68492 8.11023 2.07545L2.45338 7.7323L8.11023 13.3892C8.50076 13.7797 8.50076 14.4128 8.11023 14.8034C7.71971 15.1939 7.08654 15.1939 6.69602 14.8034L0.332056 8.43941ZM17.3384 8.7323H1.03916V6.7323H17.3384V8.7323Z"></path>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.0459 8.43941C17.4364 8.04888 17.4364 7.41572 17.0459 7.02519L10.6819 0.661232C10.2914 0.270708 9.65822 0.270708 9.2677 0.661232C8.87717 1.05176 8.87717 1.68492 9.2677 2.07545L14.9246 7.7323L9.2677 13.3892C8.87717 13.7797 8.87717 14.4128 9.2677 14.8034C9.65822 15.1939 10.2914 15.1939 10.6819 14.8034L17.0459 8.43941ZM0.0395508 8.7323H16.3388V6.7323H0.0395508V8.7323Z"></path>
+              </svg>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-slider__big-item">
+                    <div class="product-slider__big-zoom">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6874 9.00661H9.96872V6.37831C9.96872 6.13651 9.76572 5.94026 9.51559 5.94026C9.26547 5.94026 9.06247 6.13651 9.06247 6.37831V9.00661H6.34375C6.09362 9.00661 5.89062 9.20286 5.89062 9.44466C5.89062 9.68647 6.09362 9.88271 6.34375 9.88271H9.06247V12.511C9.06247 12.7528 9.26547 12.9491 9.51559 12.9491C9.76572 12.9491 9.96872 12.7528 9.96872 12.511V9.88271H12.6874C12.9376 9.88271 13.1406 9.68647 13.1406 9.44466C13.1406 9.20286 12.9376 9.00661 12.6874 9.00661Z" fill="white"></path>
+                        <path d="M22.9827 22.7058L16.2498 15.9366C17.9671 14.2715 19.0311 11.9762 19.0311 9.44466C19.0311 4.37204 14.7627 0.245605 9.51553 0.245605C4.2684 0.245605 0 4.37204 0 9.44466C0 14.5173 4.2684 18.6437 9.51553 18.6437C11.8187 18.6437 13.9326 17.8478 15.5801 16.5271L22.3293 23.3129C22.4181 23.4027 22.5369 23.4474 22.656 23.4474C22.7693 23.4474 22.8821 23.4066 22.97 23.3252C23.1504 23.1574 23.1558 22.8801 22.9827 22.7058ZM0.906241 9.44466C0.906241 4.85521 4.76819 1.12171 9.51553 1.12171C14.2629 1.12171 18.1248 4.85521 18.1248 9.44466C18.1248 14.0341 14.2629 17.7676 9.51553 17.7676C4.76819 17.7676 0.906241 14.0341 0.906241 9.44466Z" fill="white"></path>
+                      </svg>
+                    </div>
+                    <div class="product-slider__big-sale">Sale</div><a class="product-slider__big-img" href="assets/images/png/product__img--big.png" data-fancybox="certifications-gallery"><img src="assets/images/png/product__img--big.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-slider__big-item">
+                    <div class="product-slider__big-zoom">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6874 9.00661H9.96872V6.37831C9.96872 6.13651 9.76572 5.94026 9.51559 5.94026C9.26547 5.94026 9.06247 6.13651 9.06247 6.37831V9.00661H6.34375C6.09362 9.00661 5.89062 9.20286 5.89062 9.44466C5.89062 9.68647 6.09362 9.88271 6.34375 9.88271H9.06247V12.511C9.06247 12.7528 9.26547 12.9491 9.51559 12.9491C9.76572 12.9491 9.96872 12.7528 9.96872 12.511V9.88271H12.6874C12.9376 9.88271 13.1406 9.68647 13.1406 9.44466C13.1406 9.20286 12.9376 9.00661 12.6874 9.00661Z" fill="white"></path>
+                        <path d="M22.9827 22.7058L16.2498 15.9366C17.9671 14.2715 19.0311 11.9762 19.0311 9.44466C19.0311 4.37204 14.7627 0.245605 9.51553 0.245605C4.2684 0.245605 0 4.37204 0 9.44466C0 14.5173 4.2684 18.6437 9.51553 18.6437C11.8187 18.6437 13.9326 17.8478 15.5801 16.5271L22.3293 23.3129C22.4181 23.4027 22.5369 23.4474 22.656 23.4474C22.7693 23.4474 22.8821 23.4066 22.97 23.3252C23.1504 23.1574 23.1558 22.8801 22.9827 22.7058ZM0.906241 9.44466C0.906241 4.85521 4.76819 1.12171 9.51553 1.12171C14.2629 1.12171 18.1248 4.85521 18.1248 9.44466C18.1248 14.0341 14.2629 17.7676 9.51553 17.7676C4.76819 17.7676 0.906241 14.0341 0.906241 9.44466Z" fill="white"></path>
+                      </svg>
+                    </div>
+                    <div class="product-slider__big-sale">Sale</div><a class="product-slider__big-img" href="assets/images/png/product__img--big.png" data-fancybox="certifications-gallery"><img src="assets/images/png/product__img--big.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-slider__big-item">
+                    <div class="product-slider__big-zoom">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6874 9.00661H9.96872V6.37831C9.96872 6.13651 9.76572 5.94026 9.51559 5.94026C9.26547 5.94026 9.06247 6.13651 9.06247 6.37831V9.00661H6.34375C6.09362 9.00661 5.89062 9.20286 5.89062 9.44466C5.89062 9.68647 6.09362 9.88271 6.34375 9.88271H9.06247V12.511C9.06247 12.7528 9.26547 12.9491 9.51559 12.9491C9.76572 12.9491 9.96872 12.7528 9.96872 12.511V9.88271H12.6874C12.9376 9.88271 13.1406 9.68647 13.1406 9.44466C13.1406 9.20286 12.9376 9.00661 12.6874 9.00661Z" fill="white"></path>
+                        <path d="M22.9827 22.7058L16.2498 15.9366C17.9671 14.2715 19.0311 11.9762 19.0311 9.44466C19.0311 4.37204 14.7627 0.245605 9.51553 0.245605C4.2684 0.245605 0 4.37204 0 9.44466C0 14.5173 4.2684 18.6437 9.51553 18.6437C11.8187 18.6437 13.9326 17.8478 15.5801 16.5271L22.3293 23.3129C22.4181 23.4027 22.5369 23.4474 22.656 23.4474C22.7693 23.4474 22.8821 23.4066 22.97 23.3252C23.1504 23.1574 23.1558 22.8801 22.9827 22.7058ZM0.906241 9.44466C0.906241 4.85521 4.76819 1.12171 9.51553 1.12171C14.2629 1.12171 18.1248 4.85521 18.1248 9.44466C18.1248 14.0341 14.2629 17.7676 9.51553 17.7676C4.76819 17.7676 0.906241 14.0341 0.906241 9.44466Z" fill="white"></path>
+                      </svg>
+                    </div>
+                    <div class="product-slider__big-sale">Sale</div><a class="product-slider__big-img" href="assets/images/png/product__img--big.png" data-fancybox="certifications-gallery"><img src="assets/images/png/product__img--big.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-slider__big-item">
+                    <div class="product-slider__big-zoom">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6874 9.00661H9.96872V6.37831C9.96872 6.13651 9.76572 5.94026 9.51559 5.94026C9.26547 5.94026 9.06247 6.13651 9.06247 6.37831V9.00661H6.34375C6.09362 9.00661 5.89062 9.20286 5.89062 9.44466C5.89062 9.68647 6.09362 9.88271 6.34375 9.88271H9.06247V12.511C9.06247 12.7528 9.26547 12.9491 9.51559 12.9491C9.76572 12.9491 9.96872 12.7528 9.96872 12.511V9.88271H12.6874C12.9376 9.88271 13.1406 9.68647 13.1406 9.44466C13.1406 9.20286 12.9376 9.00661 12.6874 9.00661Z" fill="white"></path>
+                        <path d="M22.9827 22.7058L16.2498 15.9366C17.9671 14.2715 19.0311 11.9762 19.0311 9.44466C19.0311 4.37204 14.7627 0.245605 9.51553 0.245605C4.2684 0.245605 0 4.37204 0 9.44466C0 14.5173 4.2684 18.6437 9.51553 18.6437C11.8187 18.6437 13.9326 17.8478 15.5801 16.5271L22.3293 23.3129C22.4181 23.4027 22.5369 23.4474 22.656 23.4474C22.7693 23.4474 22.8821 23.4066 22.97 23.3252C23.1504 23.1574 23.1558 22.8801 22.9827 22.7058ZM0.906241 9.44466C0.906241 4.85521 4.76819 1.12171 9.51553 1.12171C14.2629 1.12171 18.1248 4.85521 18.1248 9.44466C18.1248 14.0341 14.2629 17.7676 9.51553 17.7676C4.76819 17.7676 0.906241 14.0341 0.906241 9.44466Z" fill="white"></path>
+                      </svg>
+                    </div>
+                    <div class="product-slider__big-sale">Sale</div><a class="product-slider__big-img" href="assets/images/png/product__img--big.png" data-fancybox="certifications-gallery"><img src="assets/images/png/product__img--big.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-slider__big-item">
+                    <div class="product-slider__big-zoom">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6874 9.00661H9.96872V6.37831C9.96872 6.13651 9.76572 5.94026 9.51559 5.94026C9.26547 5.94026 9.06247 6.13651 9.06247 6.37831V9.00661H6.34375C6.09362 9.00661 5.89062 9.20286 5.89062 9.44466C5.89062 9.68647 6.09362 9.88271 6.34375 9.88271H9.06247V12.511C9.06247 12.7528 9.26547 12.9491 9.51559 12.9491C9.76572 12.9491 9.96872 12.7528 9.96872 12.511V9.88271H12.6874C12.9376 9.88271 13.1406 9.68647 13.1406 9.44466C13.1406 9.20286 12.9376 9.00661 12.6874 9.00661Z" fill="white"></path>
+                        <path d="M22.9827 22.7058L16.2498 15.9366C17.9671 14.2715 19.0311 11.9762 19.0311 9.44466C19.0311 4.37204 14.7627 0.245605 9.51553 0.245605C4.2684 0.245605 0 4.37204 0 9.44466C0 14.5173 4.2684 18.6437 9.51553 18.6437C11.8187 18.6437 13.9326 17.8478 15.5801 16.5271L22.3293 23.3129C22.4181 23.4027 22.5369 23.4474 22.656 23.4474C22.7693 23.4474 22.8821 23.4066 22.97 23.3252C23.1504 23.1574 23.1558 22.8801 22.9827 22.7058ZM0.906241 9.44466C0.906241 4.85521 4.76819 1.12171 9.51553 1.12171C14.2629 1.12171 18.1248 4.85521 18.1248 9.44466C18.1248 14.0341 14.2629 17.7676 9.51553 17.7676C4.76819 17.7676 0.906241 14.0341 0.906241 9.44466Z" fill="white"></path>
+                      </svg>
+                    </div>
+                    <div class="product-slider__big-sale">Sale</div><a class="product-slider__big-img" href="assets/images/png/product__img--big.png" data-fancybox="certifications-gallery"><img src="assets/images/png/product__img--big.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product__right">
+        <h2 class="product__title">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h2>
+        <div class="product__info">
+          <div class="product__info-box">
+            <div class="product__info-name">Availability: <strong>In stock</strong></div>
+          </div>
+          <div class="product__info-box">
+            <div class="product__info-name">SKU: <strong>APF-1100</strong></div>
+          </div>
+        </div>
+        <div class="product__right-content">
+          <div class="content">
+            <ul> 
+              <li>Certified According to NSF 42&372</li>
+              <li>Compatible with Maytag UKF8001AXX, 46-9992, 9005, Filter 4, PURICLEAN II, MFI2568AES APF-1100</li>
+            </ul>
+          </div>
+        </div>
+        <div class="product__reviews">
+          <div class="product__reviews-rating">
+            <div class="star-rating">
+              <input id="5-stars" type="radio" name="rating" value="5">
+              <label class="star" for="5-stars">★</label>
+              <input id="4-stars" type="radio" name="rating" value="4">
+              <label class="star" for="4-stars">★</label>
+              <input id="3-stars" type="radio" name="rating" value="3" checked>
+              <label class="star" for="3-stars">★</label>
+              <input id="2-stars" type="radio" name="rating" value="2">
+              <label class="star" for="2-stars">★</label>
+              <input id="1-star" type="radio" name="rating" value="1">
+              <label class="star" for="1-star">★</label>
+            </div>
+          </div><a class="product__reviews-value" href="#">173 reviews</a><a class="product__reviews-write" href="#">Write a review</a>
+        </div>
+        <div class="product__descr">
+          <div class="product__descr-img img-wrap"> 
+            <div><img src="assets/images/png/product__descr-img.png" alt=""></div>
+          </div>
+          <div class="content"> 
+            <p> his refrigerator filter is Tested and Certified by WQA according to NSF/ANSI 42 for materials safety and structural integrity.</p>
+          </div>
+        </div>
+        <div class="product__list"> 
+          <div class="product__list-item product__list-item--active">
+            <div class="product__list-row"> 
+              <div class="product__list-quantity">1 Filter —</div>
+              <div class="product__list-price">$14.99</div>
+            </div>
+          </div>
+          <div class="product__list-item">
+            <div class="product__list-row"> 
+              <div class="product__list-quantity">2 Filter —</div>
+              <div class="product__list-price">$19.99</div>
+            </div>
+            <div class="product__list-sale">( each $9.99 You save 33%)</div>
+          </div>
+          <div class="product__list-item">
+            <div class="product__list-row"> 
+              <div class="product__list-quantity">3 Filter —</div>
+              <div class="product__list-price">$27.99</div>
+            </div>
+            <div class="product__list-sale">( each $9.33 You save 38%)</div>
+          </div>
+          <div class="product__list-item">
+            <div class="product__list-row"> 
+              <div class="product__list-quantity">1 Filter —</div>
+              <div class="product__list-price">$14.99</div>
+            </div>
+          </div>
+          <div class="product__list-item">
+            <div class="product__list-row"> 
+              <div class="product__list-quantity">2 Filter —</div>
+              <div class="product__list-price">$19.99</div>
+            </div>
+            <div class="product__list-sale">( each $9.99 You save 33%)</div>
+          </div>
+          <div class="product__list-item">
+            <div class="product__list-row"> 
+              <div class="product__list-quantity">3 Filter —</div>
+              <div class="product__list-price">$27.99</div>
+            </div>
+            <div class="product__list-sale">( each $9.33 You save 38%)</div>
+          </div>
+          <div class="product__list-item product__list-item--hide"></div>
+          <div class="product__list-item product__list-item--hide"></div>
+        </div>
+        <div class="product__radio">
+          <div class="radio">
+            <div class="radio__box">
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="radio-delivery" checked>
+                <div class="radio__content"><span></span></div>Buy Once
+              </label>
+              <div class="radio__price"><span class="radio__price-new">$99.99</span><span class="radio__price-old">$199.99</span>MSRP</div>
+            </div>
+            <div class="radio__box">
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="radio-delivery">
+                <div class="radio__content"><span></span></div>Subscribe
+              </label>
+              <div class="radio__price"><span class="radio__price-new">$90.99 </span>save 10%</div>
+              <div class="radio__tooltip">
+                <div class="tooltip"><span class="tooltip__title" attr="Каскадные таблицы стилей">?</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__select">
+          <div class="select">
+            <div class="select__value">3 Months</div>
+            <div class="select__variants">
+              <label class="select__variant select__variant--active" for=""><span>3 Months</span></label>
+              <label class="select__variant" for=""><span>4 Months</span></label>
+              <label class="select__variant" for=""><span>5 Months</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="product__amount">
+          <div class="product__amount-text">Quantity:</div>
+          <div class="amount"><span class="amount__minus">
+              <svg viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.458336" width="13" height="1.08333"></rect>
+              </svg></span>
+            <input class="amount__input" type="text" value="1"><span class="amount__plus">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="5.49961" width="12" height="1"></rect>
+                <rect x="5.5" y="12" width="12" height="1" transform="rotate(-90 5.5 12)"></rect>
+              </svg></span>
+          </div>
+          <div class="product__amount-btn">
+            <div class="btn">add to cart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="advantages">
+        <div class="center-wrap">
+          <div class="advantages__list">
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon1.svg" alt=""></div>
+              <div class="advantages__item-title">Certification</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>NSF, WQA, IAPMO<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon2.svg" alt=""></div>
+              <div class="advantages__item-title">FREE SHIPPING</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>Free shipping with no order minimum required<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon3.svg" alt=""></div>
+              <div class="advantages__item-title">Exclusive Offers</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>Subscribe and save big<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon4.svg" alt=""></div>
+              <div class="advantages__item-title">30-day Return</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>No-worries guarantee<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<section class="product-info">
+  <div class="center-wrap"> 
+    <div class="toogles toogles--fade">
+      <div class="product-info__list">
+        <div class="toogles__item-title product-info__list-title toogles__item-title--active" data-toogles="1">Overview</div>
+        <div class="toogles__item-title product-info__list-title" data-toogles="2">Specs</div>
+        <div class="toogles__item-title product-info__list-title" data-toogles="3">
+           FAQ</div>
+        <div class="toogles__item-title product-info__list-title" data-toogles="4">Reviews</div>
+      </div>
+      <div class="toogles__item toogles__item--active" data-toogles="1">
+        <div class="toogles__item-content" style="display: block;">
+          <div>
+            <div class="product-info__bg img-wrap"> 
+              <div><img src="assets/images/png/product-info__img.png" alt=""></div>
+            </div>
+            <div class="product-info__body">
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img1.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>The APF-1100 water filter by Arrowpure.</h6>
+                      <p>This high-quality water filter replacement provides you with consistently clean, healthy and delicious water. Install in 60 seconds and eliminate any chlorine, bacteria, chemicals and dangerous elements that might be found in your water source. Simple as that. No leaks, no complications, just a steady flow of healthy and tasty water!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap product-info__img-wrap--100"> <img src="assets/images/png/product__wrap-img2.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>advanced filtration</h6>
+                      <ol> 
+                        <li>advanced filtration Get rids from cysts, chlorine & harmful chemicals</li>
+                        <li>Keeps the healthy minerals & improves taste</li>
+                        <li>Compatible with most Kenmore, Viking, Maytag refrigerators</li>
+                        <li>Installs in seconds, perfect fit, no leaks</li>
+                        <li>WQA certification according to NSF 42, NSF 372</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img3.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>Compatible with the following refrigerator models:</h6>
+                      <p>4396395, 4396395P, 4396395T, 46-9005-750, 46-9006, 46-9006-750, 46-9992, 469006, 469006-750, 67003523, 67003523-750, 67003591, 67003727, 67006470, 8001, 8001P, 8171249, 9006, 9006P, 9992, AFF3, AP4343647, EFF-6007A, EFF6007A, FILTER4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img4.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>WQA certification according to NSF 42</h6>
+                      <p>WQA certification according to NSF 42* means reducing aesthetic impurities such as chlorine and taste/odor from your water. Enjoy tastier and healthier water with a refreshing taste.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img5.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>WQA certification according to NSF 372</h6>
+                      <p>means that the Arrowpure water filter is made of lead-free material giving you a completely safe water.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img6.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>coconut activated carbon </h6>
+                      <p>Enjoy advanced filtration with coconut activated carbon that is super-absorbent and completely natural. Get rid of the harmful chlorine, cysts, lead, and other similar harmful chemicals, and keep the healthy minerals.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img7.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>premium fridge filters  </h6>
+                      <p>Our premium fridge filters come with easy to understand instructions so you can have yours ready in under a minute. You'll love that installation takes no tools, no time and no effort!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info__wrap">
+                <div class="product-info__img">
+                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img8.png" alt=""></div>
+                </div>
+                <div class="product-info__content">
+                  <div class="product-info__content-wrap"> 
+                    <div class="content">
+                      <h6>healthier and tastier </h6>
+                      <p> Drink healthier and tastier water with your family every day. Our ultimate goal is to enhance your health and overall wellbeing with perfect filtration. For best results change our replacement filters every 6 months.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toogles__item" data-toogles="2">
+        <div class="toogles__item-content">
+          <div>
+            <p>CONTENT</p>
+          </div>
+        </div>
+      </div>
+      <div class="toogles__item" data-toogles="3">
+        <div class="toogles__item-content">
+          <div>
+            <p>CONTENT</p>
+          </div>
+        </div>
+      </div>
+      <div class="toogles__item" data-toogles="4">
+        <div class="toogles__item-content">
+          <div>
+            <p>CONTENT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="advantages">
+        <div class="center-wrap">
+          <div class="advantages__list">
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon1.svg" alt=""></div>
+              <div class="advantages__item-title">Certification</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>NSF, WQA, IAPMO<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon2.svg" alt=""></div>
+              <div class="advantages__item-title">FREE SHIPPING</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>Free shipping with no order minimum required<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon3.svg" alt=""></div>
+              <div class="advantages__item-title">Exclusive Offers</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>Subscribe and save big<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-img"><img src="assets/images/svg/advantages-icon4.svg" alt=""></div>
+              <div class="advantages__item-title">30-day Return</div>
+              <div class="advantages__item-text"> 
+                <div class="content"> 
+                  <p>No-worries guarantee<a class="advantages__item-link"></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<footer class="footer">
+  <div class="connection">
+    <div class="center-wrap">
+      <div class="connection__wrap">
+        <div class="connection__left"> 
+          <div class="call-now__item"> 
+            <div class="icon">
+               <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8125 9.54068L13.5417 7.72649C12.7306 7.07857 11.3519 7.33776 11.0275 8.18004C10.7842 8.7632 9.97313 9.08716 9.24321 8.95755C7.62115 8.63359 5.43138 6.94898 5.02586 5.58834C4.78256 5.00519 5.26917 4.35726 5.9991 4.16291C7.05343 3.90374 7.37785 2.80227 6.56682 2.15435L4.29594 0.34016C3.64712 -0.113387 2.67388 -0.113387 2.10616 0.34016L0.565211 1.57122C-0.975742 2.86706 0.727417 6.30106 4.53925 9.3463C8.35108 12.3915 12.6495 13.817 14.2716 12.5211L15.8125 11.2901C16.3803 10.7717 16.3803 9.99423 15.8125 9.54068Z" fill="#0166B0"/>
+</svg>
+            </div><span>
+               1-800-753-5327</span>
+          </div>
+          <div class="call-now__item"> 
+            <div class="icon">
+               <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.535563 0H14.4641L7.49982 5.354L0.456806 0.015C0.482576 0.00796877 0.508912 0.00295898 0.535563 0Z" fill="#3293D0"/>
+<path d="M7.16198 6.38781C7.35936 6.53866 7.64334 6.53866 7.84072 6.38781L15 0.882812V9.49981C15 9.77596 14.7602 9.99982 14.4643 9.99982H0.535726C0.239848 9.99982 0 9.77596 0 9.49981V0.956816L7.16198 6.38781Z" fill="#3293D0"/>
+</svg>
+            </div><span>
+               sales@filterway.com</span>
+          </div>
+        </div>
+        <div class="connection__right">
+          <div class="call-now__item"> 
+            <div class="icon">
+               <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6 1.6944H11.9V0.994417C11.9 0.574427 11.62 0.294434 11.2 0.294434C10.78 0.294434 10.5 0.574427 10.5 0.994417V1.6944H3.5V0.994417C3.5 0.574427 3.22 0.294434 2.8 0.294434C2.38 0.294434 2.1 0.574427 2.1 0.994417V1.6944H0.699999C0.35 1.6944 0 1.97439 0 2.39438V12.1941C0 12.6141 0.35 12.8941 0.699999 12.8941H4.97C4.48 12.0542 4.2 11.0742 4.2 10.0942C4.2 7.01427 6.71999 4.49433 9.79999 4.49433C11.13 4.49433 12.32 4.98432 13.3 5.7543V2.39438C13.3 2.04439 12.95 1.6944 12.6 1.6944Z" fill="#0166B0"/>
+<path d="M9.79962 5.89453C7.48961 5.89453 5.59961 7.78452 5.59961 10.0945C5.59961 12.4045 7.48961 14.2945 9.79962 14.2945C12.1096 14.2945 13.9996 12.4045 13.9996 10.0945C13.9996 7.78452 12.1096 5.89453 9.79962 5.89453ZM11.1996 10.7945H9.79962C9.37962 10.7945 9.09962 10.5145 9.09962 10.0945V7.99452C9.09962 7.57452 9.37962 7.29452 9.79962 7.29452C10.2196 7.29452 10.4996 7.57452 10.4996 7.99452V9.39451H11.1996C11.6196 9.39451 11.8996 9.67451 11.8996 10.0945C11.8996 10.5145 11.6196 10.7945 11.1996 10.7945Z" fill="#0166B0"/>
+</svg>
+            </div>
+            <ul> 
+              <li>MON - Thu:<span>8am - 6pm</span></li>
+              <li>FRI: <span>8am - 5pm</span></li>
+              <li>WKND & hols: <span>Closed</span></li>
+            </ul>
+          </div>
+          <div class="socials"> 
+            <ul class="socials__list"> 
+              <li class="socials__item"> <a class="socials__link" href="#" target="_blank"><svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.35689 2.82271H9V0.119708C8.71652 0.082875 7.74161 0 6.6062 0C4.23715 0 2.61428 1.40746 2.61428 3.99429V6.375H0V9.39675H2.61428V17H5.81952V9.39746H8.32806L8.72627 6.37571H5.81877V4.29392C5.81952 3.42054 6.06849 2.82271 7.35689 2.82271Z" fill="white"/>
+</svg></a></li>
+              <li class="socials__item"> <a class="socials__link" href="#" target="_blank"><svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.8235 6.4509C19.1175 6.57651 19.4973 6.66509 19.9641 6.71665C20.1783 6.7348 20.3845 6.74278 20.5885 6.74278C20.8252 6.74278 21.0474 6.72972 21.25 6.70358C20.9951 6.94245 20.667 7.14939 20.2705 7.32582C19.8697 7.50298 19.3542 7.59084 18.7182 7.59084C18.427 8.6785 17.8876 9.65579 17.099 10.5155C16.3134 11.378 15.3782 12.0903 14.2949 12.6523C13.2116 13.2143 12.0216 13.6049 10.7183 13.8264C9.98497 13.9585 9.25236 14.0239 8.51612 14.0239C7.96067 14.0239 7.40305 13.9839 6.84833 13.9048C5.56245 13.7378 4.3274 13.3457 3.13228 12.7307C1.93789 12.1172 0.894523 11.2394 0 10.0994C0.505347 10.5496 1.09492 10.8988 1.76654 11.1413C2.43816 11.3831 3.13591 11.5066 3.86053 11.5066C4.58588 11.5066 5.29889 11.3737 5.9981 11.1145C6.69513 10.8545 7.32245 10.4487 7.88153 9.90048C7.77552 9.91718 7.66952 9.92662 7.56133 9.92662C7.35876 9.92662 7.17361 9.89104 7.00661 9.82061C6.74014 9.7146 6.55645 9.57012 6.45697 9.38932C6.35387 9.20853 6.35387 9.00886 6.45697 8.79176C6.55645 8.57539 6.81493 8.38371 7.23169 8.21671C7.08938 8.23196 6.9507 8.2414 6.82074 8.2414C6.61526 8.2414 6.42575 8.22398 6.25222 8.19058C5.95744 8.13612 5.70476 8.04536 5.48839 7.9183C5.26839 7.78833 5.09123 7.64965 4.94892 7.49935C4.80806 7.34833 4.68826 7.18787 4.59024 7.02014C4.76885 6.86113 4.96634 6.73988 5.1878 6.65783C5.40925 6.57361 5.70041 6.52133 6.06272 6.50463C5.25097 6.3282 4.67083 6.06463 4.32667 5.72192C3.98179 5.37704 3.76251 4.97988 3.67684 4.52899C3.91644 4.49196 4.15387 4.45057 4.39855 4.40265C4.64034 4.35255 4.8342 4.34747 4.97651 4.38159C4.28456 4.03671 3.80463 3.63446 3.52872 3.17486C3.29129 2.76898 3.17149 2.38707 3.17149 2.03347C3.17149 1.98918 3.17585 1.94126 3.18529 1.88753C4.43195 2.32172 5.48186 2.72034 6.33427 3.08119C7.18886 3.44496 7.94688 3.79856 8.60978 4.14489C8.86609 4.24799 9.12094 4.40701 9.37942 4.62047L10.2151 5.33856C10.393 4.86806 10.5934 4.40265 10.8229 3.93796C11.0559 3.47255 11.3006 3.02819 11.5613 2.60416C11.8219 2.18086 12.1145 1.79024 12.442 1.43664C12.7695 1.08449 13.1419 0.794062 13.5558 0.561719C13.5391 0.763567 13.4345 0.964689 13.2392 1.15855C13.4788 0.956703 13.7366 0.793336 14.0139 0.666999C14.2949 0.543567 14.589 0.46152 14.8969 0.416504C14.8613 0.619805 14.7168 0.786801 14.4583 0.913864C14.202 1.04238 13.9784 1.14185 13.7831 1.21155C13.8528 1.19485 13.9936 1.14839 14.1998 1.07433C14.4082 0.998815 14.6297 0.929112 14.8642 0.868848C15.1009 0.806406 15.3107 0.764293 15.5024 0.749772C15.6912 0.73162 15.8052 0.765019 15.8393 0.855053C15.8916 0.961059 15.8611 1.05182 15.7471 1.1266C15.6331 1.20212 15.4922 1.26456 15.3281 1.32047C15.167 1.37274 15.0007 1.41558 14.8395 1.45261C14.6747 1.48891 14.5672 1.51505 14.5149 1.53103L14.0234 1.70311C14.12 1.69367 14.218 1.69004 14.3145 1.69004C14.7204 1.69004 15.1205 1.75103 15.5082 1.87519C15.9867 2.02621 16.4245 2.25638 16.8224 2.56713C17.2188 2.87426 17.5695 3.23803 17.8687 3.65407C18.1693 4.07011 18.3907 4.51592 18.5323 4.99295L18.586 5.20569C18.6013 5.27612 18.6209 5.35453 18.6383 5.44239C18.8155 5.49757 19.0268 5.52952 19.2765 5.54331C19.5234 5.55565 19.7681 5.54331 20.0128 5.50338C20.2538 5.46417 20.4753 5.41407 20.6728 5.35163C20.8732 5.28991 21.0315 5.23182 21.1454 5.17955C21.0046 5.52516 20.7323 5.81414 20.3293 6.04793C19.9249 6.28028 19.4225 6.4146 18.8235 6.4509Z" fill="white"/>
+</svg></a></li>
+              <li class="socials__item"> <a class="socials__link" href="#" target="_blank"><svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5673 2.34714C20.3253 1.42934 19.616 0.705842 18.7165 0.458706C17.0732 0 10.4998 0 10.4998 0C10.4998 0 3.92661 0 2.28329 0.441315C1.40107 0.68819 0.674452 1.42947 0.432459 2.34714C0 4.02348 0 7.5 0 7.5C0 7.5 0 10.994 0.432459 12.6529C0.674708 13.5705 1.38377 14.294 2.28342 14.5412C3.94392 15 10.5 15 10.5 15C10.5 15 17.0732 15 18.7165 14.5587C19.6161 14.3117 20.3253 13.5882 20.5676 12.6705C20.9999 10.994 20.9999 7.51765 20.9999 7.51765C20.9999 7.51765 21.0172 4.02348 20.5673 2.34714ZM8.40694 10.7117V4.28827L13.873 7.5L8.40694 10.7117Z" fill="white"/>
+</svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center-wrap">
+    <div class="footer-content"> 
+      <nav class="footer-content__nav">
+        <div class="footer-content__nav-item">
+          <h4>
+             HELP </h4>
+          <ul class="footer-content__list"> 
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 FAQ</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 My Account </a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Manage Subscription </a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Track order </a></li>
+          </ul>
+        </div>
+        <div class="footer-content__nav-item">
+          <h4>
+             Products </h4>
+          <ul class="footer-content__list"> 
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Whole House Filters</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Refrigerator Filters</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Replacement Filter Cartridges</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 All Products</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-content__nav-item">
+          <h4>
+             policy </h4>
+          <ul class="footer-content__list"> 
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Shipping Policy</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Return Policy</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Privacy Policy</a></li>
+            <li class="footer-content__item"> <a href="#" target="_blank">
+                 Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </nav>
+      <form>
+        <h4>
+           Sign Up for Offers</h4>
+        <div class="inputs__field-wrap">
+          <input class="inputs__field" type="text" placeholder="your email">
+          <button><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.35355 4.35355C9.54882 4.15829 9.54882 3.84171 9.35355 3.64645L6.17157 0.464466C5.97631 0.269204 5.65973 0.269204 5.46447 0.464466C5.2692 0.659728 5.2692 0.976311 5.46447 1.17157L8.29289 4L5.46447 6.82843C5.2692 7.02369 5.2692 7.34027 5.46447 7.53553C5.65973 7.7308 5.97631 7.7308 6.17157 7.53553L9.35355 4.35355ZM0 4.5H9V3.5H0V4.5Z" fill="#0166B0"/>
+</svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="footer__bottom"> <span>
+         © Copyright 2021 i FilterWay LLC.  i  All Rights Reserved</span><a class="logo-footer" href="#"> <img src="assets/images/svg/logo.svg" alt="logo"></a>
+      <ul class="footer__bottom-list">
+        <li class="footer__bottom-item"> <a href="#"> <img src="assets/images/png/pay-1.png" alt=""></a></li>
+        <li class="footer__bottom-item"> <a href="#"> <img src="assets/images/png/pay-2.png" alt=""></a></li>
+        <li class="footer__bottom-item"> <a href="#"> <img src="assets/images/png/pay-3.png" alt=""></a></li>
+        <li class="footer__bottom-item"> <a href="#"> <img src="assets/images/png/pay-4.png" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <div class="mobile-menu__act mobile-menu__act--close">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.79" fill-rule="evenodd" clip-rule="evenodd" d="M15 1.5L13.5 0L7.5 6L1.5 0L0 1.5L6 7.5L0 13.5L1.5 15L7.5 9L13.5 15L15 13.5L9 7.5L15 1.5Z" fill="#575757"></path>
+      </svg>
+    </div>
+    <nav class="mobile-menu__nav anchors">
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">О компании</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Услуги</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Строителям</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Отзывы</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Частые вопросы</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="">Контакты</a></li>
+      </ul>
+    </nav><span class="btn" onclick="show_popup(&quot;popup1&quot;)">Обратная связь</span><span class="mobile-menu__schedule">График работы: 9:00 - 18:00</span>
+    <div class="mobile-menu__phones"><a class="mobile-menu__phone" href="tel:73422032012">+7(342)203-20-12</a></div>
+  </div>
+</div>
+<div class="popup-wrap" id="form">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('form')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner"></div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/app.js?v=1626166520286"></script></body>
+</html>
