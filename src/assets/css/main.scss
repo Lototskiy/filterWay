@@ -91,6 +91,7 @@ h4 {
 	text-transform: uppercase;
 	text-align: center;
 	color: #0166B0;
+
 	@media screen and (max-width:$large_tablet) {}
 }
 
@@ -133,6 +134,7 @@ h4 {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			transition: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) transform;
 		}
 	}
 }

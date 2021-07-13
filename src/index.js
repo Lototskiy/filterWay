@@ -32,6 +32,8 @@ import './assets/css/blocks/star-rating.scss';
 import './assets/css/blocks/checkout.scss';
 import './assets/css/blocks/wizard.scss';
 import './assets/css/blocks/steps.scss';
+import './assets/css/blocks/catalog.scss';
+import './assets/css/blocks/catalog-card.scss';
 
 
 
