@@ -1,0 +1,52 @@
+section.checkout-screen#checkout-screen
+  .main-forms
+    .center-wrap
+      .main-forms__wrap 
+        form.main-forms__form.left-continer(action="#")
+          .form_content
+            h2.main-forms__title
+              |sing in
+            .inputs__field-wrap.required
+              label.inputs__label(for="") 
+                |EMAIL
+              input.inputs__field(type="text" required)
+            .inputs__field-wrap.required
+              label.inputs__label(for="") 
+                |PASSWORD
+              input.inputs__field(type="text" required)
+            .inputs__field-row
+              .inputs__checkbox  
+                label.inputs__checkbox-label
+                  input(type="checkbox" name="name1" checked required).inputs__checkbox-input
+                  span.inputs__checkbox-content
+                  span
+                    |remember me
+              a(href="#").inputs__link
+                |Forgot password?
+            button.btn(type="submit")
+              |sing in
+          .socials-sign 
+            h2.socials-sign__title 
+              span 
+                |OR SIGN IN WITH
+            ul.socials-sign__list   
+              li.socials-sign__item 
+                a(href="#").socials-sign__link
+                  img(src="assets/images/svg/gmail.svg", alt="")
+              li.socials-sign__item 
+                a(href="#").socials-sign__link
+                  img(src="assets/images/svg/facebook.svg", alt="")
+              li.socials-sign__item 
+                a(href="#").socials-sign__link
+                  img(src="assets/images/png/amazon.png", alt="")
+        .right 
+          .right__wrap
+            .right__item
+                .content 
+                    h2
+                        |New Customers
+                    p 
+                        |Creating an account has many benefits: check out faster, keep more than one address, track orders and more.
+                a(href="#").btn
+                    |Create Account 
+                

@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Filterway-checkout';
+  - var pageClass = 'checkout-page';
+
+block content
+  +breadcrumb([{href:'index.html',text:'Home'},{href:'checkout.html',text:'Checkout'}])
+  include ../includes/main-checkout
+
+//- block script
