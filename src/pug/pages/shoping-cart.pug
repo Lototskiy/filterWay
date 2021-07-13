@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Filterway-sign-in';
+  - var pageClass = 'sign-in-page';
+
+block content
+  +breadcrumb([{href:'index.html',text:'Home'},{href:'sign-in.html',text:'Account'}])
+  include ../includes/wizard
+
+//- block script
