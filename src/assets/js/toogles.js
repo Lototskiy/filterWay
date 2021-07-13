@@ -29,6 +29,12 @@ if (document.querySelector('[data-toogles]')) {
                     return;
                 }
 
+                if ($('.toogles__item-title--active').hasClass('wizard__steps-item')) {
+                    $('.wizard__steps-item').find('.wizard__steps--indicator').removeClass('wizard__steps--indicator--active')
+                    $(this).find('.wizard__steps--indicator').addClass('wizard__steps--indicator--active')
+                    $(this).prevAll('.wizard__steps-item').find('.wizard__steps--indicator').addClass('wizard__steps--indicator--active')
+                }
+
                 if (need_i.hasClass('toogles__item--active')) {
 
 
@@ -62,6 +68,13 @@ if (document.querySelector('[data-toogles]')) {
             }
 
         });
+
+        $('.next-wizard').on('click', function () {
+            $(this).closest('.wizard').find('.toogles__item-title--active').next().trigger('click')
+        })
+        $('.back-wizard').on('click', function () {
+            $(this).closest('.wizard').find('.toogles__item-title--active').prev().trigger('click')
+        })
     });
 
 
