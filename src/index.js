@@ -24,6 +24,11 @@ import './assets/css/blocks/how-it-work.scss';
 import './assets/css/blocks/call-now.scss';
 import './assets/css/blocks/find.scss';
 import './assets/css/blocks/inputs.scss';
+import './assets/css/blocks/select.scss';
+import './assets/css/blocks/radio.scss';
+import './assets/css/blocks/amount.scss';
+import './assets/css/blocks/tooltip.scss';
+import './assets/css/blocks/star-rating.scss';
 
 
 
@@ -42,6 +47,7 @@ import './assets/css/blocks/product.scss';
 // JS
 import './assets/js/drop-down';
 import './assets/js/toogles';
+import './assets/js/select';
 import './assets/js/video';
 import './assets/js/main-slider';
 import './assets/js/product-slider';

@@ -1,0 +1,43 @@
+.amount {
+    display: flex;
+    align-items: center;
+    height: 5.2rem;
+    max-width: 12rem;
+    border: 1px solid $secondary-c;
+
+    &__input {
+        width: 4rem;
+        height: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: normal;
+        font-size: 2.4rem;
+        color: $primary-c;
+    }
+
+    &__minus,
+    &__plus {
+        cursor: pointer;
+        height: 100%;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        transition: all 0.5s;
+
+        svg {
+            fill: $primary-c;
+            width: 1rem;
+            transition: fill .5s;
+        }
+
+        &:hover {
+            svg {
+                fill: $secondary-c;
+            }
+        }
+    }
+}

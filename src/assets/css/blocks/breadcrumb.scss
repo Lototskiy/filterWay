@@ -2,8 +2,9 @@
     padding: 1rem 0;
     border-bottom: 1px solid rgba(49, 49, 49, 0.2);
 
-    .center-wrap {
-        max-width: 1020px;
+    &__wrap {
+        max-width: 930px;
+        margin: 0 auto;
     }
 
     &__list {
