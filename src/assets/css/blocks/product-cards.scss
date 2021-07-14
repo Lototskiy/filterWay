@@ -23,6 +23,20 @@
         align-items: center;
         padding: 1.6rem;
 
+        @media screen and (max-width:$large_tablet) {
+            width: calc(33.33% - 2rem); 
+
+            &:nth-child(-n+2) {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            width: calc(50% - 2rem);
+            &:nth-child(-n+4) {
+                display: none;
+            }
+        }
+
         .img-wrap {
             width: 14.6rem;
             margin-bottom: 1.5rem;
