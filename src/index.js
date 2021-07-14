@@ -40,6 +40,7 @@ import './assets/css/blocks/pagination.scss';
 import './assets/css/blocks/brand.scss';
 import './assets/css/blocks/catalog-test.scss';
 import './assets/css/blocks/aside-product.scss';
+import './assets/css/blocks/check-in.scss';
 
 
 
@@ -57,6 +58,7 @@ import './assets/css/blocks/product.scss';
 // JS
 
 // JS
+import './assets/js/inputs-mask';
 import './assets/js/drop-down';
 import './assets/js/footer';
 import './assets/js/toogles';
@@ -67,7 +69,7 @@ import './assets/js/main-slider';
 import './assets/js/product-slider';
 import './assets/js/popup';
 import './assets/js/inputs';
-import './assets/js/inputs-mask';
+
 import './assets/js/header';
 import './assets/js/mobile-menu';
 // import './assets/js/anchors';

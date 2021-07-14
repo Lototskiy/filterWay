@@ -1,0 +1,12 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Filterway-check-in';
+    - var pageClass = 'checkIn-page';
+
+block content
+    .check-in__breadcrumb
+        +breadcrumb([{href:'index.html',text:'Home'},{text:'Account'}])
+    include ../includes/check-in
+
+//- block script
