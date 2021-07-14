@@ -5,6 +5,8 @@ block variables
     - var pageClass = 'catalog-page';
 
 block content
+    .catalog__breadcrumb
+        +breadcrumb([{href:'index.html',text:'Home'},{text:'All Products'}])
     include ../includes/catalog
 
 //- block script

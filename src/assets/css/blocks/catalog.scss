@@ -1,16 +1,16 @@
 .catalog {
     padding-bottom: 6rem;
 
-    .breadcrumb {
-        &__wrap {
-            max-width: 107rem;
+    &__breadcrumb {
+        .breadcrumb__wrap {
+            max-width: 1070px;
         }
     }
 
     &__wrap {
         display: flex;
         padding-top: 2rem;
-        max-width: 107rem;
+        max-width: 1070px;
         margin: 0 auto;
     }
 
