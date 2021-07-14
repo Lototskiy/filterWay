@@ -1,0 +1,45 @@
+.brand {
+    background: #E9F4FA;
+    padding: 2rem;
+    padding-bottom: 5rem;
+
+    &__wrap {
+        max-width: 102rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #037FC9;
+        margin-bottom: 2.5rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: -2rem;
+    }
+
+    &__item {
+        width: calc((100% - 2rem * 5) / 6);
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        &--bg {
+            background-color: $secondary-c;
+        }
+
+        &--hide {
+            margin-bottom: 0px !important;
+            padding: 0px !important;
+            opacity: 0 !important;
+            height: 0px !important;
+        }
+    }
+}

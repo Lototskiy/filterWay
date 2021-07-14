@@ -1,0 +1,99 @@
+.catalog-test {
+    padding-top: 4rem;
+
+    &__title {
+        font-weight: bold;
+        font-size: 3.6rem;
+        line-height: 43/36*1;
+        text-transform: uppercase;
+        color: #037FC9;
+        max-width: 52rem;
+        width: 100%;
+        margin: 0 auto 2.5rem;
+    }
+
+    &__breadcrumb {
+        .breadcrumb {
+            &__wrap {
+                max-width: 1020px;
+            }
+        }
+    }
+
+    &__bottom {
+        &-title {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #037FC9;
+            margin-bottom: 2.5rem;
+        }
+
+
+        &-form {
+            max-width: 45rem;
+            width: 100%;
+
+            .inputs__field {
+                width: calc(100% - 14rem - 1rem);
+                margin-right: 1rem;
+                padding-right: 0.5rem;
+
+                &-wrap {
+                    display: flex;
+                }
+
+                &::placeholder {
+                    font-size: 1rem;
+                    text-transform: lowercase;
+                    color: #A3A3A3;
+                }
+
+            }
+
+            .btn {
+                padding: 0 0.5rem;
+                max-width: 14rem;
+                width: 100%;
+            }
+        }
+
+        &-right {
+            width: calc(100% - 45rem - 6rem);
+            margin-left: 6rem;
+            background-color: $secondary-c;
+            padding: 5rem 8rem;
+        }
+
+        &-link {
+            color: $secondary-c;
+            background-color: #fff;
+            width: 100%;
+
+            &:hover {
+                border: 1px solid #fff;
+                color: #fff;
+            }
+        }
+
+        &-wrap {
+            display: flex;
+        }
+
+        .center-wrap {
+            padding-right: 0;
+            padding-left: calc((100% - 1020px) / 2);
+            max-width: 100%;
+
+            @media screen and (max-width:1070px) {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .content {
+        max-width: 30rem;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 3.5rem;
+    }
+}
