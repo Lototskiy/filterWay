@@ -1,0 +1,64 @@
+.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 16/13*1;
+        text-transform: uppercase;
+        color: $primary-c;
+        transition: all .5s;
+
+        &--dots {
+            pointer-events: none;
+        }
+
+        &:hover {
+            color: $secondary-c;
+        }
+
+        &--active {
+            color: $secondary-c;
+        }
+    }
+
+    &__prev,
+    &__next {
+        cursor: pointer;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #E5E5E5;
+
+        svg {
+            width: 1.4rem;
+            fill: $primary-c;
+            transition: all .5s;
+        }
+
+        &:hover {
+            svg {
+                fill: $secondary-c;
+            }
+        }
+    }
+}
