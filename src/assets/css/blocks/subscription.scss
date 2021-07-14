@@ -1,0 +1,42 @@
+.subscription {
+    text-align: center;
+
+    .simple-title {
+        margin-bottom: 1rem;
+    }
+
+    .advantages {
+        padding-top: 4rem;
+    }
+
+    &__wrap {
+        padding-top: 4rem;
+        background: rgba(183, 217, 239, 0.3);
+    }
+
+    &__text {
+        font-family: $secondary-f;
+    }
+
+    &__link {
+        color: $secondary-c;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 1px;
+            background: $secondary-c;
+            opacity: 1;
+            transition: opacity .5s, width .5s;
+        }
+
+        &:hover::before {
+            width: 0%;
+            opacity: 0;
+        }
+    }
+}

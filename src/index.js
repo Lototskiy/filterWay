@@ -34,6 +34,9 @@ import './assets/css/blocks/wizard.scss';
 import './assets/css/blocks/steps.scss';
 import './assets/css/blocks/catalog.scss';
 import './assets/css/blocks/catalog-card.scss';
+import './assets/css/blocks/nothing-hide.scss';
+import './assets/css/blocks/subscription.scss';
+import './assets/css/blocks/pagination.scss';
 
 
 
@@ -53,6 +56,7 @@ import './assets/css/blocks/product.scss';
 // JS
 import './assets/js/drop-down';
 import './assets/js/toogles';
+import './assets/js/filter';
 import './assets/js/select';
 import './assets/js/video';
 import './assets/js/main-slider';

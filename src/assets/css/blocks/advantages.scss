@@ -81,16 +81,28 @@
     }
 }
 
-.main-screen~.advantages {
-    .center-wrap {
-        max-width: 1170px;
-    }
+.main-screen~.nothing-hide {
+    .advantages {
+        .center-wrap {
+            max-width: 1170px;
+        }
 
-    .advantages__item-title {
-        max-width: 18rem;
-    }
+        &__item {
+            &-title {
+                max-width: 18rem;
+            }
 
-    .advantages__item-text {
-        max-width: 100%;
+            &-text {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.main-screen~.subscription {
+    .advantages {
+        .center-wrap {
+            max-width: 1170px;
+        }
     }
 }
