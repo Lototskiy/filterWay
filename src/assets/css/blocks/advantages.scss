@@ -128,6 +128,10 @@
     .advantages {
         .center-wrap {
             max-width: 1170px;
+
+            @media screen and (max-width:$large_tablet) {
+                max-width: $large_mobile;
+            }
         }
 
         &__item {
@@ -151,6 +155,10 @@
     .advantages {
         .center-wrap {
             max-width: 1170px;
+
+            @media screen and (max-width:$large_tablet) {
+                max-width: $large_mobile;
+            }
         }
     }
 }
