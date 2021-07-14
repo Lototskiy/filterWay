@@ -58,6 +58,7 @@ import './assets/css/blocks/product.scss';
 
 // JS
 import './assets/js/drop-down';
+import './assets/js/footer';
 import './assets/js/toogles';
 import './assets/js/filter';
 import './assets/js/select';

@@ -5,6 +5,10 @@
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+        }
+
         span {
             font-weight: 300;
             font-size: 1.3rem;
@@ -28,6 +32,10 @@
     form {
         h4 {
             margin-bottom: 0.6rem;
+
+            @media screen and (max-width:$large_tablet) {
+                padding: 0;
+            }
         }
 
         .inputs__field {
@@ -70,12 +78,31 @@
         justify-content: space-between;
         padding: 1.8rem 0rem 2.5rem 0rem;
 
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column-reverse;
+        }
+
+        &__list {
+            @media screen and (max-width:$large_tablet) {
+                display: none;
+            }
+        }
+
         &__item {
             font-size: 1.3rem;
             line-height: 1.6rem;
             color: #313131;
             transition: all 0.5s;
             margin-bottom: 0.3rem;
+
+            @media screen and (max-width:$large_tablet) {
+                font-size: 1.6rem;
+                margin-bottom: 0.5rem;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
 
             &:hover {
                 color: #3293D0;
@@ -85,10 +112,23 @@
         &__nav {
             display: flex;
 
+            @media screen and (max-width:$large_tablet) {
+                flex-direction: column;
+            }
+
             &-item {
                 margin-right: 5.2rem;
 
+                @media screen and (max-width:$large_tablet) {
+                    margin-right: 0;
+                    border-top: 1px solid #E5E5E5;
+                }
 
+                h4 {
+                    @media screen and (max-width:$large_tablet) {
+                        margin-bottom: 0;
+                    }
+                }
 
                 &:last-child {
                     margin-right: 0rem;
@@ -102,9 +142,15 @@
     h4 {
         font-weight: 600;
         font-size: 1.3rem;
-        line-height: 1.6rem;
+        line-height: 16/13*1;
         margin-bottom: 1.2rem;
         text-transform: uppercase;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 0;
+            padding: 2.3rem 0;
+            font-size: 1.8rem;
+        }
     }
 
     .connection {
