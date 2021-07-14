@@ -1,0 +1,28 @@
+.shipping {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    padding: 0rem 1.5rem;
+    background: #F7F7F7;
+    border: 1px solid #E5E5E5;
+    color: #000;
+    margin-bottom: 3rem;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2rem 0rem;
+        border-bottom: 1px solid #E5E5E5;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        white-space: nowrap;
+        margin-right: 1.5rem;
+        text-transform: uppercase;
+    }
+    &__info {
+        margin-right: 5rem;
+    }
+}

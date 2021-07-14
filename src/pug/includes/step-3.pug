@@ -1,10 +1,58 @@
-.toogles__item.toogles__item--active(data-toogles="3")
-  .step.toogles__item-content(style='display: block;')
+.toogles__item(data-toogles="3")
+  .step.toogles__item-content
     .step__row 
       .step__left
         h2.step__title 
           |Shipping
-        
+        .shipping 
+          .shipping__item 
+            .shipping__title
+              |Shipping Address:
+            .shipping__info 
+              |kjbhbsl Per, Sadove tovarystvo MVS vulytsia. Simii Sosninih 3, 420,Kiev, BC A0A 0A0 (099) 999-9999
+            a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Edit
+          .shipping__item 
+            .shipping__title
+              |Shipping Method:
+            .shipping__info 
+              |free
+            a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Edit
+        h2.step__title 
+          |Payment
+        .inputs__field-wrap.required
+          label.inputs__label
+            |BILLING ADDRESS
+          .inputs__checkbox
+            label.inputs__checkbox-label
+              input.inputs__checkbox-input.inputs__field--invalid(type="checkbox" checked required)
+              span.inputs__checkbox-content
+              span my shipping and billing address are the same
+              a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Update Address
+        .inputs__field-row 
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |EMAIL
+              .radio__tooltip
+                .tooltip
+                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
+              input.inputs__field(type='text' required)
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |PHONE NUMBER
+              .radio__tooltip
+                .tooltip
+                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
+              input.inputs__field(type='text' required)
+        .inputs__field-wrap
+          label.inputs__label
+            |Payment Method
+          include ./pay-tabs
         a(href="#").btn.next-wizard
           |Next: Review & Place Order
       .aside-product 

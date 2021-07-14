@@ -105,6 +105,10 @@
                 width: calc(50% - 0.6rem);
             }
 
+            &--33 {
+                width: calc(33.333% - 0.6rem) !important;
+            }
+
             @media screen and (max-width:$large_tablet) {}
 
             &.required {
@@ -295,7 +299,7 @@
             color: #000000;
             position: relative;
             cursor: pointer;
-            display: inline-block;
+            display: inline-flex;
             text-transform: lowercase;
 
             @media screen and (max-width:$large_tablet) {
