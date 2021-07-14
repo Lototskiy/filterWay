@@ -1,0 +1,83 @@
+.aside-product {
+    background: #F7F7F7;
+    padding: 1.5rem 1.8rem 2.4rem 1.8rem;
+    width: 26.7rem;
+    margin-left: 3rem;
+
+    &__items {
+        text-align: center;
+        &-item {
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            border-top: 1px solid #E5E5E5;
+            padding-top: 1.3rem;
+            text-align: center;
+
+            .warning {
+                display: inline-block;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .item-row {
+                display: flex;
+                justify-content: space-between;
+
+                h4,
+                .price {
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 1.9rem;
+                    margin-bottom: 1rem;
+                    text-transform: uppercase;
+                }
+                .price.blue {
+                    color: #3293D0;
+                }
+                span {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    &__promo {
+        h4 {
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .inputs__field {
+
+            &::placeholder {
+                font-weight: normal;
+                font-size: 1rem;
+                color: #A3A3A3;
+            }
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0166B0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            transition: all 0.5s;
+            outline: none;
+            border: none;
+            flex-shrink: 0;
+            margin-left: 1.3rem;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

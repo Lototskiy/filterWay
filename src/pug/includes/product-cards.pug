@@ -1,4 +1,4 @@
-section.product-info
+section.product-info.product-info--cards
   .toogles.toogles--fade
       .center-wrap
         .product-info__list
@@ -23,18 +23,19 @@ section.product-info
       .toogles__item.toogles__item--active(data-toogles='3')
         .toogles__item-content(style='display: block;')
           div
-            .product-cards
-              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
-              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
-              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
-              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
-              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
-              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
-              +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
-              a(href="#").product-cards__item.product-cards__all-item
-                h6 ALL PRODUCTS
-                span.arrow 
-                  img(src="assets/images/svg/all-arrow.svg", alt="")
+            .center-wrap
+              .product-cards
+                +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+                +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+                +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+                +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+                +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+                +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+                +productCards({src: '#' ,srcImg: 'assets/images/png/img-product-card.png', name: 'Amana ASD2522WRW01', name2: 'Water Filter (OEM)', price: '199.99'})
+                a(href="#").product-cards__item.product-cards__all-item
+                  h6 ALL PRODUCTS
+                  span.arrow 
+                    img(src="assets/images/svg/all-arrow.svg", alt="")
 
       .toogles__item(data-toogles='4')
         .toogles__item-content

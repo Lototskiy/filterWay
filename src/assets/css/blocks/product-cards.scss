@@ -1,7 +1,17 @@
+.product-info {
+    .toogles__item-content {
+        .center-wrap {
+            max-width: 1170px;
+            padding: 0px 0.5rem;
+        }
+    }
+}
+
 .product-cards {
     display: flex;
-    padding: 0rem 2.2rem 2.5rem 2.2rem;
+    padding: 0rem 0rem 2.5rem 0rem;
     flex-wrap: wrap;
+
 
     &__item {
         background: #F7F7F7;

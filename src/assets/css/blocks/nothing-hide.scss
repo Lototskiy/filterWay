@@ -3,18 +3,34 @@
 
     .advantages {
         padding-top: 2rem;
+
+        @media screen and (max-width:$large_tablet) {
+            padding-top: 4.5rem;
+        }
     }
 
     .simple-title {
         margin-bottom: 1rem;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__wrap {
         padding-top: 3.5rem;
         background: rgba(183, 217, 239, 0.3);
+
+        @media screen and (max-width:$large_tablet) {
+            padding-top: 3rem;
+        }
     }
 
-    &__text {
+    .content {
         text-transform: lowercase;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+        }
     }
 }

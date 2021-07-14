@@ -10,14 +10,25 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: -6rem;
+        }
     }
 
     &__item {
         width: calc((100% - 12rem * 3) / 4);
         // padding: 0 2rem;
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
         align-items: center;
+
+
+        @media screen and (max-width:$large_tablet) {
+            width: calc((100% - 3rem * 1) / 2);
+            margin-bottom: 6rem;
+        }
 
         &-img {
             margin-bottom: 3rem;
@@ -25,6 +36,12 @@
             max-width: 4rem;
             width: 100%;
             position: relative;
+
+            @media screen and (max-width:$large_tablet) {
+                min-height: 6.5rem;
+                max-width: 6rem;
+                margin-bottom: 2rem;
+            }
 
             img {
                 position: absolute;
@@ -41,19 +58,45 @@
             font-size: 1.6rem;
             line-height: 19/16*1;
             text-transform: uppercase;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid $secondary-c;
-            display: inline-block;
-            max-width: 16rem;
-            width: 100%;
+            padding-bottom: 0.5rem;
+            // border-bottom: 1px solid $secondary-c;
+            // display: inline-block;
+            // max-width: 16rem;
+            // width: 100%;
             text-align: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+
+            @media screen and (max-width:$large_tablet) {
+                font-size: 1.8rem;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $secondary-c;
+
+            }
         }
 
         &-text {
             max-width: 15rem;
             text-align: center;
             width: 100%;
+
+            @media screen and (max-width:$large_tablet) {
+                max-width: 100%;
+            }
+
+            .content {
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                }
+            }
         }
 
         &-link {
@@ -90,6 +133,11 @@
         &__item {
             &-title {
                 max-width: 18rem;
+
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                    max-width: 100%;
+                }
             }
 
             &-text {
