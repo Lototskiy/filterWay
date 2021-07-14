@@ -184,9 +184,9 @@
 			width: 35px;
 		}
 
-		@media screen and (max-width:$large_mobile) {
-			width: 25px;
-		}
+		// @media screen and (max-width:$large_mobile) {
+		// 	width: 25px;
+		// }
 
 		&:hover div {
 			border-bottom-color: $secondary-c;
@@ -203,9 +203,9 @@
 				margin-bottom: 8px;
 			}
 
-			@media screen and (max-width:$large_mobile) {
-				margin-bottom: 4px;
-			}
+			// @media screen and (max-width:$large_mobile) {
+			// 	margin-bottom: 4px;
+			// }
 
 			&:last-child {
 				margin-bottom: 0px;
