@@ -4,15 +4,31 @@
     width: 26.7rem;
     margin-left: 3rem;
 
+    .pay-btn {
+        display: inline-flex;
+        margin-bottom: 1.1rem;
+        transition: all 0.5s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
     &__items {
         text-align: center;
+
+        .btn {
+            margin-bottom: 1rem;
+        }
+
         &-item {
             font-size: 1.3rem;
             line-height: 1.6rem;
             border-top: 1px solid #E5E5E5;
             padding-top: 1.3rem;
             text-align: center;
-
+            
+            
             .warning {
                 display: inline-block;
                 font-size: 1rem;
@@ -44,7 +60,7 @@
     }
 
     &__promo {
-        h4 {
+        label {
             font-weight: 600;
             font-size: 1.3rem;
             line-height: 1.6rem;

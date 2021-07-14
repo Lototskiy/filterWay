@@ -32,15 +32,18 @@
         &-row {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 1.8rem;
+            // margin-bottom: 1.8rem;
         }
 
         &-wrap {
             width: 100%;
             position: relative;
             overflow: hidden;
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.4rem;
 
+            &--50 {
+                width: calc(50% - 0.6rem);
+            }
             @media screen and (max-width:$large_tablet) {}
 
             &.required {
@@ -156,6 +159,7 @@
         font-size: 1.3rem;
         line-height: 1.6rem;
         margin-bottom: 0.6rem;
+        text-transform: uppercase;
 
 
         // &::after {

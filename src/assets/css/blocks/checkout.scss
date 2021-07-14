@@ -7,6 +7,10 @@
         display: flex;
     }
 
+    .inputs__field-wrap {
+        margin-bottom: 1.8rem;
+    }
+
     .left-continer {
         background: rgba(183, 217, 239, 0.3);
         position: relative;
@@ -116,8 +120,7 @@
                 transition: all 0.5s;
             }
         }
-        &__title,
-        .pay-title {
+        &__title {
             position: relative;
             font-weight: 600;
             font-size: 1.3rem;

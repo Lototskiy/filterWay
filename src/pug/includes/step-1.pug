@@ -1,9 +1,9 @@
-.toogles__item.toogles__item--active(data-toogles="1")
-  .step.toogles__item-content(style='display: block;')
+.toogles__item(data-toogles="1")
+  .step.toogles__item-content
     h2.step__title 
       |Shopping Cart (2)
     .step__row 
-      .step__cards
+      .step__left.step__cards
         .step__cards-item
           .step__cards-left 
             .img-wrap 
@@ -64,7 +64,7 @@
           |Continue Shopping 
       .aside-product 
         form.aside-product__promo
-          h4 Promo Code
+          label Promo Code
           .inputs__field-row
             input.inputs__field(type="text" placeholder="Apply only one discount code per order")
             button 
@@ -99,3 +99,7 @@
           h4.pay-title 
             span 
               |OR CHECKOUT WITH
+          a(href="#").pay-btn 
+            img(src="assets/images/png/img-paypal-1.png", alt="")
+          a(href="#").pay-btn 
+            img(src="assets/images/png/img-paypal-2.png", alt="")
