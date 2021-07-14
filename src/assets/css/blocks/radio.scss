@@ -73,23 +73,23 @@
             border-radius: 50%;
             transition: background-color, .5s;
         }
+    }
 
-        &__input {
-            position: absolute;
-            width: 0px;
-            height: 0px;
-            overflow: hidden;
-            clip: rect(0 0 0 0);
-            padding-left: 2rem;
+    &__input {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        padding-left: 2rem;
 
-            &:checked+.radio__content span {
-                background-color: rgba($secondary-c, 1);
-            }
+        &:checked+.radio__content span {
+            background-color: rgba($secondary-c, 1);
+        }
 
-            &:checked+.radio__checkbox::before,
-            &:checked+.radio__checkbox::after {
-                opacity: 1;
-            }
+        &:checked+.radio__checkbox::before,
+        &:checked+.radio__checkbox::after {
+            opacity: 1;
         }
     }
 }
