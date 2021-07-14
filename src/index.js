@@ -40,6 +40,7 @@ import './assets/css/blocks/pagination.scss';
 import './assets/css/blocks/brand.scss';
 import './assets/css/blocks/standarts.scss';
 import './assets/css/blocks/catalog-test.scss';
+import './assets/css/blocks/aside-product.scss';
 
 
 

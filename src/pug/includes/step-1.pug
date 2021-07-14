@@ -1,65 +1,101 @@
-  .toogles__item.toogles__item--active(data-toogles="1")
-.step.toogles__item-content(style='display: block;')
-  h2.step__title 
-    |Shopping Cart (2)
-  .step__row 
-    .step__cards
-      .step__cards-item
-        .step__cards-left 
-          .img-wrap 
-            div 
-              img(src="assets/images/png/product__img--small1.png" alt="")
-          .step__cards-param
-            .content 
-              h3
-                |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
-              p
-                |SKU: <strong>APF-1100</strong>
-            .amount
-              span.amount__minus
-                svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  rect(y='0.458336' width='13' height='1.08333')
-              input.amount__input(type='text' value='1')
-              span.amount__plus
-                svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  rect(y='5.49961' width='12' height='1')
-                  rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
-        .step__cards-right
-          .close-card 
-            img(src="assets/images/svg/card-close.svg" alt="")
-          .price.price-for-one
-            |2 Filter — <span>$19.99</span>
-          .price.price-all 
-            |Item Total:<br/>
-            <span>$19.99</span>
-      .step__cards-item
-        .step__cards-left 
-          .img-wrap 
-            div 
-              img(src="assets/images/png/product__img--small1.png" alt="")
-          .step__cards-param
-            .content 
-              h3
-                |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
-              p
-                |SKU: <strong>APF-1100</strong>
-            .amount
-              span.amount__minus
-                svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  rect(y='0.458336' width='13' height='1.08333')
-              input.amount__input(type='text' value='1')
-              span.amount__plus
-                svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
-                  rect(y='5.49961' width='12' height='1')
-                  rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
-        .step__cards-right
-          .close-card 
-            img(src="assets/images/svg/card-close.svg" alt="")
-          .price.price-for-one
-            |2 Filter — <span>$19.99</span>
-          .price.price-all 
-            |Item Total:<br/>
-            <span>$19.99</span>
-      a(href="#").btn.btn--empty.next-wizard
-        |Continue Shopping 
-    .aside-product 
+.toogles__item.toogles__item--active(data-toogles="1")
+  .step.toogles__item-content(style='display: block;')
+    h2.step__title 
+      |Shopping Cart (2)
+    .step__row 
+      .step__cards
+        .step__cards-item
+          .step__cards-left 
+            .img-wrap 
+              div 
+                img(src="assets/images/png/product__img--small1.png" alt="")
+            .step__cards-param
+              .content 
+                h3
+                  |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                p
+                  |SKU: <strong>APF-1100</strong>
+              .amount
+                span.amount__minus
+                  svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    rect(y='0.458336' width='13' height='1.08333')
+                input.amount__input(type='text' value='1')
+                span.amount__plus
+                  svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    rect(y='5.49961' width='12' height='1')
+                    rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
+          .step__cards-right
+            .close-card 
+              img(src="assets/images/svg/card-close.svg" alt="")
+            .price.price-for-one
+              |2 Filter — <span>$19.99</span>
+            .price.price-all 
+              |Item Total:<br/>
+              <span>$19.99</span>
+        .step__cards-item
+          .step__cards-left 
+            .img-wrap 
+              div 
+                img(src="assets/images/png/product__img--small1.png" alt="")
+            .step__cards-param
+              .content 
+                h3
+                  |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                p
+                  |SKU: <strong>APF-1100</strong>
+              .amount
+                span.amount__minus
+                  svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    rect(y='0.458336' width='13' height='1.08333')
+                input.amount__input(type='text' value='1')
+                span.amount__plus
+                  svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    rect(y='5.49961' width='12' height='1')
+                    rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
+          .step__cards-right
+            .close-card 
+              img(src="assets/images/svg/card-close.svg" alt="")
+            .price.price-for-one
+              |2 Filter — <span>$19.99</span>
+            .price.price-all 
+              |Item Total:<br/>
+              <span>$19.99</span>
+        a(href="#").btn.btn--empty.next-wizard
+          |Continue Shopping 
+      .aside-product 
+        form.aside-product__promo
+          h4 Promo Code
+          .inputs__field-row
+            input.inputs__field(type="text" placeholder="Apply only one discount code per order")
+            button 
+              img(src="assets/images/svg/promo-arrow.svg", alt="")
+        .aside-product__items 
+          .aside-product__items-item
+            .item-row 
+              h4
+                |Sub-Total:
+              .price 
+                |$<span>229.94</span>
+            .item-row
+              span
+                |sales tax
+              span
+                |tbd
+            .item-row
+              span
+                |estimated shipping cost 
+              span
+                |$4.99
+          .aside-product__items-item
+            .item-row 
+              h4
+                |Estimated Total:
+              .price.blue 
+                |$<span>234.93</span>
+            span.warning
+              |tax and shipping cost will be finalized during checkout
+          a(href="#").btn
+            |checkout 
+          h4.pay-title 
+            span 
+              |OR CHECKOUT WITH
