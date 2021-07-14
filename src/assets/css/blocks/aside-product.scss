@@ -3,6 +3,7 @@
     padding: 1.5rem 1.8rem 2.4rem 1.8rem;
     width: 26.7rem;
     margin-left: 3rem;
+    height: max-content;
 
     .pay-btn {
         display: inline-flex;
@@ -11,6 +12,61 @@
 
         &:hover {
             opacity: 0.7;
+        }
+    }
+
+    &__basket {
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        &-title {
+            font-weight: normal;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+        }
+
+        &-wrap {
+            border-top: 1px solid #037FC9;
+            border-bottom: 1px solid #037FC9;
+        }
+
+        &-item {
+            padding: 1rem 0rem 0.8rem 0rem;
+            display: flex;
+            border-bottom: 1px solid #E5E5E5;
+
+            &:last-child {
+                border-bottom: none;
+            }
+            .img-wrap {
+                max-width: 4.2rem;
+                margin-right: 0.6rem;
+            }
+        }
+
+        &-info {
+            .title {
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                text-align: left;
+                margin-bottom: 0.9rem;
+            }
+
+            span {
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+
+            .price {
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                font-weight: bold;
+                color: #3293D0;
+            }
         }
     }
 

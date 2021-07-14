@@ -41,6 +41,7 @@ import './assets/css/blocks/brand.scss';
 import './assets/css/blocks/catalog-test.scss';
 import './assets/css/blocks/aside-product.scss';
 import './assets/css/blocks/check-in.scss';
+import './assets/css/blocks/shipping.scss';
 
 
 

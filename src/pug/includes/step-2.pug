@@ -1,9 +1,9 @@
-.toogles__item.toogles__item--active(data-toogles="2")
-  .step.toogles__item-content(style='display: block;')
-    h2.step__title 
-      |Shopping Cart (2)
+.toogles__item(data-toogles="2")
+  .step.toogles__item-content
     .step__row 
       .step__left
+        h2.step__title 
+          |Shopping Cart (2)
         form.inputs
           .inputs__field-row 
             .inputs__field-wrap.required.inputs__field-wrap--50
@@ -26,24 +26,117 @@
             .inputs__field-wrap.required.inputs__field-wrap--50
               label.inputs__label
                 |COUNTRY
-              select.inputs__select(name='select')
-                option(value='value1')
-                  |val1
-                option(value='value1')
-                  |val1
-                option(value='value1')
-                  |val1
+              .radio__tooltip
+                .tooltip
+                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                  |Please Select
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |USA
+                  option(value='value2')
+                    |EUR
+                  option(value='value3')
+                    |UAH
             .inputs__field-wrap.required.inputs__field-wrap--50
               label.inputs__label
                 |STATE
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                  |Please Select
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |Alabama
+                  option(value='value2')
+                    |Arizona
+                  option(value='value3')
+                    |Ternopil
+          .inputs__field-row 
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |FIRST NAME
               input.inputs__field(type='text' required)
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |LAST NAME
+              input.inputs__field(type='text' required)
+          .inputs__field-row 
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |CITY
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |New York
+                  option(value='value2')
+                    |Los Angeles
+                  option(value='value3')
+                    |Chicago
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |ZIP CODE
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |85001-85099
+                  option(value='value2')
+                    |72201-72099
+                  option(value='value3')
+                    |82001-82010
+          .inputs__field-wrap.required
+            label.inputs__label
+              |PHONE NUMBER
+            input.inputs__field(type='text' placeholder='+1 XXX-XXX-XXXX')
+        h2.step__title 
+          |Shipping Method
+        .product__radio
+          .radio
+            .radio__box
+              label.radio__label
+                input.radio__input(type='radio' name='radio-delivery' checked)
+                .radio__content
+                  span
+                | USPS prioryty mail 
+              .radio__price
+                span FREE
+            .radio__box
+              label.radio__label
+                input.radio__input(type='radio' name='radio-delivery')
+                .radio__content
+                  span
+                | UPS - graund (3-6 days)
+              .radio__price
+                span FREE
+        .product__radio
+          .radio
+            .radio__box
+              label.radio__label
+                input.radio__input(type='radio' name='radio-delivery' checked)
+                .radio__content
+                  span
+                |UPS - ( 2-5 days)
+              .radio__price
+                span $69.99
+            .radio__box.warning
+              |Please allow <strong>24</strong> to <strong>48</strong> hours <br/> to process your order
+        a(href="#").btn.next-wizard
+          |Next: Payment Info 
       .aside-product 
-        form.aside-product__promo
-          label Promo Code
-          .inputs__field-row
-            input.inputs__field(type="text" placeholder="Apply only one discount code per order")
-            button 
-              img(src="assets/images/svg/promo-arrow.svg", alt="")
         .aside-product__items 
           .aside-product__items-item
             .item-row 
@@ -69,12 +162,36 @@
                 |$<span>234.93</span>
             span.warning
               |tax and shipping cost will be finalized during checkout
-          a(href="#").btn
-            |checkout 
-          h4.pay-title 
-            span 
-              |OR CHECKOUT WITH
-          a(href="#").pay-btn 
-            img(src="assets/images/png/img-paypal-1.png", alt="")
-          a(href="#").pay-btn 
-            img(src="assets/images/png/img-paypal-2.png", alt="")
+          .aside-product__basket
+            .aside-product__basket-row
+              h4.aside-product__basket-title
+                |(<span>2</span>) Items
+              a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Edit
+            .aside-product__basket-wrap 
+              .aside-product__basket-item
+                .img-wrap
+                  div 
+                    img(src="assets/images/png/product__img--small1.png", alt="")
+                .aside-product__basket-info 
+                  .title Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                  .aside-product__basket-row
+                    span SKU: <strong>APF-1100</strong>
+                    span Qty: <strong>1</strong>
+                  .aside-product__basket-row
+                    span 2 Filter — <strong>$19.99</strong>
+                    span.price $19.99
+              .aside-product__basket-item
+                .img-wrap
+                  div 
+                    img(src="assets/images/png/product__img--small1.png", alt="")
+                .aside-product__basket-info 
+                  .title Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                  .aside-product__basket-row
+                    span SKU: <strong>APF-1100</strong>
+                    span Qty: <strong>1</strong>
+                  .aside-product__basket-row
+                    span 2 Filter — <strong>$19.99</strong>
+                    span.price $19.99
+          

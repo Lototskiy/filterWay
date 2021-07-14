@@ -33,3 +33,7 @@ $('form').on('submit', function (e) {
     //     }
     // });
 });
+
+$('.inputs__select').change(function() {
+    $(this).closest('.inputs__select-wrap').find('.placeholder').remove()
+});
