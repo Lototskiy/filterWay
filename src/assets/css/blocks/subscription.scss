@@ -12,6 +12,10 @@
     &__wrap {
         padding-top: 4rem;
         background: rgba(183, 217, 239, 0.3);
+
+        @media screen and (max-width:$large_tablet) {
+            padding-top: 5rem;
+        }
     }
 
     &__text {

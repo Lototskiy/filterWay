@@ -10,8 +10,7 @@
 	animation-fill-mode: forwards !important;
 	border-bottom: 1px solid rgba(49, 49, 49, 0.2);
 	border-top: 2px solid #3293D0;
-
-
+	background-color: #fff;
 
 	&__wrap {
 		display: flex;
@@ -26,7 +25,6 @@
 		width: 100%;
 		top: 0px;
 		left: 0px;
-		background: #ffffff;
 		box-shadow: 0px 1px 36px 13px rgba(21, 21, 21, 0.03);
 		overflow: hidden;
 		transform: translate(0, -100%);
@@ -71,9 +69,20 @@
 	&__logo {
 		margin-right: 1.6rem;
 		margin-left: 1.6rem;
+
+		@media screen and (max-width:$large_tablet) {
+			margin-right: 0.5rem;
+			margin-left: 0.5rem;
+		}
 	}
 
 	&__nav {
+		margin-right: 2rem;
+
+		@media screen and (max-width:$large_tablet) {
+			display: none;
+		}
+
 		&-list {
 			display: flex;
 			align-items: center;
@@ -171,6 +180,14 @@
 		width: 21px;
 		cursor: pointer;
 
+		@media screen and (max-width:$large_tablet) {
+			width: 35px;
+		}
+
+		@media screen and (max-width:$large_mobile) {
+			width: 25px;
+		}
+
 		&:hover div {
 			border-bottom-color: $secondary-c;
 		}
@@ -180,6 +197,15 @@
 			width: 100%;
 			border-bottom: 2px solid $primary-c;
 			transition: border-bottom-color .5s;
+
+			@media screen and (max-width:$large_tablet) {
+				border-bottom: 3px solid $primary-c;
+				margin-bottom: 8px;
+			}
+
+			@media screen and (max-width:$large_mobile) {
+				margin-bottom: 4px;
+			}
 
 			&:last-child {
 				margin-bottom: 0px;

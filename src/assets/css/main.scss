@@ -37,15 +37,15 @@ body {
 	font-size: 62.5%;
 
 	@media screen and (max-width:$large_desktop) {
-		font-size: 10px;
+		font-size: 100vw / (1200/10);
 	}
 
 	@media screen and (max-width:$large_tablet) {
-		font-size: 71.5%;
+		font-size: 62.5%;
 	}
 
 	@media screen and (max-width:$large_mobile) {
-		font-size: 100vw / (380/10);
+		font-size: 100vw / (580/10);
 	}
 }
 
@@ -65,6 +65,10 @@ body {
 main {
 	flex-grow: 1;
 	padding-top: 7.8rem;
+
+	@media screen and (max-width:$large_tablet) {
+		padding-top: 7.3rem;
+	}
 }
 
 .center-wrap {
@@ -72,6 +76,11 @@ main {
 	width: 100%;
 	margin: 0px auto;
 	padding: 0px 15px;
+
+	@media screen and (max-width:$large_tablet) {
+		max-width: 580px;
+		padding: 0 20px;
+	}
 
 	//  
 }
@@ -87,12 +96,15 @@ h4 {
 .simple-title {
 	font-weight: bold;
 	font-size: 3.6rem;
-	line-height: 4.3rem;
+	line-height: 43/36*1;
 	text-transform: uppercase;
 	text-align: center;
 	color: #0166B0;
 
-	@media screen and (max-width:$large_tablet) {}
+	@media screen and (max-width:$large_tablet) {
+		font-size: 3rem;
+		font-weight: 600;
+	}
 }
 
 .simple-sub_title {

@@ -6,7 +6,7 @@ if (document.querySelector('.main-slider')) {
         //autoplay: {
         //delay: 2000,
         //},
-        autoHeight: true,
+        // autoHeight: true,
         loop: true,
         //centeredSlides: true,
         //initialSlide: 1,

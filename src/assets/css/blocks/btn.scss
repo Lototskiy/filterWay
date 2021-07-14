@@ -17,6 +17,10 @@
 	font-family: $secondary-f;
 	border: 1px solid rgba($secondary-c, 0);
 
+	@media screen and (max-width:$large_tablet) {
+		line-height: 6.2rem;
+	}
+
 	&:hover {
 		background-color: inherit;
 		color: $secondary-c;

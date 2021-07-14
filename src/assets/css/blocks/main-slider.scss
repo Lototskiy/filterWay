@@ -1,9 +1,23 @@
 .main-slider {
     position: relative;
+    height: 100%;
+
+    .swiper-container {
+        height: inherit;
+    }
 
     &__img {
-        >div {
-            padding-bottom: 66.66%;
+
+        // >div {
+        //     padding-bottom: 66.66%;
+        // }
+        img {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            object-fit: cover;
         }
     }
 
