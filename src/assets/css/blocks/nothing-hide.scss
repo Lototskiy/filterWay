@@ -6,6 +6,7 @@
 
         @media screen and (max-width:$large_tablet) {
             padding-top: 4.5rem;
+            padding-bottom: 6rem;
         }
     }
 
@@ -28,6 +29,7 @@
 
     .content {
         text-transform: lowercase;
+        font-size: 1.6rem;
 
         @media screen and (max-width:$large_tablet) {
             font-size: 1.8rem;

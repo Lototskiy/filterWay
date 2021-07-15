@@ -12,6 +12,12 @@
 	border-top: 2px solid #3293D0;
 	background-color: #fff;
 
+	@media screen and (max-width:$large_tablet) {
+		border-top: 4px solid #3293D0;
+		padding-top: 1.2rem;
+		padding-bottom: 1.2rem;
+	}
+
 	&__wrap {
 		display: flex;
 		align-items: center;
@@ -132,6 +138,7 @@
 		&-item {
 			padding-right: 1rem;
 			padding-left: 1rem;
+			padding-top: 0.7rem;
 			border-right: 1px solid #E5E5E5;
 			position: relative;
 
@@ -148,6 +155,10 @@
 				fill: $primary-c;
 				width: 1.5rem;
 				transition: fill .5s;
+
+				@media screen and (max-width:$large_tablet) {
+					width: 2.5rem;
+				}
 			}
 
 			&:hover {
@@ -160,7 +171,7 @@
 		&-value {
 			position: absolute;
 			right: -0.5rem;
-			top: -0.5rem;
+			top: 0;
 			width: 1.3rem;
 			height: 1.3rem;
 			background-color: $secondary-c;
@@ -187,8 +198,12 @@
 		width: 21px;
 		cursor: pointer;
 
+		&:hover {
+			pointer-events: none;
+		}
+
 		@media screen and (max-width:$large_tablet) {
-			width: 35px;
+			width: 3.5rem;
 		}
 
 		// @media screen and (max-width:$large_mobile) {
@@ -207,7 +222,7 @@
 
 			@media screen and (max-width:$large_tablet) {
 				border-bottom: 3px solid $primary-c;
-				margin-bottom: 8px;
+				margin-bottom: 0.8rem;
 			}
 
 			// @media screen and (max-width:$large_mobile) {
