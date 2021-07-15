@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Filterway-cabinet6';
+    - var pageClass = 'cabinet6-page';
+
+block content
+    +breadcrumb([{href:'index.html',text:'Home'},{text:'Account'}])
+    include ../includes/cabinet6
+
+//- block script
