@@ -44,6 +44,7 @@ import './assets/css/blocks/check-in.scss';
 import './assets/css/blocks/shipping.scss';
 import './assets/css/blocks/pay-tabs.scss';
 import './assets/css/blocks/voucher.scss';
+import './assets/css/blocks/cabinet.scss';
 
 
 
