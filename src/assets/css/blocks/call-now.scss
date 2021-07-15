@@ -41,6 +41,7 @@
         justify-content: center;
     }
 
+
     &__item,
     .footer-call__item {
         display: flex;
@@ -52,6 +53,7 @@
         }
         .icon {
             margin-right: 0.8rem;
+            flex-shrink: 0;
         }
 
         ul {

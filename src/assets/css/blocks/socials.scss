@@ -4,17 +4,25 @@
     }
 
     &__item {
+        padding: 0rem 0.7rem;
         @media screen and (max-width:$large_tablet) {
             margin-left: 4rem;
+            padding: 0rem;
 
             &:first-child {
                 margin-left: 0rem;
             }
         }
+        &:first-child {
+            padding-left: 0rem;
+        }
+        &:last-child {
+            padding-right: 0rem;
+        }
     }
 
     &__link {
-        padding: 0rem 0.7rem;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -26,6 +34,8 @@
             background: #fff;
             border-radius: 50%;
         }
+
+        
 
         
 
