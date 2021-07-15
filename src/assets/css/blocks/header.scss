@@ -75,6 +75,8 @@
 	&__logo {
 		margin-right: 1.6rem;
 		margin-left: 1.6rem;
+		max-width: 15rem;
+		width: 100%;
 
 		@media screen and (max-width:$large_tablet) {
 			margin-right: 0.5rem;
