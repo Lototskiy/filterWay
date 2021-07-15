@@ -19,21 +19,24 @@
         width: 100%;
         background: #E9F4FA;
         position: relative;
+        padding-top: 2rem;
 
         &::before {
             content: '';
             position: absolute;
             top: 0;
             right: 100%;
-            width: 100%;
+            width: 1000%;
             height: 100%;
             background-color: inherit;
         }
 
+        &-list {
+            padding-right: 8rem;
+        }
+
         &-item {
             margin: 0;
-            display: flex;
-            align-items: center;
 
             svg {
                 margin-right: 0.5rem;
@@ -47,6 +50,38 @@
             font-size: 1.3rem;
             line-height: 16/13*1;
             text-transform: capitalize;
+            display: block;
+            border-bottom: 1px solid #fff;
+            transition: color .5s, text-shadow .5s;
+            color: $primary-c;
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &:last-child {
+                border: none;
+            }
+
+            &:hover {
+                color: $secondary-c;
+                text-shadow: 0 0 1px $secondary-c, 0 0 1px $secondary-c;
+            }
+
+            &--active {
+                color: $secondary-c;
+                text-shadow: 0 0 1px $secondary-c, 0 0 1px $secondary-c;
+            }
+        }
+    }
+
+    &__body {
+        padding-top: 2rem;
+        width: calc(100% - 23.5rem - 5rem);
+        margin-left: 5rem;
+
+        .content {
+            margin-bottom: 2rem;
         }
     }
 }

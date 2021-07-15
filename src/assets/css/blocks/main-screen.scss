@@ -1,5 +1,8 @@
 .main-screen {
-    padding-bottom: 2.5rem;
+    @media screen and (max-width:$large_tablet) {
+        padding-bottom: 2.5rem;
+    }
+
 
     .center-wrap {
         max-width: 100%;

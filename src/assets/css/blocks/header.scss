@@ -147,6 +147,13 @@
 			svg {
 				fill: $primary-c;
 				width: 1.5rem;
+				transition: fill .5s;
+			}
+
+			&:hover {
+				svg {
+					fill: $secondary-c;
+				}
 			}
 		}
 

@@ -15,16 +15,18 @@
             opacity: 0.7;
         }
     }
+
     .inputs__select-wrap,
     .inputs__select-wrap .inputs__select {
-      position: relative;
-      width: 100%;
-      font-family: 'Arial';
-      font-size: 12px;
+        position: relative;
+        width: 100%;
+        font-family: 'Arial';
+        font-size: 12px;
     }
-    
+
     .inputs__select-wrap {
-        margin-bottom:0rem !important;
+        margin-bottom: 0rem !important;
+
         .arrow {
             position: absolute;
             right: 1.1rem;
@@ -51,9 +53,9 @@
             font-size: 1rem;
             line-height: 1.2rem;
             color: #A3A3A3;
-          }
+        }
     }
-    
+
 
     &__field,
     &__select {
@@ -142,7 +144,7 @@
                         font-size: 1.5rem;
                         line-height: 160%;
                         color: $primary-c;
-                        
+
 
                         @media screen and (max-width:$large_tablet) {}
                     }
@@ -354,6 +356,6 @@
     }
 
     &__btn {
-        text-align: center;
+        text-align: right;
     }
 }
