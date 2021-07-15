@@ -1,5 +1,8 @@
 $('.toggle').click(function(e) {
     e.preventDefault();
+  $('.pay-tabs').find('.radio__input').attr('checked',false)
+  $(this).find('.radio__input').attr('checked',true)
+
 
   var $this = $(this);
 
