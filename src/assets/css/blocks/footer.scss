@@ -71,7 +71,7 @@
 
             &::placeholder {
                 color: rgba(3, 127, 201, 0.5);
-
+                padding-left: 0rem;
                 @media screen and (max-width:$large_tablet) {
                     font-size: 1.8rem;
                     line-height: 2.2rem;
@@ -125,6 +125,7 @@
         &__list {
             @media screen and (max-width:$large_tablet) {
                 display: none;
+                padding-bottom: 1rem;
             }
         }
 
@@ -213,6 +214,10 @@
         background: #3293D0;
         padding: 1.7rem 0rem 1rem 0rem;
 
+        
+        @media screen and (max-width:$large_tablet) {
+            padding: 2.7rem 0rem 3.3rem 0rem;
+        }
         &__wrap {
             color: #ffffff;
             display: flex;
@@ -224,6 +229,7 @@
         }
 
         &__left {
+            width: calc(50% - 20px);
             @media screen and (max-width:$large_tablet) {
                 padding-bottom: 1.7rem;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -231,12 +237,21 @@
             }
             .call-now__item:last-child {
                 @media screen and (max-width:$large_tablet) {
-                    justify-content: center;
+                    justify-content: flex-end;
+                    padding-right: 3.5rem;
+                }
+            }
+            >a {
+                transition: all 0.5s;
+                &:hover {
+                    opacity: 0.7;
                 }
             }
         }
 
         &__right {
+            width: calc(50% - -20px);
+            justify-content: space-between;
             @media screen and (max-width:$large_tablet) {
                 padding-top: 2rem;
                 justify-content: space-between;
@@ -247,7 +262,6 @@
         &__right {
             display: flex;
             align-items: center;
-            width: 50%;
 
             @media screen and (max-width:$large_tablet) {
                 width: 100%;
@@ -257,7 +271,7 @@
                 margin-right: 4.7rem;
 
                 @media screen and (max-width:$large_tablet) {
-                    width: calc(50% - 1rem);
+                    width: calc(50% - 3rem);
                     margin-right: 0;
                 }
 
