@@ -42,14 +42,13 @@ import './assets/css/blocks/catalog-test.scss';
 import './assets/css/blocks/aside-product.scss';
 import './assets/css/blocks/check-in.scss';
 import './assets/css/blocks/shipping.scss';
-import './assets/css/blocks/pay-tabs.scss';
+import './assets/css/blocks/accordion.scss';
 import './assets/css/blocks/voucher.scss';
 import './assets/css/blocks/cabinet.scss';
 import './assets/css/blocks/socials.scss';
 import './assets/css/blocks/edit.scss';
 
 import './assets/css/blocks/thank-you-block.scss';
-
 
 
 
