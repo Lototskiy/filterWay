@@ -68,7 +68,49 @@
             span
           img(src="assets/images/svg/icon-paypal-1.svg" alt="sss")
       .inner 
-        |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
+        form.inputs
+          .inputs__field-wrap.required
+            label.inputs__label
+              |CARD NUMBER
+            input.inputs__field.number-pay(type='text' required)
+          .inputs__field-row 
+            .inputs__field-wrap.required.inputs__field-wrap--33
+              label.inputs__label
+                |COUNTRY
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |val1
+                  option(value='value2')
+                    |val2
+                  option(value='value3')
+                    |val3
+            .inputs__field-wrap.required.inputs__field-wrap--33
+              label.inputs__label
+                |EXPIRATION YEAR
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |val1
+                  option(value='value2')
+                    |val2
+                  option(value='value3')
+                    |val3
+            .inputs__field-wrap.required.inputs__field-wrap--33
+              label.inputs__label
+                |SECURITY CODE
+              .radio__tooltip
+                .tooltip
+                  span.tooltip__title(attr="Каскадные таблицы стилей") ?
+              input.inputs__field(type='text' required)
     li 
       .radio__box.toggle
         label.radio__label
@@ -77,4 +119,46 @@
             span
           img(src="assets/images/png/icon-paypal-2.png" alt="sss")
       .inner 
-        |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
+        form.inputs
+          .inputs__field-wrap.required
+            label.inputs__label
+              |CARD NUMBER
+            input.inputs__field.number-pay(type='text' required)
+          .inputs__field-row 
+            .inputs__field-wrap.required.inputs__field-wrap--33
+              label.inputs__label
+                |COUNTRY
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |val1
+                  option(value='value2')
+                    |val2
+                  option(value='value3')
+                    |val3
+            .inputs__field-wrap.required.inputs__field-wrap--33
+              label.inputs__label
+                |EXPIRATION YEAR
+              .inputs__select-wrap
+                span.arrow
+                .placeholder
+                select.inputs__select(name='select')
+                  option(value='value1' disabled selected hidden)
+                    |val
+                  option(value='value1')
+                    |val1
+                  option(value='value2')
+                    |val2
+                  option(value='value3')
+                    |val3
+            .inputs__field-wrap.required.inputs__field-wrap--33
+              label.inputs__label
+                |SECURITY CODE
+              .radio__tooltip
+                .tooltip
+                  span.tooltip__title(attr="Каскадные таблицы стилей") ?
+              input.inputs__field(type='text' required)

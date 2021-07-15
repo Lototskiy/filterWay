@@ -48,6 +48,8 @@ import './assets/css/blocks/cabinet.scss';
 import './assets/css/blocks/socials.scss';
 import './assets/css/blocks/edit.scss';
 
+import './assets/css/blocks/thank-you-block.scss';
+
 
 
 
