@@ -1,20 +1,20 @@
 .accordion {
     list-style: none;
     padding: 0;
-  
+
     .inner {
         padding: 1em 1rem 0.5rem 1rem;
         // overflow: hidden;
         display: none;
-      
+
         &.show {
-          /*display: block;*/
+            /*display: block;*/
         }
     }
-  
+
     li {
         margin: .5em 0;
-      
+
         .radio__label {
             font-weight: 600;
             font-size: 1.3rem;

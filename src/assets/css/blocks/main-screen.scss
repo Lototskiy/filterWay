@@ -1,8 +1,4 @@
 .main-screen {
-    @media screen and (max-width:$large_tablet) {
-        padding-bottom: 2.5rem;
-    }
-
 
     .center-wrap {
         max-width: 100%;
@@ -68,27 +64,45 @@
     }
 
     &__content {
-        max-width: 35rem;
+        max-width: 38.5rem;
+        padding-right: 3.5rem;
         width: 100%;
         padding-top: 15.5rem;
         padding-bottom: 7rem;
+        background-color: #F7F7F7;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 100%;
+            width: 1000%;
+            height: 100%;
+            background-color: #F7F7F7;
+        }
 
         @media screen and (max-width:$large_tablet) {
-            max-width: $large_mobile;
-            margin: 0 auto;
-            padding: 0 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+            max-width: 100%;
+        }
+
+        &-wrap {
+            @media screen and (max-width:$large_tablet) {
+                max-width: $large_mobile;
+                margin: 0 auto;
+                padding: 4rem 20px 2.5rem;
+            }
         }
     }
 
     &__slider {
-        width: calc(100% - 35rem - 3.5rem);
-        margin-left: 3.5rem;
+        width: calc(100% - 38.5rem);
 
         @media screen and (max-width:$large_tablet) {
             width: 100%;
-            margin-left: 0;
             height: 40rem;
-            margin-bottom: 4rem;
         }
     }
 
