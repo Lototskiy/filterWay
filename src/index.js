@@ -41,6 +41,9 @@ import './assets/css/blocks/brand.scss';
 import './assets/css/blocks/catalog-test.scss';
 import './assets/css/blocks/aside-product.scss';
 import './assets/css/blocks/check-in.scss';
+import './assets/css/blocks/shipping.scss';
+import './assets/css/blocks/pay-tabs.scss';
+import './assets/css/blocks/voucher.scss';
 
 
 
@@ -58,6 +61,7 @@ import './assets/css/blocks/product.scss';
 // JS
 
 // JS
+import './assets/js/toggles-tab';
 import './assets/js/inputs-mask';
 import './assets/js/drop-down';
 import './assets/js/footer';

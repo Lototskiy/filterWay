@@ -1,0 +1,48 @@
+.voucher {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2.2rem;
+
+        .step__title {
+            margin-bottom: 0rem;
+            color: #000;
+        }
+    }
+
+    &__item {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #E5E5E5;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__info {
+        table {
+            thead {
+                tr {
+                    td {
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                        line-height: 1.6rem;
+                        color: #000;
+                        text-transform: uppercase;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 1.3rem;
+                        line-height: 1.6rem;
+                        color: #000;
+                        padding-right: 4rem;
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,52 @@
 .step {
 
+    .number-pay {
+        background-image: url('~img/svg/icon-number-cart.svg');
+        background-position: right 0.7rem center;
+        background-repeat: no-repeat;
+    }
+
+    .edit {
+        display: flex;
+        align-items: center;
+        color: #0166B0;
+        text-decoration: underline;
+        transition: all 0.5s;
+        height: fit-content;
+
+        &:hover {
+            opacity: 0.7;
+        }
+        img {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .inputs__checkbox {
+        .edit {
+            margin-left: 1.5rem;
+        }
+    }
+
+    .radio {
+        &__box {
+             min-width: 20rem;
+             span {
+                font-weight: bold;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                text-transform: uppercase;
+            }
+            &.warning {
+                color: #0166B0;
+                text-transform: uppercase;
+                text-align: center;
+                background: #E9F4FA;
+                padding: 1rem;
+            }
+        }
+    }
+
     &__row {
         display: flex !important;
     }
@@ -34,6 +81,7 @@
         font-size: 1.6rem;
         line-height: 1.9rem;
         margin-bottom: 2.2rem;
+        text-transform: uppercase;
     }
 
     &__left {

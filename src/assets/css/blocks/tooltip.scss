@@ -18,6 +18,7 @@
     &__title[attr] {
         position: relative;
         cursor: help;
+        z-index: 5;
 
         &:before {
             pointer-events: none;

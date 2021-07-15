@@ -1,7 +1,116 @@
 .toogles__item(data-toogles="3")
-    .toogles__item-content
-        |STEP 3
+  .step.toogles__item-content
+    .step__row 
+      .step__left
+        h2.step__title 
+          |Shipping
+        .shipping 
+          .shipping__item 
+            .shipping__title
+              |Shipping Address:
+            .shipping__info 
+              |kjbhbsl Per, Sadove tovarystvo MVS vulytsia. Simii Sosninih 3, 420,Kiev, BC A0A 0A0 (099) 999-9999
+            a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Edit
+          .shipping__item 
+            .shipping__title
+              |Shipping Method:
+            .shipping__info 
+              |free
+            a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Edit
+        h2.step__title 
+          |Payment
+        .inputs__field-wrap.required
+          label.inputs__label
+            |BILLING ADDRESS
+          .inputs__checkbox
+            label.inputs__checkbox-label
+              input.inputs__checkbox-input.inputs__field--invalid(type="checkbox" checked required)
+              span.inputs__checkbox-content
+              span my shipping and billing address are the same
+              a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Update Address
+        .inputs__field-row 
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |EMAIL
+              .radio__tooltip
+                .tooltip
+                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
+              input.inputs__field(type='text' required)
+            .inputs__field-wrap.required.inputs__field-wrap--50
+              label.inputs__label
+                |PHONE NUMBER
+              .radio__tooltip
+                .tooltip
+                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
+              input.inputs__field(type='text' required)
+        .inputs__field-wrap
+          label.inputs__label
+            |Payment Method
+          include ./pay-tabs
         a(href="#").btn.next-wizard
-            |next 
-        a(href="#").btn.back-wizard
-            |back
+          |Next: Review & Place Order
+      .aside-product 
+        .aside-product__items 
+          .aside-product__items-item
+            .item-row 
+              h4
+                |Sub-Total:
+              .price 
+                |$<span>229.94</span>
+            .item-row
+              span
+                |sales tax
+              span
+                |tbd
+            .item-row
+              span
+                |estimated shipping cost 
+              span
+                |$4.99
+          .aside-product__items-item
+            .item-row 
+              h4
+                |Estimated Total:
+              .price.blue 
+                |$<span>234.93</span>
+            span.warning
+              |tax and shipping cost will be finalized during checkout
+          .aside-product__basket
+            .aside-product__basket-row
+              h4.aside-product__basket-title
+                |(<span>2</span>) Items
+              a(href="#").edit.back-wizard
+                img(src="assets/images/svg/icon-edit.svg", alt="")
+                |Edit
+            .aside-product__basket-wrap 
+              .aside-product__basket-item
+                .img-wrap
+                  div 
+                    img(src="assets/images/png/product__img--small1.png", alt="")
+                .aside-product__basket-info 
+                  .title Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                  .aside-product__basket-row
+                    span SKU: <strong>APF-1100</strong>
+                    span Qty: <strong>1</strong>
+                  .aside-product__basket-row
+                    span 2 Filter — <strong>$19.99</strong>
+                    span.price $19.99
+              .aside-product__basket-item
+                .img-wrap
+                  div 
+                    img(src="assets/images/png/product__img--small1.png", alt="")
+                .aside-product__basket-info 
+                  .title Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                  .aside-product__basket-row
+                    span SKU: <strong>APF-1100</strong>
+                    span Qty: <strong>1</strong>
+                  .aside-product__basket-row
+                    span 2 Filter — <strong>$19.99</strong>
+                    span.price $19.99
+          
