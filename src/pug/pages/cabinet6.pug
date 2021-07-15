@@ -5,7 +5,8 @@ block variables
     - var pageClass = 'cabinet6-page';
 
 block content
-    +breadcrumb([{href:'index.html',text:'Home'},{text:'Account'}])
+    .cabinet__breadcrumb
+        +breadcrumb([{href:'index.html',text:'Home'},{href:'index.html',text:'Account'}])
     include ../includes/cabinet6
 
 //- block script
