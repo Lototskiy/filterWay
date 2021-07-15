@@ -7,6 +7,7 @@
     &__list {
         display: flex;
         align-items: center;
+        padding-top: 0.5rem;
     }
 
     &__item {
@@ -22,7 +23,7 @@
         font-size: 1.3rem;
         line-height: 16/13*1;
         text-transform: uppercase;
-        color: $primary-c;
+        color: #000;
         transition: all .5s;
 
         &--dots {

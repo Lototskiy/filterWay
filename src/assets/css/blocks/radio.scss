@@ -25,8 +25,12 @@
         &-new {
             font-weight: bold;
             text-transform: uppercase;
-            color: $secondary-c;
+            color: #3293D0;
             margin-right: 0.5rem;
+
+            .catalog-card & {
+                color: $secondary-c;
+            }
         }
 
         &-old {
