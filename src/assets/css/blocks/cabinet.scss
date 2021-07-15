@@ -163,4 +163,64 @@
             text-transform: lowercase;
         }
     }
+
+    &__address {
+        margin-bottom: 1.2rem;
+
+        &-wrap {
+            display: flex;
+        }
+
+        &-item {
+            max-width: 10rem;
+            width: 100%;
+
+            &+.cabinet__address-item {
+                margin-left: 8rem;
+            }
+
+            .radio {
+                margin-bottom: 1.2rem;
+
+                &__label {
+                    padding-top: 0.5rem;
+                    padding-left: 2rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+
+                    color: #313131;
+                }
+            }
+        }
+
+        &-content {
+            padding-left: 2rem;
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+
+        &-tel {
+            font-size: 1.3rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: 2px;
+                width: 0%;
+                height: 1px;
+                background: $primary-c;
+                opacity: 0;
+                transition: opacity .5s, width .5s;
+            }
+
+            &:hover::before {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
 }

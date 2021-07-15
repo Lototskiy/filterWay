@@ -77,10 +77,6 @@
             display: flex;
             justify-content: space-between;
 
-            .inputs__field-wrap {
-                width: calc(50% - 4rem);
-            }
-
             &--btn {
                 .btn {
                     margin-left: auto;
@@ -105,6 +101,10 @@
 
             &--50 {
                 width: calc(50% - 0.6rem);
+
+                .check-in & {
+                    width: calc(50% - 4rem);
+                }
             }
 
             &--33 {
