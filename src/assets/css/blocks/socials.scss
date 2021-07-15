@@ -1,0 +1,48 @@
+.socials {
+    &__list {
+        display: inline-flex;
+    }
+
+    &__item {
+        @media screen and (max-width:$large_tablet) {
+            margin-left: 4rem;
+
+            &:first-child {
+                margin-left: 0rem;
+            }
+        }
+    }
+
+    &__link {
+        padding: 0rem 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+        @media screen and (max-width:$large_tablet) {
+            width: 5rem;
+            height: 5rem;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        
+
+        svg {
+            @media screen and (max-width:$large_tablet) {
+                height: 2.3rem;
+                width: auto;
+                path {
+                    fill: #3293D0;
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+
+    }
+}

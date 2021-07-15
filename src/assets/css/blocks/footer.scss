@@ -15,21 +15,39 @@
             font-size: 1.3rem;
             line-height: 1.6rem;
             color: #465157;
+
+            @media screen and (max-width:$large_tablet) {
+                order: 2;
+                line-height: 4.3rem;
+                border-bottom: 1px solid #E5E5E5;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
         }
 
         &-list {
             display: flex;
+
+            @media screen and (max-width:$large_tablet) {
+                order: 3;
+                padding: 1.3rem 0rem 2.4rem 0rem;
+            }
         }
 
         &-item {
             margin-left: 1rem;
         }
 
-        .logo-footer {
-            margin-bottom: 1rem;
+        
+    }
+    &-logo {
+        margin-bottom: 1rem;
+        @media screen and (max-width:$large_tablet) {
+            order: 1;
+            max-width: 14.4rem;
         }
     }
-
     form {
         h4 {
             margin-bottom: 0.6rem;
@@ -44,8 +62,22 @@
             font-size: 1rem;
             min-width: 13.4rem;
 
+            @media screen and (max-width:$large_tablet) {
+                line-height: 6.4rem;
+                font-size: 1.8rem;
+                border: 1px solid #E5E5E5;
+                padding-left: 2rem;
+            }
+
             &::placeholder {
                 color: rgba(3, 127, 201, 0.5);
+
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    color: #465157;
+                    padding-left: 0rem;
+                }
             }
 
             &-wrap {
@@ -67,6 +99,13 @@
             background: none;
             cursor: pointer;
             transition: all 0.5s;
+
+            svg {
+                @media screen and (max-width:$large_tablet) {
+                    min-width: 2.9rem;
+                    height: auto;
+                }
+            }
 
             &:hover {
                 transform: scale(1.1);
@@ -128,6 +167,22 @@
                 h4 {
                     @media screen and (max-width:$large_tablet) {
                         margin-bottom: 0;
+                        display: block;
+                        position: relative;
+                    }
+
+                    span {
+                        display: none;
+
+                        @media screen and (max-width:$large_tablet) {
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            right: 0rem;
+                            font-size: 3.7rem;
+                            transition: all 0.5s;
+                            transform: translate(0, -50%);
+                        }
                     }
                 }
 
@@ -168,6 +223,26 @@
             }
         }
 
+        &__left {
+            @media screen and (max-width:$large_tablet) {
+                padding-bottom: 1.7rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                justify-content: space-between;
+            }
+            .call-now__item:last-child {
+                @media screen and (max-width:$large_tablet) {
+                    justify-content: center;
+                }
+            }
+        }
+
+        &__right {
+            @media screen and (max-width:$large_tablet) {
+                padding-top: 2rem;
+                justify-content: space-between;
+            }
+        }
+
         &__left,
         &__right {
             display: flex;
@@ -190,6 +265,11 @@
                     font-weight: normal;
                     font-size: 1.3rem;
                     line-height: 1.6rem;
+
+                    @media screen and (max-width:$large_tablet)  {
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                    }
                 }
             }
         }
@@ -201,7 +281,17 @@
 
 
     .icon {
+
+        @media screen and (max-width:$large_tablet) {
+            width: 5rem;
+            height: 5rem;
+        }
         svg {
+
+            @media screen and (max-width:$large_tablet) {
+                height: auto;
+                min-width: 2rem;
+            }
             path {
                 fill: #3293D0;
             }
@@ -210,22 +300,3 @@
 
 }
 
-.socials {
-    &__list {
-        display: inline-flex;
-    }
-
-    &__link {
-        padding: 0rem 0.7rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-
-
-    }
-}

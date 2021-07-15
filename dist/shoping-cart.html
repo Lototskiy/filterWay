@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&amp;family=PT+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <link href="assets/css/app.css?v=1626277928090" rel="stylesheet"></head>
+  <link href="assets/css/app.css?v=1626336192152" rel="stylesheet"></head>
   <body id="sign-in-page">
 <header class="header">
   <div class="center-wrap">
@@ -76,7 +76,7 @@
           <div class="breadcrumb__wrap">
             <ul class="breadcrumb__list">
               <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Home</a></li>
-              <li class="breadcrumb__item"><a class="breadcrumb__link" href="sign-in.html">Account</a></li>
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="shoping-cart.html">Shopping Cart</a></li>
             </ul>
           </div>
         </div>
@@ -86,9 +86,9 @@
     <div class="wizard__wrap toogles toogles--fade"> 
       <ul class="wizard__steps-list">
         <li class="wizard__steps-item toogles__item-title" data-toogles="1"><span class="wizard__steps-name">CART</span><span class="wizard__steps--indicator wizard__steps--indicator--active"></span></li>
-        <li class="wizard__steps-item toogles__item-title toogles__item-title--active" data-toogles="2"><span class="wizard__steps-name">SHIPPING INFO</span><span class="wizard__steps--indicator wizard__steps--indicator--active"></span></li>
-        <li class="wizard__steps-item toogles__item-title" data-toogles="3"><span class="wizard__steps-name">PAYMENT INFO</span><span class="wizard__steps--indicator"></span></li>
-        <li class="wizard__steps-item toogles__item-title" data-toogles="4"><span class="wizard__steps-name">REVIEW & PLACE ORDER</span><span class="wizard__steps--indicator"></span></li>
+        <li class="wizard__steps-item toogles__item-title" data-toogles="2"><span class="wizard__steps-name">SHIPPING INFO</span><span class="wizard__steps--indicator wizard__steps--indicator--active"></span></li>
+        <li class="wizard__steps-item toogles__item-title toogles__item-title--active" data-toogles="3"><span class="wizard__steps-name">PAYMENT INFO</span><span class="wizard__steps--indicator wizard__steps--indicator--active"></span></li>
+        <li class="wizard__steps-item toogles__item-title toogles__item-title--active" data-toogles="4"><span class="wizard__steps-name">REVIEW & PLACE ORDER</span><span class="wizard__steps--indicator wizard__steps--indicator--active"></span></li>
       </ul>
       <div class="wizard__steps">
         <div class="wizard__item">
@@ -191,12 +191,12 @@
 </div>
         </div>
         <div class="wizard__item">
-<div class="toogles__item toogles__item--active" data-toogles="2">
-  <div class="step toogles__item-content" style="display: block;">
-    <h2 class="step__title">
-       Shopping Cart (2)</h2>
+<div class="toogles__item" data-toogles="2">
+  <div class="step toogles__item-content">
     <div class="step__row"> 
       <div class="step__left">
+        <h2 class="step__title">
+           Shopping Cart (2)</h2>
         <form class="inputs">
           <div class="inputs__field-row"> 
             <div class="inputs__field-wrap required inputs__field-wrap--50">
@@ -219,27 +219,107 @@
           <div class="inputs__field-row"> 
             <div class="inputs__field-wrap required inputs__field-wrap--50">
               <label class="inputs__label">COUNTRY</label>
-              <select class="inputs__select" name="select">
-                <option value="value1">val1</option>
-                <option value="value1">val1</option>
-                <option value="value1">val1</option>
-              </select>
+              <div class="radio__tooltip">
+                <div class="tooltip"><span class="tooltip__title" attr="Каскадные таблицы стилей">?</span></div>
+              </div>
+              <div class="inputs__select-wrap"><span class="arrow"></span>
+                <div class="placeholder">Please Select</div>
+                <select class="inputs__select" name="select">
+                  <option value="value1" disabled selected hidden>val</option>
+                  <option value="value1">USA</option>
+                  <option value="value2">EUR</option>
+                  <option value="value3">UAH</option>
+                </select>
+              </div>
             </div>
             <div class="inputs__field-wrap required inputs__field-wrap--50">
               <label class="inputs__label">STATE</label>
+              <div class="inputs__select-wrap"><span class="arrow"></span>
+                <div class="placeholder">Please Select</div>
+                <select class="inputs__select" name="select">
+                  <option value="value1" disabled selected hidden>val</option>
+                  <option value="value1">Alabama</option>
+                  <option value="value2">Arizona</option>
+                  <option value="value3">Ternopil</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="inputs__field-row"> 
+            <div class="inputs__field-wrap required inputs__field-wrap--50">
+              <label class="inputs__label">FIRST NAME</label>
+              <input class="inputs__field" type="text" required>
+            </div>
+            <div class="inputs__field-wrap required inputs__field-wrap--50">
+              <label class="inputs__label">LAST NAME</label>
               <input class="inputs__field" type="text" required>
             </div>
           </div>
-        </form>
-      </div>
-      <div class="aside-product"> 
-        <form class="aside-product__promo">
-          <label>Promo Code</label>
-          <div class="inputs__field-row">
-            <input class="inputs__field" type="text" placeholder="Apply only one discount code per order">
-            <button> <img src="assets/images/svg/promo-arrow.svg" alt=""></button>
+          <div class="inputs__field-row"> 
+            <div class="inputs__field-wrap required inputs__field-wrap--50">
+              <label class="inputs__label">CITY</label>
+              <div class="inputs__select-wrap"><span class="arrow"></span>
+                <div class="placeholder"></div>
+                <select class="inputs__select" name="select">
+                  <option value="value1" disabled selected hidden>val</option>
+                  <option value="value1">New York</option>
+                  <option value="value2">Los Angeles</option>
+                  <option value="value3">Chicago</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputs__field-wrap required inputs__field-wrap--50">
+              <label class="inputs__label">ZIP CODE</label>
+              <div class="inputs__select-wrap"><span class="arrow"></span>
+                <div class="placeholder"></div>
+                <select class="inputs__select" name="select">
+                  <option value="value1" disabled selected hidden>val</option>
+                  <option value="value1">85001-85099</option>
+                  <option value="value2">72201-72099</option>
+                  <option value="value3">82001-82010</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="inputs__field-wrap required">
+            <label class="inputs__label">PHONE NUMBER</label>
+            <input class="inputs__field" type="text" placeholder="+1 XXX-XXX-XXXX">
           </div>
         </form>
+        <h2 class="step__title">
+           Shipping Method</h2>
+        <div class="product__radio">
+          <div class="radio">
+            <div class="radio__box">
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="radio-delivery" checked>
+                <div class="radio__content"><span></span></div>USPS prioryty mail 
+              </label>
+              <div class="radio__price"><span>FREE</span></div>
+            </div>
+            <div class="radio__box">
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="radio-delivery">
+                <div class="radio__content"><span></span></div>UPS - graund (3-6 days)
+              </label>
+              <div class="radio__price"><span>FREE</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="product__radio">
+          <div class="radio">
+            <div class="radio__box">
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="radio-delivery" checked>
+                <div class="radio__content"><span></span></div>UPS - ( 2-5 days)
+              </label>
+              <div class="radio__price"><span>$69.99</span></div>
+            </div>
+            <div class="radio__box warning">Please allow <strong>24</strong> to <strong>48</strong> hours <br/> to process your order</div>
+          </div>
+        </div><a class="btn next-wizard" href="#">Next: Payment Info </a>
+      </div>
+      <div class="aside-product"> 
         <div class="aside-product__items"> 
           <div class="aside-product__items-item">
             <div class="item-row"> 
@@ -256,9 +336,34 @@
               <div class="price blue">
                  $<span>234.93</span></div>
             </div><span class="warning">tax and shipping cost will be finalized during checkout</span>
-          </div><a class="btn" href="#">checkout </a>
-          <h4 class="pay-title"> <span>
-               OR CHECKOUT WITH</span></h4><a class="pay-btn" href="#"> <img src="assets/images/png/img-paypal-1.png" alt=""></a><a class="pay-btn" href="#"> <img src="assets/images/png/img-paypal-2.png" alt=""></a>
+          </div>
+          <div class="aside-product__basket">
+            <div class="aside-product__basket-row">
+              <h4 class="aside-product__basket-title">(<span>2</span>) Items</h4><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Edit</a>
+            </div>
+            <div class="aside-product__basket-wrap"> 
+              <div class="aside-product__basket-item">
+                <div class="img-wrap">
+                  <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                </div>
+                <div class="aside-product__basket-info"> 
+                  <div class="title">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</div>
+                  <div class="aside-product__basket-row"><span>SKU: <strong>APF-1100</strong></span><span>Qty: <strong>1</strong></span></div>
+                  <div class="aside-product__basket-row"><span>2 Filter — <strong>$19.99</strong></span><span class="price">$19.99</span></div>
+                </div>
+              </div>
+              <div class="aside-product__basket-item">
+                <div class="img-wrap">
+                  <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                </div>
+                <div class="aside-product__basket-info"> 
+                  <div class="title">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</div>
+                  <div class="aside-product__basket-row"><span>SKU: <strong>APF-1100</strong></span><span>Qty: <strong>1</strong></span></div>
+                  <div class="aside-product__basket-row"><span>2 Filter — <strong>$19.99</strong></span><span class="price">$19.99</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -267,12 +372,328 @@
         </div>
         <div class="wizard__item">
 <div class="toogles__item" data-toogles="3">
-  <div class="toogles__item-content">STEP 3<a class="btn next-wizard" href="#">next </a><a class="btn back-wizard" href="#">back</a></div>
+  <div class="step toogles__item-content">
+    <div class="step__row"> 
+      <div class="step__left">
+        <h2 class="step__title">
+           Shipping</h2>
+        <div class="shipping"> 
+          <div class="shipping__item"> 
+            <div class="shipping__title">Shipping Address:</div>
+            <div class="shipping__info">
+               kjbhbsl Per, Sadove tovarystvo MVS vulytsia. Simii Sosninih 3, 420,Kiev, BC A0A 0A0 (099) 999-9999</div><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Edit</a>
+          </div>
+          <div class="shipping__item"> 
+            <div class="shipping__title">Shipping Method:</div>
+            <div class="shipping__info">
+               free</div><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Edit</a>
+          </div>
+        </div>
+        <h2 class="step__title">
+           Payment</h2>
+        <div class="inputs__field-wrap required">
+          <label class="inputs__label">BILLING ADDRESS</label>
+          <div class="inputs__checkbox">
+            <label class="inputs__checkbox-label">
+              <input class="inputs__checkbox-input inputs__field--invalid" type="checkbox" checked required><span class="inputs__checkbox-content"></span><span>my shipping and billing address are the same</span><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Update Address</a>
+            </label>
+          </div>
+        </div>
+        <div class="inputs__field-row"> 
+          <div class="inputs__field-wrap required inputs__field-wrap--50">
+            <label class="inputs__label">EMAIL</label>
+            <div class="radio__tooltip">
+              <div class="tooltip"><span class="tooltip__title" attr="Каскадные таблицы стилей">?</span></div>
+            </div>
+            <input class="inputs__field" type="text" required>
+          </div>
+          <div class="inputs__field-wrap required inputs__field-wrap--50">
+            <label class="inputs__label">PHONE NUMBER</label>
+            <div class="radio__tooltip">
+              <div class="tooltip"><span class="tooltip__title" attr="Каскадные таблицы стилей">?</span></div>
+            </div>
+            <input class="inputs__field" type="text" required>
+          </div>
+        </div>
+        <div class="inputs__field-wrap">
+          <label class="inputs__label">Payment Method</label>
+<div class="pay-tabs">
+  <ul class="accordion">
+    <li> 
+      <div class="radio__box toggle">
+        <label class="radio__label">
+          <input class="radio__input" type="radio" name="toggle" checked>
+          <div class="radio__content"><span></span></div>	Credit card
+        </label>
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item"><img src="assets/images/png/pay-1.png" alt=""></li>
+          <li class="footer__bottom-item"> <img src="assets/images/png/pay-2.png" alt=""></li>
+          <li class="footer__bottom-item"> <img src="assets/images/png/pay-3.png" alt=""></li>
+          <li class="footer__bottom-item"> <img src="assets/images/png/pay-4.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="inner">
+        <form class="inputs">
+          <div class="inputs__field-wrap required">
+            <label class="inputs__label">CARD NUMBER</label>
+            <input class="inputs__field number-pay" type="text" required>
+          </div>
+          <div class="inputs__field-row"> 
+            <div class="inputs__field-wrap required inputs__field-wrap--33">
+              <label class="inputs__label">COUNTRY</label>
+              <div class="inputs__select-wrap"><span class="arrow"></span>
+                <div class="placeholder"></div>
+                <select class="inputs__select" name="select">
+                  <option value="value1" disabled selected hidden>val</option>
+                  <option value="value1">val1</option>
+                  <option value="value2">val2</option>
+                  <option value="value3">val3</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputs__field-wrap required inputs__field-wrap--33">
+              <label class="inputs__label">EXPIRATION YEAR</label>
+              <div class="inputs__select-wrap"><span class="arrow"></span>
+                <div class="placeholder"></div>
+                <select class="inputs__select" name="select">
+                  <option value="value1" disabled selected hidden>val</option>
+                  <option value="value1">val1</option>
+                  <option value="value2">val2</option>
+                  <option value="value3">val3</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputs__field-wrap required inputs__field-wrap--33">
+              <label class="inputs__label">SECURITY CODE</label>
+              <div class="radio__tooltip">
+                <div class="tooltip"><span class="tooltip__title" attr="Каскадные таблицы стилей">?</span></div>
+              </div>
+              <input class="inputs__field" type="text" required>
+            </div>
+          </div>
+        </form>
+      </div>
+    </li>
+    <li> 
+      <div class="radio__box toggle">
+        <label class="radio__label">
+          <input class="radio__input" type="radio" name="toggle">
+          <div class="radio__content"><span></span></div><img src="assets/images/svg/icon-paypal-1.svg" alt="sss">
+        </label>
+      </div>
+      <div class="inner">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.</div>
+    </li>
+    <li> 
+      <div class="radio__box toggle">
+        <label class="radio__label">
+          <input class="radio__input" type="radio" name="toggle">
+          <div class="radio__content"><span></span></div><img src="assets/images/png/icon-paypal-2.png" alt="sss">
+        </label>
+      </div>
+      <div class="inner">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.</div>
+    </li>
+  </ul>
+</div>
+        </div><a class="btn next-wizard" href="#">Next: Review & Place Order</a>
+      </div>
+      <div class="aside-product"> 
+        <div class="aside-product__items"> 
+          <div class="aside-product__items-item">
+            <div class="item-row"> 
+              <h4>Sub-Total:</h4>
+              <div class="price">
+                 $<span>229.94</span></div>
+            </div>
+            <div class="item-row"><span>sales tax</span><span>tbd</span></div>
+            <div class="item-row"><span>estimated shipping cost </span><span>$4.99</span></div>
+          </div>
+          <div class="aside-product__items-item">
+            <div class="item-row"> 
+              <h4>Estimated Total:</h4>
+              <div class="price blue">
+                 $<span>234.93</span></div>
+            </div><span class="warning">tax and shipping cost will be finalized during checkout</span>
+          </div>
+          <div class="aside-product__basket">
+            <div class="aside-product__basket-row">
+              <h4 class="aside-product__basket-title">(<span>2</span>) Items</h4><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Edit</a>
+            </div>
+            <div class="aside-product__basket-wrap"> 
+              <div class="aside-product__basket-item">
+                <div class="img-wrap">
+                  <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                </div>
+                <div class="aside-product__basket-info"> 
+                  <div class="title">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</div>
+                  <div class="aside-product__basket-row"><span>SKU: <strong>APF-1100</strong></span><span>Qty: <strong>1</strong></span></div>
+                  <div class="aside-product__basket-row"><span>2 Filter — <strong>$19.99</strong></span><span class="price">$19.99</span></div>
+                </div>
+              </div>
+              <div class="aside-product__basket-item">
+                <div class="img-wrap">
+                  <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                </div>
+                <div class="aside-product__basket-info"> 
+                  <div class="title">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</div>
+                  <div class="aside-product__basket-row"><span>SKU: <strong>APF-1100</strong></span><span>Qty: <strong>1</strong></span></div>
+                  <div class="aside-product__basket-row"><span>2 Filter — <strong>$19.99</strong></span><span class="price">$19.99</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
         </div>
         <div class="wizard__item">
-<div class="toogles__item" data-toogles="4">
-  <div class="toogles__item-content">STEP 4<a class="btn next-wizard" href="#">next </a><a class="btn back-wizard" href="#">back</a></div>
+<div class="toogles__item toogles__item--active" data-toogles="4">
+  <div class="step toogles__item-content" style="display: block;">
+    <div class="step__row"> 
+      <div class="step__left">
+        <div class="voucher">
+          <div class="voucher__item">
+            <div class="voucher__top">
+              <h2 class="step__title">
+                 Shipping</h2><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Edit</a>
+            </div>
+            <div class="voucher__info">
+              <table> 
+                <thead> 
+                  <tr> 
+                    <td>
+                       Shipping Address:</td>
+                    <td>
+                       |lorem</td>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr> 
+                    <td> 
+                      <ul> 
+                        <li>
+                           kjbhbsl Per</li>
+                        <li>
+                           Sadove tovarystvo MVS vulytsia</li>
+                        <li>
+                           Simii Sosninih 3, 420</li>
+                        <li>
+                           Kiev, BC A0A 0A0</li>
+                        <li>
+                           (099) 999-9999</li>
+                      </ul>
+                    </td>
+                    <td>
+                       free</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="voucher__item">
+            <div class="voucher__top">
+              <h2 class="step__title">
+                 Payment</h2><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Edit</a>
+            </div>
+            <div class="voucher__info">
+              <table> 
+                <thead> 
+                  <tr> 
+                    <td>
+                       BILLING addres:</td>
+                    <td>
+                       Payment</td>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr> 
+                    <td> 
+                      <ul> 
+                        <li>
+                           kjbhbsl Per</li>
+                        <li>
+                           Sadove tovarystvo MVS vulytsia</li>
+                        <li>
+                           Simii Sosninih 3, 420</li>
+                        <li>
+                           Kiev, BC A0A 0A0</li>
+                        <li>
+                           (099) 999-9999</li>
+                      </ul>
+                    </td>
+                    <td> 
+                      <ul> 
+                        <li>
+                           kjbhbsl Per</li>
+                        <li>
+                           Sadove tovarystvo MVS vulytsia</li>
+                        <li>
+                           Simii Sosninih 3, 420</li>
+                        <li>
+                           Kiev, BC A0A 0A0</li>
+                        <li>
+                           (099) 999-9999    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><a class="btn next-wizard" href="#">place order </a>
+      </div>
+      <div class="aside-product"> 
+        <div class="aside-product__items"> 
+          <div class="aside-product__items-item">
+            <div class="item-row"> 
+              <h4>Sub-Total:</h4>
+              <div class="price">
+                 $<span>229.94</span></div>
+            </div>
+            <div class="item-row"><span>sales tax</span><span>tbd</span></div>
+            <div class="item-row"><span>estimated shipping cost </span><span>$4.99</span></div>
+          </div>
+          <div class="aside-product__items-item">
+            <div class="item-row"> 
+              <h4>Estimated Total:</h4>
+              <div class="price blue">
+                 $<span>234.93</span></div>
+            </div><span class="warning">tax and shipping cost will be finalized during checkout</span>
+          </div>
+          <div class="aside-product__basket">
+            <div class="aside-product__basket-row">
+              <h4 class="aside-product__basket-title">(<span>2</span>) Items</h4><a class="edit back-wizard" href="#"><img src="assets/images/svg/icon-edit.svg" alt="">Edit</a>
+            </div>
+            <div class="aside-product__basket-wrap"> 
+              <div class="aside-product__basket-item">
+                <div class="img-wrap">
+                  <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                </div>
+                <div class="aside-product__basket-info"> 
+                  <div class="title">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</div>
+                  <div class="aside-product__basket-row"><span>SKU: <strong>APF-1100</strong></span><span>Qty: <strong>1</strong></span></div>
+                  <div class="aside-product__basket-row"><span>2 Filter — <strong>$19.99</strong></span><span class="price">$19.99</span></div>
+                </div>
+              </div>
+              <div class="aside-product__basket-item">
+                <div class="img-wrap">
+                  <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                </div>
+                <div class="aside-product__basket-info"> 
+                  <div class="title">Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</div>
+                  <div class="aside-product__basket-row"><span>SKU: <strong>APF-1100</strong></span><span>Qty: <strong>1</strong></span></div>
+                  <div class="aside-product__basket-row"><span>2 Filter — <strong>$19.99</strong></span><span class="price">$19.99</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
         </div>
       </div>
@@ -339,7 +760,7 @@
       <nav class="footer-content__nav">
         <div class="footer-content__nav-item">
           <h4>
-             HELP </h4>
+             HELP <span>+</span></h4>
           <ul class="footer-content__list"> 
             <li class="footer-content__item"> <a href="#" target="_blank">
                  FAQ</a></li>
@@ -353,7 +774,7 @@
         </div>
         <div class="footer-content__nav-item">
           <h4>
-             Products </h4>
+             Products <span>+</span></h4>
           <ul class="footer-content__list"> 
             <li class="footer-content__item"> <a href="#" target="_blank">
                  Whole House Filters</a></li>
@@ -369,7 +790,7 @@
         </div>
         <div class="footer-content__nav-item">
           <h4>
-             policy </h4>
+             policy <span>+</span></h4>
           <ul class="footer-content__list"> 
             <li class="footer-content__item"> <a href="#" target="_blank">
                  Shipping Policy</a></li>
@@ -437,5 +858,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="js/app.js?v=1626277927459"></script></body>
+  <script type="text/javascript" src="js/app.js?v=1626336191839"></script></body>
 </html>
