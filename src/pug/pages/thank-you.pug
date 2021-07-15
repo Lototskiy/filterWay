@@ -1,0 +1,114 @@
+extends ../layout/main
+block variables
+	- var title = 'Filterway-sign-in';
+	- var pageClass = 'sign-in-page';
+
+block content
+	+breadcrumb([{href:'index.html',text:'Home'},{href:'shoping-cart.html',text:'Shopping Cart'}])
+	.wizard 
+		.center-wrap
+			include ../includes/thank-you-block
+			.step
+				.step__row 
+					.step__left
+						.voucher
+							.voucher__item
+								.voucher__top
+									h2.step__title 
+										|Shipping
+									a(href="#").edit.back-wizard
+										img(src="assets/images/svg/icon-edit.svg", alt="")
+										|Edit
+								.voucher__info
+									table 
+										thead 
+											tr 
+												td 
+													|Shipping Address:
+												td 
+													|Shipping Method:
+										tbody 
+											tr 
+												td 
+													ul 
+														li 
+															|kjbhbsl Per
+														li 
+															|Sadove tovarystvo MVS vulytsia
+														li 
+															|Simii Sosninih 3, 420
+														li 
+															|Kiev, BC A0A 0A0
+														li 
+															|(099) 999-9999
+												td 
+													|free
+							.voucher__item
+								.voucher__top
+									h2.step__title 
+										|Payment
+									a(href="#").edit.back-wizard
+										img(src="assets/images/svg/icon-edit.svg", alt="")
+										|Edit
+								.voucher__info
+									table 
+										thead 
+											tr 
+												td 
+													|BILLING addres:
+												td 
+													|Payment
+										tbody 
+											tr 
+												td 
+													ul 
+														li 
+															|kjbhbsl Per
+														li 
+															|Sadove tovarystvo MVS vulytsia
+														li 
+															|Simii Sosninih 3, 420
+														li 
+															|Kiev, BC A0A 0A0
+														li 
+															|(099) 999-9999
+												td 
+													ul 
+														li 
+															|kjbhbsl Per
+														li 
+															|Sadove tovarystvo MVS vulytsia
+														li 
+															|Simii Sosninih 3, 420
+														li 
+															|Kiev, BC A0A 0A0
+														li 
+															|(099) 999-9999   
+					.aside-product 
+						.aside-product__items 
+							.aside-product__items-item
+								.item-row 
+									h4
+										|Sub-Total:
+									.price 
+										|$<span>229.94</span>
+								.item-row
+									span
+										|sales tax
+									span
+										|tbd
+								.item-row
+									span
+										|estimated shipping cost 
+									span
+										|$4.99
+							.aside-product__items-item
+								.item-row 
+									h4
+										|Estimated Total:
+									.price.blue 
+										|$<span>234.93</span>
+								span.warning
+									|tax and shipping cost will be finalized during checkout
+							
+//- block script
