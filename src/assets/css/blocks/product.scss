@@ -4,7 +4,7 @@
 
     &__wrap {
         display: flex;
-        max-width: 930px;
+        max-width: 935px;
         margin: 0 auto;
     }
 
@@ -168,7 +168,7 @@
 
         &-price {
             font-weight: 700;
-            color: $secondary-c;
+            color: #3293D0;
             margin-left: 0.5rem;
         }
 
@@ -199,7 +199,7 @@
         }
 
         &-btn {
-            width: 50%;
+            width: 56%;
 
 
             .btn {

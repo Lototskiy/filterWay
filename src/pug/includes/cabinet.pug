@@ -5,7 +5,7 @@ section.cabinet
                 .cabinet__sidebar-wrap
                     ul.cabinet__sidebar-list 
                         li.cabinet__sidebar-item
-                            a(href="").cabinet__sidebar-link
+                            a(href="").cabinet__sidebar-link.cabinet__sidebar-link--active 
                                 svg(viewBox='0 0 8 9' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M6.62171 5.776L5.372 5.52571C5.23943 5.49943 5.14286 5.38171 5.14286 5.24571V4.95886C5.22514 4.84457 5.30229 4.692 5.38229 4.53257C5.44343 4.412 5.53543 4.23029 5.57657 4.18743C5.81886 3.95029 6.07714 3.656 6.156 3.27257C6.22743 2.92514 6.156 2.74457 6.07314 2.60171C6.07314 2.32229 6.07314 1.81086 5.976 1.44229C5.96629 0.997143 5.88457 0.745714 5.67943 0.521714C5.53429 0.365143 5.32057 0.328571 5.14914 0.299429C5.08114 0.288 4.988 0.272 4.95543 0.254286C4.65886 0.0902857 4.35771 0.00914286 3.98914 0C3.23486 0.0285714 2.30914 0.506857 1.99943 1.36686C1.90514 1.628 1.91429 2.05657 1.92114 2.40114L1.91314 2.60171C1.84057 2.74457 1.76914 2.92514 1.84114 3.272C1.92 3.65714 2.17829 3.95086 2.41943 4.18686C2.46114 4.23029 2.55429 4.41314 2.616 4.53371C2.69714 4.69257 2.77486 4.84514 2.85714 4.95943V5.24571C2.85714 5.38171 2.76057 5.49943 2.62743 5.52571L1.37771 5.776C0.579429 5.93543 0 6.64229 0 7.45657V8C0 8.31486 0.256571 8.57143 0.571429 8.57143H7.42857C7.74343 8.57143 8 8.31486 8 8V7.45657C8 6.64229 7.42057 5.93543 6.62171 5.776Z')
                                 | Profile
@@ -28,7 +28,7 @@ section.cabinet
                                     path(d='M2.86523 3.55486V5.25009C2.86523 5.30605 2.91062 5.35144 2.96659 5.35144H5.03419C5.09016 5.35144 5.13554 5.30605 5.13554 5.25009V3.55486C5.13554 3.52526 5.12261 3.49717 5.10015 3.47791L4.06635 2.5918C4.0284 2.55926 3.9724 2.55926 3.93443 2.5918L2.90063 3.47791C2.87817 3.49715 2.86523 3.52526 2.86523 3.55486Z')
                                 | Address Book
                         li.cabinet__sidebar-item
-                            a(href="").cabinet__sidebar-link.cabinet__sidebar-link--active
+                            a(href="").cabinet__sidebar-link
                                 svg(viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M3.5 1.99976V1.49976H0.5C0.2245 1.49976 0 1.72426 0 1.99976V2.99976H3.6055C3.536 2.69426 3.5 2.36526 3.5 1.99976Z')
                                     path(d='M7.9795 3.99976C7.6385 4.52526 7.1185 4.97226 6.3735 5.40026C6.259 5.46576 6.13 5.49976 6 5.49976C5.87 5.49976 5.741 5.46576 5.628 5.40126C4.883 4.97226 4.363 4.52476 4.0215 3.99976H0V6.49976C0 6.77576 0.2245 6.99976 0.5 6.99976H7.5C7.776 6.99976 8 6.77576 8 6.49976V3.99976H7.9795ZM2.25 5.49976H1.25C1.112 5.49976 1 5.38776 1 5.24976C1 5.11176 1.112 4.99976 1.25 4.99976H2.25C2.388 4.99976 2.5 5.11176 2.5 5.24976C2.5 5.38776 2.388 5.49976 2.25 5.49976Z')
@@ -47,87 +47,21 @@ section.cabinet
                                     path(d='M7.90298 3.09763L6.56962 1.76433C6.47434 1.66899 6.33097 1.6403 6.20634 1.69194C6.08201 1.74363 6.00066 1.86528 6.00066 1.99998V2.99997H4.66736C4.48334 2.99997 4.33398 3.14926 4.33398 3.33328C4.33398 3.5173 4.48334 3.66659 4.66736 3.66659H6.00066V4.66658C6.00066 4.80128 6.08201 4.92293 6.20634 4.97462C6.33097 5.02626 6.47434 4.99757 6.56962 4.9023L7.90298 3.56893C8.03329 3.43863 8.03329 3.22793 7.90298 3.09763Z')
                                 | Log out 
             .cabinet__body
-                .content
-                    h2 MY payment methods
-                .pay-tabs
-                    ul.accordion
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' checked)
-                                    .radio__content
-                                        span
-                                    |	Credit card
-                                ul.footer__bottom-list
-                                    li.footer__bottom-item
-                                        img(src="assets/images/png/pay-1.png" alt="")
-                                    li.footer__bottom-item 
-                                        img(src="assets/images/png/pay-2.png" alt="")
-                                    li.footer__bottom-item  
-                                        img(src="assets/images/png/pay-3.png" alt="")
-                                    li.footer__bottom-item  
-                                        img(src="assets/images/png/pay-4.png" alt="")
-                            .inner
-                                form.inputs
-                                    .inputs__field-wrap.required
-                                        label.inputs__label
-                                            |CARD NUMBER
-                                        input.inputs__field.number-pay(type='text' required)
-                                    .inputs__field-row 
-                                        .inputs__field-wrap.required.inputs__field-wrap--33
-                                            label.inputs__label
-                                                |COUNTRY
-                                            .inputs__select-wrap
-                                                span.arrow
-                                                .placeholder
-                                                select.inputs__select(name='select')
-                                                    option(value='value1' disabled selected hidden)
-                                                        |val
-                                                    option(value='value1')
-                                                        |val1
-                                                    option(value='value2')
-                                                        |val2
-                                                    option(value='value3')
-                                                        |val3
-                                        .inputs__field-wrap.required.inputs__field-wrap--33
-                                            label.inputs__label
-                                                |EXPIRATION YEAR
-                                            .inputs__select-wrap
-                                                span.arrow
-                                                .placeholder
-                                                select.inputs__select(name='select')
-                                                    option(value='value1' disabled selected hidden)
-                                                        |val
-                                                    option(value='value1')
-                                                        |val1
-                                                    option(value='value2')
-                                                        |val2
-                                                    option(value='value3')
-                                                        |val3
-                                        .inputs__field-wrap.required.inputs__field-wrap--33
-                                            label.inputs__label
-                                                |SECURITY CODE
-                                            .radio__tooltip
-                                                .tooltip
-                                                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
-                                            input.inputs__field(type='text' required)
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' )
-                                    .radio__content
-                                        span
-                                    img(src="assets/images/svg/icon-paypal-1.svg" alt="sss")
-                            .inner 
-                                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' )
-                                    .radio__content
-                                        span
-                                    img(src="assets/images/png/icon-paypal-2.png" alt="sss")
-                            .inner 
-                                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
-                .cabinet__body-btn
-                    .btn Save
+                .cabinet__information
+                    .content
+                        h2 Account Information
+                    a(href="").edit
+                        svg(width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M9.03556 5.49991C8.81859 5.49991 8.6427 5.6758 8.6427 5.89277V9.82127C8.6427 10.0382 8.46681 10.2141 8.24984 10.2141H1.17855C0.961579 10.2141 0.785694 10.0382 0.785694 9.82127V1.96426C0.785694 1.74728 0.961579 1.5714 1.17855 1.5714H5.89276C6.10973 1.5714 6.28562 1.39551 6.28562 1.17854C6.28562 0.961568 6.10973 0.785706 5.89276 0.785706H1.17855C0.527655 0.785706 0 1.31336 0 1.96426V9.82127C0 10.4722 0.527655 10.9998 1.17855 10.9998H8.24986C8.90076 10.9998 9.42842 10.4722 9.42842 9.82127V5.89275C9.42842 5.6758 9.25253 5.49991 9.03556 5.49991Z' fill='#0166B0')
+                            path(d='M10.5597 0.440536C10.2776 0.15842 9.89505 -3.98219e-05 9.49612 6.21528e-06C9.09695 -0.00114471 8.71397 0.157591 8.43268 0.440789L3.25803 5.615C3.2151 5.65825 3.18272 5.71083 3.16336 5.7686L2.37766 8.12571C2.30909 8.33156 2.42039 8.55402 2.62624 8.62257C2.66618 8.63587 2.708 8.64266 2.75008 8.64271C2.79225 8.64264 2.83417 8.63587 2.87422 8.62268L5.23133 7.83699C5.28922 7.81765 5.34181 7.7851 5.38493 7.74192L10.5596 2.56729C11.1469 1.98004 11.1469 1.02786 10.5597 0.440536Z' fill='#0166B0')
+                        .edit__title edit
+                    .cabinet__body-edit
+                .cabinet__information-row
+                    .cabinet__information-title Name:
+                    p.cabinet__information-name Marina Perepelychna
+                .cabinet__information-row
+                    .cabinet__information-title Email:
+                    a(href="mailto:Marina@smelo.com").cabinet__information-link Marina@smelo.com
+                .cabinet__information-row
+                    .cabinet__information-title Phone:
+                    a(href="tel:9778888888").cabinet__information-link 977-888-8888

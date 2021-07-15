@@ -1,6 +1,6 @@
 .select {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1;
     text-transform: lowercase;
     cursor: pointer;
@@ -32,6 +32,7 @@
         padding-bottom: 0.5rem;
         border-bottom: 1px solid $primary-c;
         transition: color .5s;
+        color: #A3A3A3;
 
         &:hover {
             color: $secondary-c;

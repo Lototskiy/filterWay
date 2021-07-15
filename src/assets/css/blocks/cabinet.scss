@@ -93,5 +93,69 @@
         .content {
             margin-bottom: 2rem;
         }
+
+        &-btn {
+            margin-top: 2rem;
+            text-align: right;
+
+            .btn {
+                margin-left: auto;
+                padding: 0 7rem;
+
+            }
+        }
+
+    }
+
+    &__information {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-row {
+            margin-bottom: 2rem;
+            font-size: 1.3rem;
+            line-height: 16/13*1;
+            text-transform: capitalize;
+            color: #313131;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        &-title {
+            font-weight: 600;
+
+            margin-bottom: 1rem;
+        }
+
+        &-link {
+            text-transform: lowercase;
+            font-weight: 400;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 0%;
+                height: 1px;
+                background: $primary-c;
+                opacity: 0;
+                transition: opacity .5s, width .5s;
+            }
+
+            &:hover::before {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        &-name {
+            font-weight: 400;
+            text-transform: lowercase;
+        }
     }
 }
