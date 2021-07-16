@@ -10,14 +10,14 @@ section.cabinet
                                     path(d='M6.62171 5.776L5.372 5.52571C5.23943 5.49943 5.14286 5.38171 5.14286 5.24571V4.95886C5.22514 4.84457 5.30229 4.692 5.38229 4.53257C5.44343 4.412 5.53543 4.23029 5.57657 4.18743C5.81886 3.95029 6.07714 3.656 6.156 3.27257C6.22743 2.92514 6.156 2.74457 6.07314 2.60171C6.07314 2.32229 6.07314 1.81086 5.976 1.44229C5.96629 0.997143 5.88457 0.745714 5.67943 0.521714C5.53429 0.365143 5.32057 0.328571 5.14914 0.299429C5.08114 0.288 4.988 0.272 4.95543 0.254286C4.65886 0.0902857 4.35771 0.00914286 3.98914 0C3.23486 0.0285714 2.30914 0.506857 1.99943 1.36686C1.90514 1.628 1.91429 2.05657 1.92114 2.40114L1.91314 2.60171C1.84057 2.74457 1.76914 2.92514 1.84114 3.272C1.92 3.65714 2.17829 3.95086 2.41943 4.18686C2.46114 4.23029 2.55429 4.41314 2.616 4.53371C2.69714 4.69257 2.77486 4.84514 2.85714 4.95943V5.24571C2.85714 5.38171 2.76057 5.49943 2.62743 5.52571L1.37771 5.776C0.579429 5.93543 0 6.64229 0 7.45657V8C0 8.31486 0.256571 8.57143 0.571429 8.57143H7.42857C7.74343 8.57143 8 8.31486 8 8V7.45657C8 6.64229 7.42057 5.93543 6.62171 5.776Z')
                                 | Profile
                         li.cabinet__sidebar-item
-                            a(href="cabinet2.html").cabinet__sidebar-link.cabinet__sidebar-link--active 
+                            a(href="cabinet2.html").cabinet__sidebar-link
                                 svg(viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M6.64546 0.258093C6.55339 0.0988952 6.38197 0 6.19819 0H4.27734V2.2721H7.81032L6.64546 0.258093Z')
                                     path(d='M3.74053 0H1.80156C1.6174 0 1.446 0.0990747 1.35392 0.258631L0.193359 2.2721H3.74051V0H3.74053Z')
                                     path(d='M0 2.81055V8.55316C0 8.90225 0.284126 9.1862 0.63322 9.1862H7.36678C7.71587 9.1862 8 8.90225 8 8.55316V2.81055H0ZM5.22211 5.22551L3.82966 6.61796C3.77707 6.67055 3.70814 6.69694 3.63923 6.69694C3.57031 6.69694 3.50138 6.67055 3.44897 6.61796L2.79619 5.96534C2.6912 5.86035 2.6912 5.68983 2.79619 5.58465C2.90137 5.47948 3.07189 5.47948 3.17706 5.58465L3.63924 6.04701L4.84143 4.84482C4.94661 4.73965 5.11713 4.73965 5.22212 4.84482C5.3273 4.95 5.3273 5.12034 5.22211 5.22551Z')
                                 | Order History
                         li.cabinet__sidebar-item
-                            a(href="cabinet3.html").cabinet__sidebar-link
+                            a(href="cabinet3.html").cabinet__sidebar-link.cabinet__sidebar-link--active
                                 svg(viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M8.41755 0.782904C7.94427 0.27805 7.29485 0 6.5888 0C6.06104 0 5.57771 0.1641 5.1522 0.487703C4.9375 0.651048 4.74296 0.85089 4.57143 1.08414C4.39997 0.850959 4.20536 0.651048 3.99058 0.487703C3.56515 0.1641 3.08182 0 2.55406 0C1.84801 0 1.19852 0.27805 0.725237 0.782904C0.257603 1.28186 0 1.9635 0 2.70236C0 3.46283 0.288156 4.15895 0.906808 4.89315C1.46024 5.54989 2.25565 6.21658 3.17676 6.98858C3.49128 7.25222 3.8478 7.55106 4.21798 7.86938C4.31578 7.95362 4.44127 8 4.57143 8C4.70152 8 4.82708 7.95362 4.92474 7.86952C5.29492 7.55113 5.65165 7.25215 5.96631 6.98837C6.88728 6.21651 7.68269 5.54989 8.23612 4.89308C8.85477 4.15895 9.14286 3.46283 9.14286 2.70229C9.14286 1.9635 8.88525 1.28186 8.41755 0.782904Z')
                                 | your subscription
@@ -48,86 +48,8 @@ section.cabinet
                                 | Log out 
             .cabinet__body
                 .content
-                    h2 MY payment methods
-                .pay-tabs
-                    ul.accordion
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' checked)
-                                    .radio__content
-                                        span
-                                    |	Credit card
-                                ul.footer__bottom-list
-                                    li.footer__bottom-item
-                                        img(src="assets/images/png/pay-1.png" alt="")
-                                    li.footer__bottom-item 
-                                        img(src="assets/images/png/pay-2.png" alt="")
-                                    li.footer__bottom-item  
-                                        img(src="assets/images/png/pay-3.png" alt="")
-                                    li.footer__bottom-item  
-                                        img(src="assets/images/png/pay-4.png" alt="")
-                            .inner
-                                form.inputs
-                                    .inputs__field-wrap.required
-                                        label.inputs__label
-                                            |CARD NUMBER
-                                        input.inputs__field.number-pay(type='text' required)
-                                    .inputs__field-row 
-                                        .inputs__field-wrap.required.inputs__field-wrap--33
-                                            label.inputs__label
-                                                |COUNTRY
-                                            .inputs__select-wrap
-                                                span.arrow
-                                                .placeholder
-                                                select.inputs__select(name='select')
-                                                    option(value='value1' disabled selected hidden)
-                                                        |val
-                                                    option(value='value1')
-                                                        |val1
-                                                    option(value='value2')
-                                                        |val2
-                                                    option(value='value3')
-                                                        |val3
-                                        .inputs__field-wrap.required.inputs__field-wrap--33
-                                            label.inputs__label
-                                                |EXPIRATION YEAR
-                                            .inputs__select-wrap
-                                                span.arrow
-                                                .placeholder
-                                                select.inputs__select(name='select')
-                                                    option(value='value1' disabled selected hidden)
-                                                        |val
-                                                    option(value='value1')
-                                                        |val1
-                                                    option(value='value2')
-                                                        |val2
-                                                    option(value='value3')
-                                                        |val3
-                                        .inputs__field-wrap.required.inputs__field-wrap--33
-                                            label.inputs__label
-                                                |SECURITY CODE
-                                            .radio__tooltip
-                                                .tooltip
-                                                    span.tooltip__title(attr="Каскадные таблицы стилей") ?
-                                            input.inputs__field(type='text' required)
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' )
-                                    .radio__content
-                                        span
-                                    img(src="assets/images/svg/icon-paypal-1.svg" alt="sss")
-                            .inner 
-                                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' )
-                                    .radio__content
-                                        span
-                                    img(src="assets/images/png/icon-paypal-2.png" alt="sss")
-                            .inner 
-                                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
-                .cabinet__body-btn
-                    .btn Save
+                    h2 MY subscription
+                    h3 active ubscritions
+                .cabinet__
+                a(href="catalog.html").cabinet__body-btn 
+                    .btn Add product      
