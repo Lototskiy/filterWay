@@ -31,13 +31,21 @@
         svg {
             fill: $primary-c;
             width: 1rem;
-            transition: fill .5s;
+            transition: fill .5s, transform .5s;
+            will-change: transform;
         }
 
         &:hover {
             svg {
                 fill: $secondary-c;
             }
+        }
+
+        &:active {
+            svg {
+                transform: scale(0.9);
+            }
+
         }
     }
 }
