@@ -7,18 +7,7 @@
     position: relative;
     user-select: none;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: calc(50% - 0.3rem);
-        right: 0;
-        width: 1.1rem;
-        height: 0.6rem;
-        background-image: url('~img/svg/select-arrow.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: transform .5s;
-    }
+
 
     &--active {
         &::before {
@@ -33,9 +22,23 @@
         border-bottom: 1px solid $primary-c;
         transition: color .5s;
         color: #A3A3A3;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(50% - 0.3rem);
+            right: 0.5rem;
+            width: 1.1rem;
+            height: 0.6rem;
+            background-image: url('~img/svg/select-arrow.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: transform .5s;
+        }
 
         &:hover {
-            color: $secondary-c;
+            color: #037FC9;
         }
     }
 
@@ -60,11 +63,15 @@
         transition: color .5s;
 
         &:hover {
-            color: $secondary-c;
+            color: #037FC9;
         }
 
         &:last-child {
             margin-bottom: 0px;
+        }
+
+        &--active {
+            color: #037FC9;
         }
     }
 
