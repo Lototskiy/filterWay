@@ -1,6 +1,68 @@
-#form.popup-wrap
+#popup-product.popup-wrap
     .popup
-        .popup__close(onclick="close_popup('form')")
-            div
-            div
         .popup__inner
+            .popup__top
+                .content
+                    h2 edit product
+                .popup__close(onclick="close_popup('popup-product')")
+                    div
+                    div
+            .popup__body
+                .step__cards-item
+                    .step__cards-left 
+                        .img-wrap 
+                            div 
+                                img(src="assets/images/png/product__img--small1.png" alt="")
+                        .step__cards-param
+                            .content 
+                                h3
+                                    |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                            .step__cards-right
+                                .price.price-for-one
+                                    |2 Filter — <span>$19.99</span>
+                                .price.price-all 
+                                    |Item Total:
+                                    <span>$19.99</span>
+                            .amount
+                                span.amount__minus
+                                    svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        rect(y='0.458336' width='13' height='1.08333')
+                                input.amount__input(type='text' value='1')
+                                span.amount__plus
+                                    svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        rect(y='5.49961' width='12' height='1')
+                                        rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
+                .popup__btn 
+                    .btn Update
+#popup-delivery.popup-wrap
+    .popup
+        .popup__inner
+            .popup__top
+                .content
+                    h2 delivery every
+                .popup__close(onclick="close_popup('popup-delivery')")
+                    div
+                    div
+            .popup__body
+                .content
+                    h2 periodicity
+                form.inputs(action="") 
+                    .inputs__field-row
+                        .inputs__field-wrap.required.inputs__field-wrap--50
+                            input.inputs__field(type='text' required placeholder='enter number')
+                        .inputs__field-wrap.required.inputs__field-wrap--50
+                            .inputs__select-wrap
+                                span.arrow
+                                .placeholder
+                                    |Weeks
+                                select.inputs__select(name='select')
+                                    option(value='value1' disabled selected hidden)
+                                        |val
+                                    option(value='value1')
+                                        |USA
+                                    option(value='value2')
+                                        |EUR
+                                    option(value='value3')
+                                        |UAH
+                .popup__btn 
+                    .btn Update
