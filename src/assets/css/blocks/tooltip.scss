@@ -28,7 +28,7 @@
             opacity: 0;
             visibility: hidden;
             margin-top: 0.5rem;
-            max-width: 100vw;
+            width: calc(100% + 10rem);
             font-size: 1rem;
             color: $primary-c;
             border-radius: 0.5rem;
