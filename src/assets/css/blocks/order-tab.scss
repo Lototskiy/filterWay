@@ -1,0 +1,95 @@
+.order-tab {
+    .edit {
+        color: #037FC9;
+        :before {
+            background: #037FC9;
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+        }
+        .inputs {
+            max-width: 50%;
+        }
+        .inputs__select-wrap {
+            max-width: 13.1rem;
+            width: 100%;
+
+            .placeholder {
+                color: #3293D0;
+            }
+        }
+        .inputs__field-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .inputs__label {
+            margin-bottom: 0rem;
+            margin-right: 1.1rem;
+            font-weight: normal;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+        }
+    }
+    table {
+        width: 100%;
+        font-weight: normal;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        tbody {
+            tr {
+                td:first-child {
+                    font-weight: 600;
+                }
+
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+
+                td {
+                    border-bottom: 1px solid #E5E5E5;
+                    height: 5.2rem;
+                    .date {
+                        display: inline-flex;
+                        align-items: center;
+                        span:first-child {
+                            position: relative;
+                            margin-right: 1rem;
+                            &:after {
+                                content: '|';
+                                color: #037FC9;
+                                position: absolute;
+                                top: 0;
+                                right: -0.6rem;
+                            }
+                        }
+                    }
+                    .status {
+                        display: flex;
+                        margin-left: auto;
+                        max-width: 18rem;
+                        justify-content: space-between;
+                        span {
+                            font-weight: 600;
+                            &.red {
+                                color: #ED1C2E;
+                            }
+                            &.green {
+                                color: #80BB13;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
