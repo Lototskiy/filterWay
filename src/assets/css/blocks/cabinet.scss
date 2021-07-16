@@ -48,6 +48,18 @@
         &-item {
             margin: 0;
 
+            &:first-child {
+                .cabinet__sidebar-link {
+                    padding-top: 0;
+                }
+            }
+
+            &:last-child {
+                .cabinet__sidebar-link {
+                    border: none;
+                }
+            }
+
             svg {
                 margin-right: 0.5rem;
                 width: 1rem;
@@ -56,7 +68,7 @@
         }
 
         &-link {
-            padding: 2rem 0;
+            padding: 1.2rem 0 1rem;
             font-size: 1.3rem;
             line-height: 16/13*1;
             text-transform: capitalize;
@@ -66,11 +78,11 @@
             color: $primary-c;
 
             &:first-child {
-                padding-top: 0;
+                // padding-top: 0;
             }
 
             &:last-child {
-                border: none;
+                // border: none;
             }
 
             &:hover {
@@ -87,12 +99,19 @@
 
     &__body {
         padding-top: 2rem;
-        width: calc(100% - 23.5rem - 5rem);
-        margin-left: 5rem;
+        width: calc(100% - 23.5rem - 8.5rem);
+        margin-left: 8.5rem;
 
         .content {
             margin-bottom: 2rem;
         }
+
+        .number-pay {
+            background-image: url(http://localhost:8081/assets/images/icon-number-cart.svg);
+            background-position: right 0.7rem center;
+            background-repeat: no-repeat;
+        }
+
 
         &-btn {
             margin-top: 2rem;
@@ -131,8 +150,7 @@
 
         &-title {
             font-weight: 600;
-
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         &-link {
