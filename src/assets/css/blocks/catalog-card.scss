@@ -19,9 +19,16 @@
             }
         }
 
+        .img-wrap>div img {
+            object-fit: contain;
+
+        }
+
         &-wrap {
             max-width: 14.5rem;
             overflow: hidden;
+
+
         }
     }
 
