@@ -1,5 +1,5 @@
-.toogles__item.toogles__item--active(data-toogles="4")
-  .step.toogles__item-content(style='display: block;')
+.toogles__item(data-toogles="4")
+  .step.toogles__item-content
     .step__row 
       .step__left
         .voucher
@@ -9,7 +9,8 @@
                 |Shipping
               a(href="#").edit.back-wizard
                 img(src="assets/images/svg/icon-edit.svg", alt="")
-                |Edit
+                span.edit__title
+                  |Edit
             .voucher__info
               table 
                 thead 
@@ -40,7 +41,8 @@
                 |Payment
               a(href="#").edit.back-wizard
                 img(src="assets/images/svg/icon-edit.svg", alt="")
-                |Edit
+                span.edit__title
+                  |Edit
             .voucher__info
               table 
                 thead 
@@ -109,7 +111,8 @@
                 |(<span>2</span>) Items
               a(href="#").edit.back-wizard
                 img(src="assets/images/svg/icon-edit.svg", alt="")
-                |Edit
+                span.edit__title
+                  |Edit
             .aside-product__basket-wrap 
               .aside-product__basket-item
                 .img-wrap

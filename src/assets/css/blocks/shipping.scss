@@ -8,12 +8,16 @@
     margin-bottom: 3rem;
     &__item {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         padding: 1.2rem 0rem;
         border-bottom: 1px solid #E5E5E5;
 
         &:last-child {
             border-bottom: none;
+        }
+        
+        .edit {
+            margin-left: auto;
         }
     }
     &__title {
@@ -23,6 +27,6 @@
         text-transform: uppercase;
     }
     &__info {
-        margin-right: 5rem;
+        max-width: 70%;
     }
 }

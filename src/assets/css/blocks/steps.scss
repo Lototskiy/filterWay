@@ -6,22 +6,6 @@
         background-repeat: no-repeat;
     }
 
-    .edit {
-        display: flex;
-        align-items: center;
-        color: #0166B0;
-        text-decoration: underline;
-        transition: all 0.5s;
-        height: fit-content;
-
-        &:hover {
-            opacity: 0.7;
-        }
-        img {
-            margin-right: 0.5rem;
-        }
-    }
-
     .inputs__checkbox {
         .edit {
             margin-left: 1.5rem;
