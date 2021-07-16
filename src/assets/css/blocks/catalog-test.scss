@@ -15,7 +15,7 @@
     &__breadcrumb {
         .breadcrumb {
             &__wrap {
-                max-width: 1020px;
+                max-width: 1030px;
             }
         }
     }
@@ -30,8 +30,9 @@
 
 
         &-form {
-            max-width: 45rem;
+            max-width: 50.5rem;
             width: 100%;
+            padding-left: 5.5rem;
 
             .inputs__field {
                 width: calc(100% - 14rem - 1rem);
@@ -58,7 +59,7 @@
         }
 
         &-right {
-            width: calc(100% - 45rem - 6rem);
+            width: calc(100% - 50.5rem - 6rem);
             margin-left: 6rem;
             background-color: $secondary-c;
             padding: 5rem 8rem;
@@ -79,15 +80,15 @@
             display: flex;
         }
 
-        .center-wrap {
-            padding-right: 0;
-            padding-left: calc((100% - 1020px) / 2);
-            max-width: 100%;
+        // .center-wrap {
+        //     padding-right: 0;
+        //     padding-left: calc((100% - 1020px) / 2);
+        //     max-width: 100%;
 
-            @media screen and (max-width:1070px) {
-                padding-left: 15px;
-            }
-        }
+        //     @media screen and (max-width:1070px) {
+        //         padding-left: 15px;
+        //     }
+        // }
     }
 
     .content {
