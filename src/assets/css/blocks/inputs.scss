@@ -76,6 +76,10 @@
             justify-content: space-between;
             align-items: flex-end;
 
+            @media screen and (max-width:$large_tablet) {
+                flex-direction: column;
+            }
+
             &--btn {
                 .btn {
                     margin-left: auto;
@@ -100,6 +104,10 @@
 
             &--50 {
                 width: calc(50% - 0.6rem);
+
+                @media screen and (max-width:$large_tablet) {
+                    width: 100%;
+                }
 
                 .check-in & {
                     width: calc(50% - 4rem);

@@ -68,7 +68,7 @@ main {
 	overflow: hidden;
 
 	@media screen and (max-width:$large_tablet) {
-		padding-top: 7rem;
+		padding-top: 7.6rem;
 	}
 }
 
@@ -157,5 +157,11 @@ h4 {
 				object-fit: contain;
 			}
 		}
+	}
+}
+
+.desktop-block {
+	@media screen and (max-width:$large_tablet) {
+		display: none;
 	}
 }
