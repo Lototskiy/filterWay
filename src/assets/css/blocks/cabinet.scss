@@ -7,6 +7,19 @@
         }
     }
 
+    .back {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #0166B0;
+        transition: all 0.5s;
+        display: block;
+        margin-bottom: 0.8rem;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
     &__wrap {
         max-width: 1030px;
         width: 100%;
@@ -99,6 +112,7 @@
 
     &__body {
         padding-top: 2rem;
+        padding-bottom: 3.8rem;
         width: calc(100% - 23.5rem - 8.5rem);
         margin-left: 8.5rem;
 
@@ -121,6 +135,14 @@
                 margin-left: auto;
                 padding: 0 7rem;
 
+            }
+        }
+
+        .cabinet__3-1--btn {
+            text-align: right;
+
+            .btn {
+                margin-left: 1.7rem;
             }
         }
 

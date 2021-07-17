@@ -38,11 +38,7 @@
         height: fit-content;
         border: 1px solid #E5E5E5;
         margin-right: 0.6rem;
-        div {
-            img {
-                object-fit: contain;
-            }
-        }
+        background: #fff;
     }
     &-content {
         padding-top: 0.3rem;
