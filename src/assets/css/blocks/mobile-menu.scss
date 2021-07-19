@@ -34,6 +34,22 @@
 		transition: left 0.5s;
 		display: flex;
 		flex-direction: column;
+		overflow: auto;
+		padding-bottom: 1rem;
+
+		&::-webkit-scrollbar-thumb {
+			background: $secondary-c !important;
+			border-radius: 10rem;
+		}
+
+		&::-webkit-scrollbar {
+			width: 0.5rem;
+		}
+
+		&::-webkit-scrollbar-track {
+			border-radius: 10rem;
+			background: color;
+		}
 
 		&--left0 {
 			left: 0px;
@@ -41,26 +57,6 @@
 
 		&--left300 {
 			left: -420px;
-		}
-	}
-
-	&__phones {
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		padding: 5px 0px;
-	}
-
-	&__phone {
-		font-size: 18px;
-		text-align: center;
-		width: 100%;
-		display: block;
-		font-weight: 500;
-		margin-bottom: 4px;
-		position: relative;
-
-		&:last-child {
-			margin-bottom: 0px;
 		}
 	}
 
@@ -87,6 +83,7 @@
 		position: relative;
 		padding-right: 3rem;
 		padding-left: 3rem;
+		margin-bottom: 3.5rem;
 
 		&-list {
 			display: flex;
@@ -146,6 +143,54 @@
 
 			&:hover {
 				color: $secondary-c;
+			}
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 3rem;
+		padding-left: 3rem;
+
+		&-title {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				width: 0%;
+				height: 1px;
+				background: #465157;
+				opacity: 0;
+				transition: opacity .5s, width .5s;
+			}
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+			font-size: 1.3rem;
+			text-transform: lowercase;
+			color: #465157;
+			font-family: $secondary-f;
+
+			img {
+				max-width: 2.4rem;
+				flex-shrink: 0;
+				margin-right: 0.8rem;
+			}
+
+			&:hover {
+				.mobile-menu__bottom-title {
+					&::before {
+						width: 100%;
+						opacity: 1;
+					}
+				}
 			}
 		}
 	}
