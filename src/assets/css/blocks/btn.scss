@@ -21,6 +21,10 @@
 		line-height: 6.2rem;
 	}
 
+	@media screen and (max-width:$large_tablet) {
+		font-size: 1.8rem;
+	}
+
 	&:hover {
 		background-color: inherit;
 		color: $secondary-c;

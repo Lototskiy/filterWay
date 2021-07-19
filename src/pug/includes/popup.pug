@@ -76,3 +76,84 @@
                 .content
                     h2 periodicity
                     p the order is being processed
+#popup-basket.popup-wrap
+    .popup
+        .popup__inner
+            .popup__top
+                .content
+                    h2 Your cart (2)
+                .popup__close(onclick="close_popup('popup-basket')")
+                    div
+                    div
+            .popup__body.step__cards
+                .step__cards-item
+                    .step__cards-left 
+                        .img-wrap.img-wrap--contain 
+                            div 
+                                img(src="assets/images/png/product__img--small1.png" alt="")
+                        .step__cards-param
+                            .content 
+                                h3
+                                    |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                                p
+                                    |SKU: <strong>APF-1100</strong>
+                            .amount
+                                span.amount__minus
+                                    svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        rect(y='0.458336' width='13' height='1.08333')
+                                input.amount__input(type='text' value='1')
+                                span.amount__plus
+                                    svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        rect(y='5.49961' width='12' height='1')
+                                        rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
+                    .step__cards-right
+                        .close-card 
+                            img(src="assets/images/svg/card-close.svg" alt="")
+                        .price.price-for-one
+                            <span class='price__title'>2 Filter — </span><span>$19.99</span>
+                        .price.price-all 
+                            <span class='price__title'>Item Total:</span>
+                            <span>$19.99</span>
+                .step__cards-item
+                        .step__cards-left 
+                            .img-wrap.img-wrap--contain 
+                                div 
+                                    img(src="assets/images/png/product__img--small1.png" alt="")
+                            .step__cards-param
+                                .content 
+                                    h3
+                                        |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                                    p
+                                        |SKU: <strong>APF-1100</strong>
+                                .amount
+                                    span.amount__minus
+                                        svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            rect(y='0.458336' width='13' height='1.08333')
+                                    input.amount__input(type='text' value='1')
+                                    span.amount__plus
+                                        svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            rect(y='5.49961' width='12' height='1')
+                                            rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
+                        .step__cards-right
+                            .close-card 
+                                img(src="assets/images/svg/card-close.svg" alt="")
+                            .price.price-for-one
+                                <span class='price__title'>2 Filter — </span><span>$19.99</span>
+                            .price.price-all 
+                                <span class='price__title'>Item Total:</span>
+                                <span>$19.99</span>
+            .aside-product__items-item
+                .item-row 
+                    h4
+                        |Estimated Total:
+                    .price.blue 
+                        |$<span>234.93</span>
+                a(href="#").btn
+                    |checkout 
+                h4.pay-title 
+                    span 
+                        |OR CHECKOUT WITH
+                a(href="#").pay-btn 
+                    img(src="assets/images/png/img-paypal-1.png", alt="")
+                a(href="#").pay-btn 
+                    img(src="assets/images/png/img-paypal-2.png", alt="")        
