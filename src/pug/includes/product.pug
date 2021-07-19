@@ -83,6 +83,8 @@ section.product
                         ul 
                             li Certified According to NSF 42&372
                             li Compatible with Maytag UKF8001AXX, 46-9992, 9005, Filter 4, PURICLEAN II, MFI2568AES APF-1100
+                        a(href="")
+                            span read more
                 .product__reviews
                     .product__reviews-rating
                         .star-rating
@@ -113,12 +115,10 @@ section.product
                         .product__list-row 
                             .product__list-quantity 2 Filter —
                             .product__list-price $19.99
-                        .product__list-sale ( each $9.99 You save 33%)
                     a(href="").product__list-item
                         .product__list-row 
                             .product__list-quantity 3 Filter —
                             .product__list-price $27.99
-                        .product__list-sale ( each $9.33 You save 38%)
                     a(href="").product__list-item
                         .product__list-row 
                             .product__list-quantity 1 Filter —
@@ -127,29 +127,27 @@ section.product
                         .product__list-row 
                             .product__list-quantity 2 Filter —
                             .product__list-price $19.99
-                        .product__list-sale ( each $9.99 You save 33%)
                     a(href="").product__list-item
                         .product__list-row 
                             .product__list-quantity 3 Filter —
                             .product__list-price $27.99
-                        .product__list-sale ( each $9.33 You save 38%)
                     a(href="").product__list-item.product__list-item--hide
                     a(href="").product__list-item.product__list-item--hide
                 .product__radio
                     .radio
+                        //- .radio__box
+                        //-     label.radio__label
+                        //-         input.radio__input(type='radio' name='radio-product' checked)
+                        //-         .radio__content
+                        //-             span
+                        //-         | Buy Once
+                        //-     .radio__price
+                        //-         span.radio__price-new $99.99
+                        //-         span.radio__price-old $199.99
+                        //-         | MSRP
                         .radio__box
                             label.radio__label
-                                input.radio__input(type='radio' name='radio-product' checked)
-                                .radio__content
-                                    span
-                                | Buy Once
-                            .radio__price
-                                span.radio__price-new $99.99
-                                span.radio__price-old $199.99
-                                | MSRP
-                        .radio__box
-                            label.radio__label
-                                input.radio__input(type='radio' name='radio-product')
+                                input.radio__input(type='checkbox' name='radio-product' checked)
                                 .radio__content
                                     span
                                 | Subscribe
