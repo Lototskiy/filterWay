@@ -33,6 +33,10 @@
 
     &__row {
         display: flex !important;
+
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column !important;
+        }
     }
     .pay-title {
         position: relative;
@@ -40,7 +44,13 @@
         font-size: 1.3rem;
         line-height: 1.6rem;
         text-align: center;
-        margin-bottom: 1.2rem;
+        margin-bottom: 0.8rem;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            margin-bottom: 3.3rem;
+        }
 
         &:before {
             content: '';
@@ -71,6 +81,19 @@
     &__left {
         padding-bottom: 4.6rem;
         width: calc(100% - 26.7rem);
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+        }
+
+        .btn {
+            @media screen and (max-width:$large_tablet) {
+                margin: 0rem auto;
+                display: block;
+                width: fit-content;
+                max-width: 300px;
+                width: 100%;
+            }
+        }
     }
 
     &__cards {
@@ -94,11 +117,24 @@
                     font-size: 1.6rem;
                     line-height: 1.9rem;
                     text-transform: uppercase;
+
+                    @media screen and (max-width:$large_tablet) {
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                        margin-bottom: 1rem;
+                        width: calc(100% - -5rem);
+                    }
                 }
                 p {
                     font-weight: normal;
                     font-size: 1.3rem;
                     line-height: 1.6rem;
+
+                    @media screen and (max-width:$large_tablet) {
+                        margin-bottom: 0.8rem;
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                    }
                 }
             }
         }
@@ -111,9 +147,13 @@
                 border: 1px solid #E5E5E5;
                 div {
                     padding-bottom: 100%;
-                    img {
-                        object-fit: contain;
+
+                    @media screen and (max-width:$large_tablet) {
+                        padding-bottom: 88.42%;
                     }
+                    // img {
+                    //     object-fit: contain;
+                    // }
                 }
             }
         }
@@ -123,10 +163,20 @@
             align-items: flex-end;
             justify-content: space-between;
 
+            @media screen and (max-width:$large_tablet) {
+                justify-content: flex-end;
+            }
+
             .close-card {
                 cursor: pointer;
                 display: block;
                 transition: all 0.5s;
+
+                @media screen and (max-width:$large_tablet) {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    margin-bottom: auto;
+                }
                 &:hover {
                     opacity: 0.7;
                 }
@@ -138,6 +188,16 @@
                 line-height: 1.6rem;
                 color: #000;
                 text-align: right;
+                @media screen and (max-width:$large_tablet) {
+                    white-space: nowrap;
+                    margin-bottom: 0.8rem;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+
+                    &:last-child {
+                        margin-bottom: 0rem;
+                    }
+                }
                 span {
                     font-weight: bold;
                     color: #3293D0;

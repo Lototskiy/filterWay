@@ -68,7 +68,7 @@ main {
 	overflow: hidden;
 
 	@media screen and (max-width:$large_tablet) {
-		padding-top: 7rem;
+		padding-top: 7.6rem;
 	}
 }
 
@@ -135,6 +135,7 @@ h4 {
 
 .img-wrap {
 	width: 100%;
+	height: fit-content;
 
 	>div {
 		position: relative;
@@ -149,5 +150,18 @@ h4 {
 			object-fit: cover;
 			transition: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) transform;
 		}
+	}
+	&--contain {
+		>div {
+			img {
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+.desktop-block {
+	@media screen and (max-width:$large_tablet) {
+		display: none;
 	}
 }

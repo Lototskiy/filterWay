@@ -49,6 +49,7 @@ import './assets/css/blocks/socials.scss';
 import './assets/css/blocks/edit.scss';
 import './assets/css/blocks/order-tab.scss';
 import './assets/css/blocks/order-tab-info.scss';
+import './assets/css/blocks/edit-subscription.scss';
 
 
 

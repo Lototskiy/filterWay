@@ -48,6 +48,10 @@
         font-size: 1.1rem;
         text-transform: capitalize;
         position: relative;
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
 
         &::before {
             content: "";

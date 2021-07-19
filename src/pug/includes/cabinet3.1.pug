@@ -47,45 +47,59 @@ section.cabinet
                                     path(d='M7.90298 3.09763L6.56962 1.76433C6.47434 1.66899 6.33097 1.6403 6.20634 1.69194C6.08201 1.74363 6.00066 1.86528 6.00066 1.99998V2.99997H4.66736C4.48334 2.99997 4.33398 3.14926 4.33398 3.33328C4.33398 3.5173 4.48334 3.66659 4.66736 3.66659H6.00066V4.66658C6.00066 4.80128 6.08201 4.92293 6.20634 4.97462C6.33097 5.02626 6.47434 4.99757 6.56962 4.9023L7.90298 3.56893C8.03329 3.43863 8.03329 3.22793 7.90298 3.09763Z')
                                 | Log out 
             .cabinet__body
+                a(href="cabinet3.html").back
+                    |<< back to subscription list
                 .content
-                    h2 MY subscription
-                    h3 active ubscritions
-                .order-tab__info.my-subscription
-                    .img-wrap.img-wrap--contain 
-                        div 
-                            img(src="assets/images/png/product__img--small1.png" alt="")
-                    .order-tab__info-content 
-                        .order-tab__info-item
-                            h3 Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
-                            .order-tab__info-item-wrap
-                                ul 
-                                    li 
-                                        |next shipment
-                                    li 
-                                        |<strong>October 16</strong>
-                        .order-tab__info-item
-                            .order-tab__info-item-wrap
-                                div 
-                                    |SKU: <strong>APF-1100</strong>
-                                div 
-                                    |Qty: <strong>1</strong>
+                    h2 edit subscription
+                .edit-subscription
+                    .edit-subscription__wrap 
+                        .edit-subscription__item
                             div 
-                                |$19.99
-                        .order-tab__info-item
-                            .order-tab__info-total 
-                                .item 
-                                    div
-                                        |2 Filter —
-                                        span.item-price 
-                                            |$19.99
-                                    div
-                                        |Item Total:
-                                        span.item-price 
-                                            |$19.99
-                            a(href="#").edit 
-                                img(src="assets/images/svg/icon-edit.svg" alt="")
-                                span.edit__title 
-                                    |edit
-                .cabinet__
-                a(href="catalog.html").cabinet__body-btn 
-                    .btn Add product      
+                                span next shipment
+                                span <strong>October 16</strong>
+                            a(href="#" onclick='show_popup("popup-product")').edit 
+                                    img(src="assets/images/svg/icon-edit.svg" alt="")
+                                    span.edit__title 
+                                        |edit
+                        .edit-subscription__item
+                            div 
+                                span delivery schedule
+                                span <strong>4 months</strong>
+                            a(href="#" onclick='show_popup("popup-delivery")').edit 
+                                    img(src="assets/images/svg/icon-edit.svg" alt="")
+                                    span.edit__title 
+                                        |edit
+                    .order-tab__info.my-subscription
+                        .img-wrap.img-wrap--contain 
+                            div 
+                                img(src="assets/images/png/product__img--small1.png" alt="")
+                        .order-tab__info-content 
+                            .order-tab__info-item
+                                h3 Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                            .order-tab__info-item
+                                .order-tab__info-item-wrap
+                                    div 
+                                        |SKU: <strong>APF-1100</strong>
+                                    div 
+                                        |Qty: <strong>1</strong>
+                            .order-tab__info-item
+                                .order-tab__info-total 
+                                    .item 
+                                        div
+                                            |2 Filter —
+                                            span.item-price 
+                                                |$19.99
+                                    .item 
+                                        div
+                                            |Item Total:
+                                            span.item-price 
+                                                |$19.99
+                                a(href="#").edit 
+                                    img(src="assets/images/svg/icon-edit.svg" alt="")
+                                    span.edit__title 
+                                        |edit
+                .cabinet__3-1--btn
+                    a(href="catalog.html").btn.btn--empty 
+                        |scip shipment
+                    a(href="catalog.html").btn 
+                        |Add product
