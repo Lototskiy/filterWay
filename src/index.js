@@ -49,7 +49,6 @@ import './assets/css/blocks/socials.scss';
 import './assets/css/blocks/edit.scss';
 import './assets/css/blocks/order-tab.scss';
 import './assets/css/blocks/order-tab-info.scss';
-import './assets/css/blocks/edit-subscription.scss';
 
 
 
@@ -84,5 +83,5 @@ import './assets/js/popup';
 import './assets/js/inputs';
 
 import './assets/js/header';
-// import './assets/js/mobile-menu';
+import './assets/js/mobile-menu';
 // import './assets/js/anchors';

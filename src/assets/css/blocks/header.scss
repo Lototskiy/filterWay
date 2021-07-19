@@ -200,9 +200,9 @@
 		width: 21px;
 		cursor: pointer;
 
-		&:hover {
-			pointer-events: none;
-		}
+		// &:hover {
+		// 	pointer-events: none;
+		// }
 
 		@media screen and (max-width:$large_tablet) {
 			width: 3.5rem;
