@@ -136,6 +136,13 @@
             &--390 {
                 width: 39rem;
                 text-align: center;
+
+                .popup__body {
+                    &-img {
+                        max-width: 12.5rem;
+                        margin: 3rem auto;
+                    }
+                }
             }
 
 
@@ -196,11 +203,6 @@
 
         &__body {
             padding: 0 1.5rem;
-
-            .img-wrap {
-                max-width: 12.5rem;
-                margin: 3rem auto;
-            }
 
             &-row {
                 display: flex;
@@ -266,62 +268,69 @@
         }
 
         .aside-product__items-item {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                padding: 1.3rem 1.5rem 0rem 1.5rem;
-                border-top: 1px solid #037FC9;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 1.3rem 1.5rem 0rem 1.5rem;
+            border-top: 1px solid #037FC9;
 
-                .btn {
-                    margin: 0 auto 2.3rem auto;
+            .btn {
+                margin: 0 auto 2.3rem auto;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .item-row {
+                margin-bottom: 2rem;
+            }
+
+            h4 {
+                margin-bottom: 0rem;
+            }
+
+            .price {
+                margin-bottom: 0rem;
+            }
+
+            .pay-btn {
+                margin: 0rem auto 0.5rem auto;
+                width: 100%;
+                max-width: 300px;
+
+                img {
                     width: 100%;
-                    max-width: 300px;
-                }
-                .item-row {
-                    margin-bottom: 2rem;
-                }
-                h4 {
-                    margin-bottom: 0rem;
-                }
-                .price {
-                    margin-bottom: 0rem;
-                }
-                .pay-btn {
-                    margin: 0rem auto 0.5rem auto;
-                    width: 100%;
-                    max-width: 300px;
-                    img {
-                        width: 100%;
-                    }
-                }
-                .pay-title {
-                    position: relative;
-                    font-weight: 600;
-                    font-size: 1.3rem;
-                    line-height: 1.6rem;
-                    text-align: center;
-                    margin-bottom: 1.3rem;
-
-                    span {
-                        position: relative;
-                        z-index: 2;
-                        padding: 0rem 2rem;
-                        display: inline-block;
-                        background: #ffffff;
-                    }
-
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 1px;
-                        top: 25%;
-                        left: 0;
-                        z-index: 1;
-                        background: #E5E5E5;
-                    }
                 }
             }
+
+            .pay-title {
+                position: relative;
+                font-weight: 600;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                text-align: center;
+                margin-bottom: 1.3rem;
+
+                span {
+                    position: relative;
+                    z-index: 2;
+                    padding: 0rem 2rem;
+                    display: inline-block;
+                    background: #ffffff;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    top: 25%;
+                    left: 0;
+                    z-index: 1;
+                    background: #E5E5E5;
+                }
+            }
+        }
+
         .step__cards {
             &-item {
                 // padding: 0;
@@ -362,7 +371,7 @@
                         font-size: 1.8rem;
                     }
 
-                    
+
                 }
 
                 .price-for-one {
@@ -375,10 +384,10 @@
 
                 .price-all {
                     .price__title {
-                        display: none;  
+                        display: none;
                     }
                 }
-                
+
 
                 .img-wrap {
                     max-width: 17rem;
