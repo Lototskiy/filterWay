@@ -3,6 +3,10 @@
     font-size: 1.3rem;
     line-height: 16/13*1;
 
+    &--hide {
+        display: none;
+    }
+
     h6 {
         font-weight: bold;
         text-transform: uppercase;
@@ -35,36 +39,6 @@
             text-transform: capitalize;
             color: #313131;
             margin-top: 1rem;
-        }
-    }
-
-    a {
-        text-transform: lowercase;
-        color: #0166B0;
-        font-weight: 600;
-        padding-left: 1.5rem;
-
-
-        span {
-            // display: block;
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0px;
-                bottom: 2px;
-                width: 100%;
-                height: 1px;
-                background: $secondary-c;
-                opacity: 1;
-                transition: opacity .5s, width .5s;
-            }
-
-            &:hover::before {
-                width: 0%;
-                opacity: 0;
-            }
         }
     }
 }
