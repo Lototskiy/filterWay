@@ -70,6 +70,7 @@
         svg {
             width: 1.4rem;
             fill: $primary-c;
+            transition: fill .5s;
         }
 
         &:hover {
