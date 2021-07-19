@@ -50,6 +50,7 @@ import './assets/css/blocks/edit.scss';
 import './assets/css/blocks/order-tab.scss';
 import './assets/css/blocks/order-tab-info.scss';
 import './assets/css/blocks/catalog-slider.scss';
+import './assets/css/blocks/steps-cards.scss';
 
 
 
