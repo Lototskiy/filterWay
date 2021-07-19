@@ -158,6 +158,10 @@
 
     &__promo {
         margin-bottom: 1.7rem;
+
+        .inputs__field-row {
+            flex-direction: row;
+        }
         label {
             font-weight: 600;
             display: block;
