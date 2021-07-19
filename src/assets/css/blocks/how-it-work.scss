@@ -1,5 +1,6 @@
 .how-work {
-    padding-top: 2.6rem;
+    padding: 2.6rem 0rem 3.4rem 0rem;
+    text-align: center;
 
     .call-now {
         padding: 0rem 1.25rem;
@@ -13,7 +14,9 @@
     }
     .img-wrap {
         width: 21.6rem;
-        margin-bottom: 2.8rem;
+        margin-bottom: 2rem;
+
+        
         div {
             padding-bottom: 100%;
         }
@@ -22,28 +25,43 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        margin-bottom: 10rem;
     }
     &__item {
         width: calc(33.333% - 2.5rem);
-        background: #F7F7F7;
         margin: 0rem 1.25rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 3.5rem 4.4rem 2.6rem 4.4rem;
         margin-bottom: 2.1rem;
+        position: relative;
 
+        &:before {
+            content: url('~img/svg/arrow-how.svg');
+            position: absolute;
+            top: 35%;
+            right: calc(0rem - 1.25rem);
+            transform: translate(50%, 0rem);
+        }
+
+        &:last-child {
+            &:before {
+                content: none;
+            }
+        }
         .content {
             h4 {
                 font-weight: 600;
                 font-size: 1.6rem;
                 line-height: 1.9rem;
                 text-align: center;
-                margin-bottom: 1rem;
+                // margin-bottom: 1rem;
             }
             p {
                 font-size: 1.3rem;
                 line-height: 1.6rem;
+                text-align: center;
             }
         }
     }
