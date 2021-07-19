@@ -53,6 +53,7 @@ import './assets/css/blocks/catalog-slider.scss';
 import './assets/css/blocks/steps-cards.scss';
 import './assets/css/blocks/read-more.scss';
 
+import './assets/css/blocks/edit-subscription.scss';
 
 
 import './assets/css/blocks/thank-you-block.scss';
