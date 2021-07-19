@@ -37,6 +37,11 @@
 		overflow: auto;
 		padding-bottom: 1rem;
 
+		@media screen and (max-width:$large_tablet) {
+			left: -300px;
+			width: 300px;
+		}
+
 		&::-webkit-scrollbar-thumb {
 			background: $secondary-c !important;
 			border-radius: 10rem;
@@ -57,6 +62,10 @@
 
 		&--left300 {
 			left: -420px;
+
+			@media screen and (max-width:$large_tablet) {
+				left: -300px;
+			}
 		}
 	}
 

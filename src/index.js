@@ -49,6 +49,7 @@ import './assets/css/blocks/socials.scss';
 import './assets/css/blocks/edit.scss';
 import './assets/css/blocks/order-tab.scss';
 import './assets/css/blocks/order-tab-info.scss';
+import './assets/css/blocks/catalog-slider.scss';
 
 
 
@@ -69,6 +70,7 @@ import './assets/css/blocks/product.scss';
 // JS
 
 // JS
+import './assets/js/catalog-slider';
 import './assets/js/toggles-tab';
 import './assets/js/inputs-mask';
 import './assets/js/drop-down';
