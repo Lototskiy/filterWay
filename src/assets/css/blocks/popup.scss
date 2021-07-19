@@ -55,7 +55,18 @@
             top: 0px;
         }
 
+        &--line {
+            .popup__inner {
+                border-top: 3px solid $secondary-c;
 
+                .content {
+                    h2 {
+                        color: #037FC9;
+                    }
+                }
+            }
+
+        }
 
         &__close {
             // position: absolute;
@@ -121,6 +132,10 @@
             &::-webkit-scrollbar-thumb:hover {
                 background: $secondary-c;
             }
+
+            &--390 {
+                width: 39rem;
+            }
         }
 
         .content {
@@ -144,6 +159,12 @@
 
         &__body {
             padding: 0 1.5rem;
+            text-align: center;
+
+            .img-wrap {
+                max-width: 12.5rem;
+                margin: 3rem auto;
+            }
         }
 
         &__btn {
