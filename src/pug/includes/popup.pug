@@ -24,11 +24,11 @@
                                     |Item Total:
                                     <span>$19.99</span>
                             .amount
-                                span.amount__minus
+                                button.amount__btn(data-direction='minus')
                                     svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
                                         rect(y='0.458336' width='13' height='1.08333')
-                                input.amount__input(type='text' value='1')
-                                span.amount__plus
+                                input.amount__value(type='text' value='1')
+                                button.amount__btn(data-direction='plus')
                                     svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
                                         rect(y='5.49961' width='12' height='1')
                                         rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
