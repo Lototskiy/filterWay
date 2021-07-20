@@ -44,6 +44,11 @@
             font-weight: normal;
             font-size: 1.3rem;
             line-height: 1.6rem;
+            @media screen and (max-width:$large_tablet) {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+            
         }
 
         &-wrap {
@@ -66,6 +71,10 @@
         }
 
         &-info {
+            width: 100%;
+            @media screen and (max-width:$large_tablet) {
+                width: 100%;
+            }
             .title {
                 font-weight: bold;
                 font-size: 1rem;
