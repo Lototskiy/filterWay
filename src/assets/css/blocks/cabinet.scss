@@ -7,6 +7,13 @@
         }
     }
 
+    .center-wrap {
+        @media screen and (max-width:$large_mobile) {
+            padding: 0;
+        }
+
+    }
+
     .back {
         font-weight: 600;
         font-size: 1.3rem;
@@ -15,6 +22,7 @@
         transition: all 0.5s;
         display: block;
         margin-bottom: 0.8rem;
+
         &:hover {
             opacity: 0.7;
         }
@@ -25,6 +33,10 @@
         width: 100%;
         margin: 0 auto;
         display: flex;
+
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+        }
     }
 
     &__sidebar {
@@ -34,6 +46,11 @@
         position: relative;
         padding-top: 2rem;
 
+        @media screen and (max-width:$large_tablet) {
+            max-width: 100%;
+            padding-top: 0;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -42,6 +59,10 @@
             width: 1000%;
             height: 1000%;
             background-color: inherit;
+
+            @media screen and (max-width:$large_tablet) {
+                display: none;
+            }
         }
 
         &::after {
@@ -52,14 +73,57 @@
             width: 100%;
             height: 1000%;
             background-color: inherit;
+
+            @media screen and (max-width:$large_tablet) {
+                display: none;
+            }
+        }
+
+        .toogles__item {
+            display: none;
+
+            @media screen and (max-width:$large_tablet) {
+                display: block;
+            }
         }
 
         &-list {
             padding-right: 8rem;
+
+            @media screen and (max-width:$large_tablet) {
+                padding-right: 0;
+            }
         }
 
         &-item {
             margin: 0;
+
+            @media screen and (max-width:$large_tablet) {
+                position: relative;
+                padding: 2.2rem 2rem 2.2rem 2rem;
+                border-bottom: 1px solid #fff;
+                cursor: pointer;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: calc(50% - 0.3rem);
+                    right: 2rem;
+                    width: 2.4rem;
+                    height: 1.4rem;
+                    background-image: url('~img/svg/select-arrow.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: transform .5s;
+                    transform: rotate(-90deg);
+                }
+
+                &.toogles__item-title--active {
+                    &:before {
+                        transform: rotate(0);
+                    }
+                }
+            }
 
             &:first-child {
                 .cabinet__sidebar-link {
@@ -77,6 +141,11 @@
                 margin-right: 0.5rem;
                 width: 1rem;
                 fill: $secondary-c;
+
+                @media screen and (max-width:$large_tablet) {
+                    width: 2rem;
+                    margin-right: 2rem;
+                }
             }
         }
 
@@ -90,12 +159,13 @@
             transition: color .5s, text-shadow .5s;
             color: $primary-c;
 
-            &:first-child {
-                // padding-top: 0;
-            }
-
-            &:last-child {
-                // border: none;
+            @media screen and (max-width:$large_tablet) {
+                font-size: 1.8rem;
+                display: flex;
+                align-items: center;
+                padding: 0;
+                pointer-events: none;
+                border: none;
             }
 
             &:hover {
@@ -116,8 +186,28 @@
         width: calc(100% - 23.5rem - 8.5rem);
         margin-left: 8.5rem;
 
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+            margin-left: 0;
+            background-color: #fff;
+            padding-left: 6rem;
+            padding-bottom: 5rem;
+        }
+
+        &--desktop {
+            @media screen and (max-width:$large_tablet) {
+                display: none;
+            }
+        }
+
         .content {
             margin-bottom: 2rem;
+
+            h2 {
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                }
+            }
         }
 
         .number-pay {
@@ -131,9 +221,20 @@
             margin-top: 2rem;
             text-align: right;
 
+            @media screen and (max-width:$large_tablet) {
+                text-align: center;
+            }
+
             .btn {
                 margin-left: auto;
                 padding: 0 7rem;
+
+                @media screen and (max-width:$large_tablet) {
+                    margin: 0 auto;
+                    padding: 0 0.5rem;
+                    max-width: 30rem;
+                    width: 100%;
+                }
 
             }
         }
@@ -158,12 +259,23 @@
             margin-bottom: 0;
         }
 
+        .edit {
+            @media screen and (max-width:$large_tablet) {
+                display: none;
+            }
+        }
+
         &-row {
             margin-bottom: 2rem;
             font-size: 1.3rem;
             line-height: 16/13*1;
             text-transform: capitalize;
             color: #313131;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-bottom: 4rem;
+                font-size: 1.8rem;
+            }
 
             &:last-child {
                 margin-bottom: 0px;
@@ -173,6 +285,10 @@
         &-title {
             font-weight: 600;
             margin-bottom: 0.5rem;
+
+            @media screen and (max-width:$large_tablet) {
+                font-weight: bold;
+            }
         }
 
         &-link {
@@ -209,14 +325,29 @@
 
         &-wrap {
             display: flex;
+
+            @media screen and (max-width:$large_tablet) {
+                flex-direction: column;
+                border-bottom: 1px solid #E5E5E5;
+                padding-bottom: 3rem;
+            }
         }
 
         &-item {
             max-width: 10rem;
             width: 100%;
 
+            @media screen and (max-width:$large_tablet) {
+                max-width: 100%;
+            }
+
             &+.cabinet__address-item {
                 margin-left: 8rem;
+
+                @media screen and (max-width:$large_tablet) {
+                    margin-left: 0;
+                    margin-top: 2.5rem;
+                }
             }
 
             .radio {
@@ -227,23 +358,46 @@
                     padding-left: 2rem;
                     font-weight: 600;
                     text-transform: capitalize;
-
                     color: #313131;
+
+                    @media screen and (max-width:$large_tablet) {
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        padding-left: 4rem;
+                    }
                 }
+            }
+        }
+
+        &-edit {
+            @media screen and (max-width:$large_tablet) {
+                display: block;
             }
         }
 
         &-content {
             padding-left: 2rem;
 
+            @media screen and (max-width:$large_tablet) {
+                padding-left: 4rem;
+            }
+
             p {
                 font-size: 1.3rem;
+
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                }
             }
         }
 
         &-tel {
             font-size: 1.3rem;
             position: relative;
+
+            @media screen and (max-width:$large_tablet) {
+                font-size: 1.8rem;
+            }
 
             &::before {
                 content: "";
