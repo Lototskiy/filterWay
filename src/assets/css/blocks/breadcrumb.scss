@@ -11,11 +11,20 @@
     &__list {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: -0.5rem;
+        }
     }
 
     &__item {
         position: relative;
         padding: 0 0.8rem;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 0.5rem;
+        }
 
         &::before {
             content: '|';
@@ -48,6 +57,7 @@
         font-size: 1.1rem;
         text-transform: capitalize;
         position: relative;
+
         @media screen and (max-width:$large_tablet) {
             font-size: 1.8rem;
             line-height: 2.2rem;

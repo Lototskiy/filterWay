@@ -3,6 +3,10 @@
     font-size: 1.3rem;
     line-height: 16/13*1;
 
+    @media screen and (max-width:$large_tablet) {
+        font-size: 1.8rem;
+    }
+
     &--hide {
         display: none;
     }
@@ -12,6 +16,10 @@
         text-transform: uppercase;
         margin-bottom: 2rem;
         font-size: 1.3rem;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+        }
     }
 
     ol {

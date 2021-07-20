@@ -6,10 +6,19 @@
         position: absolute;
         right: 0;
         top: 0;
+
+        @media screen and (max-width:$large_tablet) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 
     &__box {
         position: relative;
+
+        @media screen and (max-width:$large_tablet) {
+            padding-right: 3.5rem;
+        }
 
         &+.radio__box {
             margin-left: 5rem;
@@ -21,6 +30,11 @@
         font-size: 1.3rem;
         text-transform: lowercase;
         padding-left: 3rem;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            padding-left: 25px;
+        }
 
         &-new {
             font-weight: bold;
@@ -51,6 +65,12 @@
         position: relative;
         cursor: pointer;
 
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            padding-left: 25px;
+            padding-top: 0.5rem;
+        }
+
         &:last-child {
             margin-bottom: 0px;
         }
@@ -63,8 +83,8 @@
 
     &__content {
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: 1.5rem;
+        height: 1.5rem;
         border-radius: 50%;
         top: 50%;
         transform: translateY(-50%);
@@ -74,6 +94,11 @@
         align-items: center;
         justify-content: center;
 
+        @media screen and (max-width:$large_tablet) {
+            width: 20px;
+            height: 20px;
+        }
+
         span {
             width: 0.9rem;
             height: 0.9rem;
@@ -81,6 +106,11 @@
             display: block;
             border-radius: 50%;
             transition: background-color, .5s;
+
+            @media screen and (max-width:$large_tablet) {
+                width: 12px;
+                height: 12px;
+            }
         }
     }
 

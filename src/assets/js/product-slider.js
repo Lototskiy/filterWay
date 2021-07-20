@@ -17,20 +17,12 @@ if (document.querySelector('.product-slider')) {
                 spaceBetween: 13,
                 // autoHeight: false,
                 speed: 1000,
-                // breakpoints: {
-                //     320: {
-                //         slidesPerView: 3,
-                //     },
-                //     1000: {
-                //         slidesPerView: 4,
-                //     },
-                // }
             }
         },
-        // pagination: {
-        //     el: ' .swiper-pagination',
-        //     clickable: true,
-        // },
+        pagination: {
+            el: '.product-slider .swiper-pagination',
+            clickable: true,
+        },
         // breakpoints: {
         //     320: {
         //         slidesPerView: 1,

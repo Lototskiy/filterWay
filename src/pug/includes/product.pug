@@ -69,6 +69,7 @@ section.product
                                         .product-slider__big-sale Sale
                                         a(href="assets/images/png/product__img--big.png" data-fancybox="certifications-gallery").product-slider__big-img
                                             img(src="assets/images/png/product__img--big.png" alt="")
+                    .swiper-pagination
             .product__right
                 h2.product__title Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
                 .product__info
@@ -138,16 +139,6 @@ section.product
                     a(href="").product__list-item.product__list-item--hide
                 .product__radio
                     .radio
-                        //- .radio__box
-                        //-     label.radio__label
-                        //-         input.radio__input(type='radio' name='radio-product' checked)
-                        //-         .radio__content
-                        //-             span
-                        //-         | Buy Once
-                        //-     .radio__price
-                        //-         span.radio__price-new $99.99
-                        //-         span.radio__price-old $199.99
-                        //-         | MSRP
                         .radio__box
                             label.radio__label
                                 input.radio__input(type='checkbox' name='radio-product' checked)
@@ -161,9 +152,19 @@ section.product
                                 .tooltip
                                     span.tooltip__title(attr="Каскадные таблицы стилей") ?
 
-
                 .product__select
+                    .select.select--mobile
+                        .select__title quantity
+                        .select__value 1 Filter — <strong>$14.99</strong>
+                        .select__variants
+                            label.select__variant.select__variant--active(for='')
+                                span 1 Filter — <strong>$14.99</strong>
+                            label.select__variant(for='')
+                                span 2 Filter — <strong>$19.99</strong>
+                            label.select__variant(for='')
+                                span 3 Filter — <strong>$27.99</strong>
                     .select
+                        .select__title Periodicity
                         .select__value 3 Months
                         .select__variants
                             label.select__variant.select__variant--active(for='')
@@ -184,6 +185,4 @@ section.product
                                 rect(y='5.49961' width='12' height='1')
                                 rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
                     .product__amount-btn
-                        .btn add to cart
-
-//- 
+                        .btn add to cart 
