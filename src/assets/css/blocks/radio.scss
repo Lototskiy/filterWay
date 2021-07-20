@@ -64,6 +64,10 @@
         padding-left: 3rem;
         position: relative;
         cursor: pointer;
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
 
         @media screen and (max-width:$large_tablet) {
             font-size: 1.8rem;
