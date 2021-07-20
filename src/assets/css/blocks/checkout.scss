@@ -2,9 +2,16 @@
     .center-wrap {
         max-width: 960px;
         margin: 0 auto;
+
+        @media screen and (max-width:$large_tablet) {
+           padding: 0rem;
+        }
     }
     &__wrap {
         display: flex;
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+        }
     }
 
     .inputs__field-wrap {
@@ -27,7 +34,9 @@
     &__form {
         padding-right: 9.3rem;
         padding-bottom: 4.3rem;
-       
+        @media screen and (max-width:$large_tablet) {
+            padding: 2.7rem 1.7rem 5rem 1.7rem;
+        }
 
         
     }
@@ -38,6 +47,11 @@
         margin-bottom: 0.8rem;
         text-transform: uppercase;
         color: #000000;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
     }
     &__sub-title {
         display: block;
@@ -46,51 +60,135 @@
         line-height: 1.6rem;
         margin-bottom: 0.8rem;
         color: #000000;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
     }
     .form_content {
         width: 29rem;
         margin: 0 0 0 auto;
         padding-top: 2.7rem;
 
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+            text-align: center;
+        }
+        .inputs__field-wrap {
+            text-align: left;
+        }
+        >.inputs__field-row {
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1.8rem;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-bottom: 2.3rem;
+            }
+        }
+        .inputs__checkbox {
+            margin: 0rem;
+        }
         .btn {
             margin-bottom: 1.8rem;
+            @media screen and (max-width:$large_tablet) {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 3.2rem;
+            }
         }
     }
 
     .right {
-        padding: 2.7rem 0 0 4.4rem;
+        padding: 2.7rem 4.4rem 0 4.4rem;
+
+        @media screen and (max-width:$large_tablet) {
+            
+        }
+
+        &__item {
+            @media screen and (max-width:$large_tablet) {
+                text-align: center;
+                margin-bottom: 3.7rem;
+            }
+
+            .btn {
+                @media screen and (max-width:$large_tablet) {
+                    max-width: 300px;
+                    width: 100%;
+                }
+            }
+        }
         &__row {
             display: flex;
             justify-content: space-between;
+
+            @media screen and (max-width:$large_tablet) {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            
 
             .right__item {
                 max-width: 50%;
                 display: flex;
                 flex-direction: column;
 
+                @media screen and (max-width:$large_tablet) {
+                    margin-bottom: 3.7rem;
+                    max-width: none;
+                    width: 100%;
+                }
+
                 .btn {
                     margin-top: auto;
                     width: fit-content;
+
+                    @media screen and (max-width:$large_tablet) {
+                        margin: 0rem auto;
+                        width: 100%;
+                        max-width: 300px;
+                    }
                 }
             }
         }
         .content {
+
+            @media screen and (max-width:$large_tablet) {
+                width: 100%;
+            }
             h2 {
                 font-weight: 600;
-            font-size: 1.6rem;
-            line-height: 1.9rem;
-            text-transform: uppercase;
-            color: #000000;
-            margin-bottom: 0.8rem;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                text-transform: uppercase;
+                color: #000000;
+                margin-bottom: 0.8rem;
+
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 2.3rem;
+                }
             }
             p {
                 font-size: 1.3rem;
                 color: #000000;
                 margin-bottom: 2.3rem;
+
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 1.7rem;
+                }
             }
         }
         .btn {
             padding: 0 2.5rem;
+            
         }
     }
     .socials-sign {
@@ -110,6 +208,12 @@
             border: 1px solid #E5E5E5;
             margin: 0rem 0.6rem;
 
+            @media screen and (max-width:$large_tablet) {
+                width: 8.3rem;
+                height: 8.3rem;
+                margin: 0rem 3.3rem;
+            }
+
             &:hover {
                 img {
                     transform: scale(1.1);
@@ -118,6 +222,10 @@
 
             img {
                 transition: all 0.5s;
+                @media screen and (max-width:$large_tablet) {
+                    height: 100%;
+                    max-height: 50%;
+                }
             }
         }
         &__title {
@@ -145,10 +253,23 @@
                 padding: 0rem 2rem;
                 display: inline-block;
                 background: #E9F4FA;
+
+                @media screen and (max-width:$large_tablet) {
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                }
             }
         }
     }
 }
-
+.orders {
+    .main-forms__form {
+        order: 2;
+    }
+    .right {
+        order: 1;
+    }
+}
 
 
