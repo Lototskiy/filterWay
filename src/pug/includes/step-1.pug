@@ -15,12 +15,12 @@
                   |Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
                 p
                   |SKU: <strong>APF-1100</strong>
-              .amount
-                span.amount__minus
+
+                button.amount__btn(data-direction='minus')
                   svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
                     rect(y='0.458336' width='13' height='1.08333')
-                input.amount__input(type='text' value='1')
-                span.amount__plus
+                input.amount__value(type='text' value='1')
+                button.amount__btn(data-direction='plus')
                   svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
                     rect(y='5.49961' width='12' height='1')
                     rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
@@ -44,11 +44,11 @@
                 p
                   |SKU: <strong>APF-1100</strong>
               .amount
-                span.amount__minus
+                button.amount__btn(data-direction='minus')
                   svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
                     rect(y='0.458336' width='13' height='1.08333')
-                input.amount__input(type='text' value='1')
-                span.amount__plus
+                input.amount__value(type='text' value='1')
+                button.amount__btn(data-direction='plus')
                   svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
                     rect(y='5.49961' width='12' height='1')
                     rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
@@ -68,7 +68,7 @@
           .inputs__field-row
             input.inputs__field(type="text" placeholder="Apply only one discount code per order")
             button 
-              img(src="assets/images/svg/promo-arrow.svg", alt="")
+              img(src="assets/images/svg/promo-arrow.svg" alt="")
         .aside-product__items 
           .aside-product__items-item
             .item-row 
@@ -100,6 +100,6 @@
             span 
               |OR CHECKOUT WITH
           a(href="#").pay-btn 
-            img(src="assets/images/png/img-paypal-1.png", alt="")
+            img(src="assets/images/png/img-paypal-1.png" alt="")
           a(href="#").pay-btn 
-            img(src="assets/images/png/img-paypal-2.png", alt="")
+            img(src="assets/images/png/img-paypal-2.png" alt="")
