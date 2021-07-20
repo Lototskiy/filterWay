@@ -15,19 +15,36 @@
 
     .content {
         margin-bottom: 3.5rem;
+        text-align: center;
     }
 
     .inputs__field {
         &-wrap {
             margin-bottom: 0;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-bottom: 3.5rem;
+            }
         }
 
         &-row {
             margin-bottom: 1.8rem;
 
+            @media screen and (max-width:$large_tablet) {
+                margin-bottom: 0;
+            }
+
             &:last-child {
                 margin-bottom: 0px;
             }
+        }
+    }
+
+    .inputs__checkbox {
+        @media screen and (max-width:$large_tablet) {
+            margin-right: auto;
+            margin-left: initial;
+            margin-bottom: 3.5rem;
         }
     }
 
