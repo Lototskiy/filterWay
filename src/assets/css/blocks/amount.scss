@@ -5,8 +5,13 @@
     max-width: 12rem;
     border: 1px solid $secondary-c;
 
+    @media screen and (max-width:$large_tablet) {
+        max-width: 15rem;
+        height: 6.4rem;
+    }
+
     &__value {
-        width: 4rem;
+        width: 33.33%;
         height: 100%;
         border: none;
         display: flex;
@@ -20,7 +25,7 @@
     &__btn {
         cursor: pointer;
         height: 100%;
-        width: 4rem;
+        width: 33.33%;
         display: flex;
         justify-content: center;
         text-align: center;

@@ -1,5 +1,13 @@
 .toogles {
     &__item {
+        &--mobile {
+            display: none;
+
+            @media screen and (max-width:$large_tablet) {
+                display: block;
+            }
+        }
+
         &-content {
 
             .toogles:not(.toogles--mobile) & {
