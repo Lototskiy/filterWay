@@ -73,6 +73,7 @@ import './assets/css/blocks/product.scss';
 // JS
 
 // JS
+import './assets/js/catalog';
 import './assets/js/product-info';
 import './assets/js/amount';
 import './assets/js/read-more';

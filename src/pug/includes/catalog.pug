@@ -5,6 +5,23 @@ section.catalog
                 .catalog__sidebar-title
                     img(src='assets/images/svg/filter.svg' alt='')
                     | FILTER
+                .catalog__sidebar-title.catalog__sidebar-title--mobile
+                    | Selected filters
+                    .catalog__sidebar-close    
+                        svg(viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            rect(width='5.12635' height='0.488224' transform='matrix(0.708321 0.705891 -0.708321 0.705891 0.345703 0)')
+                            rect(width='5.12635' height='0.488224' transform='matrix(0.708322 -0.70589 0.708322 0.70589 0.101074 3.65527)')
+                .catalog__value.catalog__value--mobile
+                    .catalog__value-item 
+                        | Whole House filter
+                        svg(viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            rect(width='5.12635' height='0.488224' transform='matrix(0.708321 0.705891 -0.708321 0.705891 0.345703 0)')
+                            rect(width='5.12635' height='0.488224' transform='matrix(0.708322 -0.70589 0.708322 0.70589 0.101074 3.65527)')
+                    .catalog__value-item
+                        | 10 x 4.5
+                        svg(viewBox='0 0 5 4' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            rect(width='5.12635' height='0.488224' transform='matrix(0.708321 0.705891 -0.708321 0.705891 0.345703 0)')
+                            rect(width='5.12635' height='0.488224' transform='matrix(0.708322 -0.70589 0.708322 0.70589 0.101074 3.65527)')
                 .catalog__filter-list
                     .catalog__filter-row 
                         .catalog__filter Product type
@@ -332,7 +349,9 @@ section.catalog
                                                 span.inputs__checkbox-content
                                                 span
                                                     |20 x 4.5
-
+                .catalog__sidebar-btns 
+                    .btn.btn--empty clear filters
+                    .btn show 315 results
             .catalog__body
                 .catalog-slider 
                     .swiper-container
@@ -407,6 +426,12 @@ section.catalog
                     a(href="").catalog__value-close clear all
                 .catalog__row 
                     .catalog__result 1 - 7 of 7 Results
+                    .catalog__row-filter.btn
+                        svg(viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M3.56913 3.81492C3.65385 3.90711 3.70036 4.02755 3.70036 4.15214V7.82336C3.70036 8.04431 3.96698 8.15644 4.12479 8.00111L5.14891 6.82748C5.28596 6.66302 5.36155 6.58162 5.36155 6.41883V4.15297C5.36155 4.02838 5.40889 3.90794 5.49278 3.81574L8.43141 0.627098C8.65152 0.387887 8.48209 0 8.15649 0H0.905405C0.579812 0 0.40954 0.387057 0.630478 0.627098L3.56913 3.81492Z')
+                        .catalog__row-title
+                            | filter 
+                            span (2)
                     .catalog__sort 
                         .catalog__sort-title Sort By:
                         .catalog__select 

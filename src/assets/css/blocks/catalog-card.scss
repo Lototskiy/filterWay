@@ -59,6 +59,10 @@
         align-items: center;
         font-size: 1.3rem;
 
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.4rem;
+        }
+
         svg {
             margin-right: 0.5rem;
         }
@@ -77,6 +81,12 @@
         font-weight: 600;
         display: block;
         transition: color .5s;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
 
         &:hover {
             color: $secondary-c;
