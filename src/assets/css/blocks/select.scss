@@ -71,6 +71,12 @@
             background-repeat: no-repeat;
             background-size: cover;
             transition: transform .5s;
+
+            @media screen and (max-width:$large_tablet) {
+                width: 2rem;
+                height: 1.2rem;
+                top: calc(50% - 0.6rem);
+            }
         }
 
         &:hover {
