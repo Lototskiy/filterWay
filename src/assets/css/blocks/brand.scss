@@ -1,7 +1,12 @@
 .brand {
     background: #E9F4FA;
-    padding: 2rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
+
+    @media screen and (max-width:$large_tablet) {
+        padding-top: 2.5rem;
+        padding-bottom: 7.5rem;
+    }
 
     &__wrap {
         max-width: 102rem;
@@ -15,6 +20,12 @@
         color: #037FC9;
         margin-bottom: 2.5rem;
         font-size: 1.6rem;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
     }
 
     &__list {
@@ -22,6 +33,11 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: -2rem;
+
+        @media screen and (max-width:$large_tablet) {
+            padding: 0 4rem;
+            margin-bottom: -3rem;
+        }
     }
 
     &__item {
@@ -30,6 +46,12 @@
         margin-bottom: 2rem;
         position: relative;
         height: 10rem;
+
+        @media screen and (max-width:$large_tablet) {
+            width: calc((100% - 3rem * 1) / 2);
+            height: 15rem;
+            margin-bottom: 3rem;
+        }
 
 
         &--bg {
