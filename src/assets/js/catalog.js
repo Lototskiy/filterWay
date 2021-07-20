@@ -1,11 +1,11 @@
-let linkMap = $('.catalog__row-filter');
-let map = $('.catalog__sidebar');
-let closeMap = $('.catalog__sidebar-close');
+let btnFilter = $('.catalog__row-filter');
+let sidebar = $('.catalog__sidebar');
+let sidebarClose = $('.catalog__sidebar-close');
 
 
-linkMap.click( function () {
-    map.classList.add('catalog__sidebar--active');
+btnFilter.click(function () {
+    sidebar.addClass('catalog__sidebar--active');
 })
-closeMap.click(function () {
-    map.classList.remove('catalog__sidebar--active');
+sidebarClose.click(function () {
+    sidebar.removeClass('catalog__sidebar--active');
 })
