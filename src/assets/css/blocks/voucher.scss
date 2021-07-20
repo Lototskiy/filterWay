@@ -19,8 +19,14 @@
         }
     }
     &__info {
+        @media screen and (max-width:$large_tablet) {
+            padding-bottom: 4rem;
+        }
         table {
             thead {
+                @media screen and (max-width:$large_tablet) {
+                    display: none;
+                }
                 tr {
                     td {
                         font-weight: 600;
@@ -29,6 +35,7 @@
                         color: #000;
                         text-transform: uppercase;
                         padding-bottom: 2rem;
+                        
                     }
                 }
             }
@@ -40,6 +47,18 @@
                         color: #000;
                         padding-right: 4rem;
                         vertical-align: top;
+                        @media screen and (max-width:$large_tablet) {
+                            font-size: 1.8rem;
+                            line-height: 2.2rem;
+                        }
+                    }
+                    .thead__mobil {
+                        display: none;
+                        @media screen and (max-width:$large_tablet) {
+                            display: inline-table;
+                            max-width: 8rem;
+                            text-transform: uppercase;
+                        }
                     }
                 }
             }
