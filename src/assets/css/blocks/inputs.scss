@@ -258,7 +258,8 @@
         font-weight: 600;
         font-size: 1.3rem;
         line-height: 1.6rem;
-        // margin-bottom: 0.6rem;
+        display: inline-block;
+        margin-bottom: 0.6rem;
         text-transform: uppercase;
 
         @media screen and (max-width:$large_tablet) {

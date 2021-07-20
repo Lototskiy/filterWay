@@ -6,7 +6,9 @@
     display: inline-flex;
     align-items: center;
 
-
+    @media screen and (max-width:$large_tablet) {
+        font-size: 1.8rem;
+    }
 
     &:hover {
         .edit__title::before {
