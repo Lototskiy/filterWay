@@ -6,6 +6,21 @@
         padding: 0rem;
     }
 
+
+
+    .radio__content {
+        @media screen and (max-width:$large_tablet) {
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+        span {
+            @media screen and (max-width:$large_tablet) {
+                width: 1.1rem;
+                height: 1.1rem;
+            }
+        }
+    }
+
     .inner {
         padding: 1em 1rem 0.5rem 1rem;
         // overflow: hidden;
@@ -26,6 +41,10 @@
             color: #000000;
             text-transform: none;
             padding-left: 3rem;
+            @media screen and (max-width:$large_tablet) {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
         }
     }
 
@@ -38,6 +57,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width:$large_tablet) {
+            min-height: 6.6rem; 
+        }
 
         .footer__bottom-item {
             margin: 0rem 0 0rem 1rem;

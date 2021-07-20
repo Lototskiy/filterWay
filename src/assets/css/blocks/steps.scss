@@ -1,5 +1,19 @@
 .step {
 
+    &-voucher {
+        .aside-product {
+            background: #fff;
+            padding-bottom: 0rem;
+
+            .aside-product__basket {
+                width: calc(100% - -3.6rem);
+                margin-left: -1.8rem;
+                padding: 1.8rem;
+                background: #F7F7F7;
+            }
+        }
+    }
+
     .number-pay {
         background-image: url('~img/svg/icon-number-cart.svg');
         background-position: right 0.7rem center;
@@ -34,7 +48,9 @@
                 min-height: 5rem;
 
                 @media screen and (max-width:$large_mobile) {
-                    padding: 0rem 29%;
+                    padding: 0rem 20%;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
                 }
             }
         }
@@ -85,6 +101,11 @@
         line-height: 1.9rem;
         margin-bottom: 2.2rem;
         text-transform: uppercase;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
     }
 
     &__left {
