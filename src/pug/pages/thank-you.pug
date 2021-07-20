@@ -1,14 +1,14 @@
 extends ../layout/main
 block variables
 	- var title = 'Filterway-sign-in';
-	- var pageClass = 'sign-in-page';
+	- var pageClass = 'thank-you';
 
 block content
 	+breadcrumb([{href:'index.html',text:'Home'},{href:'shoping-cart.html',text:'Shopping Cart'}])
 	.wizard 
 		.center-wrap
 			include ../includes/thank-you-block
-			.step
+			.step.thank-you__page
 				.step__row 
 					.step__left
 						.voucher
@@ -43,7 +43,7 @@ block content
 														li 
 															|(099) 999-9999
 												td 
-													|free
+													|UPS - graund (3-6 days)
 							.voucher__item
 								.voucher__top
 									h2.step__title 
@@ -110,7 +110,5 @@ block content
 										|Estimated Total:
 									.price.blue 
 										|$<span>234.93</span>
-								span.warning
-									|tax and shipping cost will be finalized during checkout
 
 //- block script

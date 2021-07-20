@@ -6,13 +6,29 @@
     margin-top: 5.8rem;
     margin-bottom: 2rem;
 
+    @media screen and (max-width:$large_tablet) {
+        display: flex;
+        padding: 1.3rem 1.9rem 2.2rem 140px;
+    }
+    
+
     .background {
         position: absolute;
         left: 0.9rem;
         bottom: 0rem;
+
+        @media screen and (max-width:$large_tablet) {
+            position: absolute;
+            left: -60px;
+            max-height: 120%;
+        }
     }
 
     &__item {
+
+        @media screen and (max-width:$large_tablet) {
+            // margin-left: -80px;
+        }
         .content {
             margin-bottom: 2rem;
 
@@ -24,6 +40,11 @@
                 text-align: left;
                 margin-bottom: 2rem;
                 text-transform: uppercase;
+                @media screen and (max-width:$large_tablet) {
+                    font-weight: 600;
+                    font-size: 3rem;
+                    line-height: 3.6rem;
+                }
             }
 
             p,
@@ -32,6 +53,10 @@
                 font-size: 1.3rem;
                 line-height: 1.6rem;
                 color: #000000;
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                }
             }
 
             h2 {

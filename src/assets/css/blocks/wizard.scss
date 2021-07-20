@@ -15,6 +15,33 @@
         background: #fff;
     }
 
+    .thank-you__page {
+        .aside-product {
+            width: 100%;
+            margin-left: 0rem;
+        }
+        .voucher__item {
+            @media screen and (max-width:$large_tablet) {
+                padding: 0rem 1.8rem;
+            }
+        }
+        thead {
+            @media screen and (max-width:$large_tablet) {
+                display: contents;
+            }
+            tr {
+                td {
+                    @media screen and (max-width:$large_tablet) {
+                        font-weight: normal;
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+            
+        }
+    }
+
     &__steps {
         @media screen and (max-width:$large_tablet) {
             padding: 0rem 1.8rem;
