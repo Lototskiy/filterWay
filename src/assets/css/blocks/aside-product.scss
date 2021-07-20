@@ -67,6 +67,10 @@
             .img-wrap {
                 max-width: 4.2rem;
                 margin-right: 0.6rem;
+                @media screen and (max-width:$large_tablet) {
+                    max-width: 9.5rem;
+                }
+                
             }
         }
 

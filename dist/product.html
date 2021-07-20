@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&amp;family=PT+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <link href="assets/css/app.css?v=1626760167028" rel="stylesheet"></head>
+  <link href="assets/css/app.css?v=1626786017130" rel="stylesheet"></head>
   <body id="product-page">
 <header class="header">
   <div class="center-wrap">
@@ -169,6 +169,7 @@
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <div class="product__right">
@@ -260,7 +261,17 @@
           </div>
         </div>
         <div class="product__select">
+          <div class="select select--mobile">
+            <div class="select__title">quantity</div>
+            <div class="select__value">1 Filter — <strong>$14.99</strong></div>
+            <div class="select__variants">
+              <label class="select__variant select__variant--active" for=""><span>1 Filter — <strong>$14.99</strong></span></label>
+              <label class="select__variant" for=""><span>2 Filter — <strong>$19.99</strong></span></label>
+              <label class="select__variant" for=""><span>3 Filter — <strong>$27.99</strong></span></label>
+            </div>
+          </div>
           <div class="select">
+            <div class="select__title">Periodicity</div>
             <div class="select__value">3 Months</div>
             <div class="select__variants">
               <label class="select__variant select__variant--active" for=""><span>3 Months</span></label>
@@ -286,7 +297,7 @@
             </button>
           </div>
           <div class="product__amount-btn">
-            <div class="btn">add to cart</div>
+            <div class="btn">add to cart </div>
           </div>
         </div>
       </div>
@@ -339,151 +350,220 @@
   <div class="center-wrap">
     <div class="product-info__wrap toogles toogles--fade">
       <div class="product-info__list">
-        <div class="toogles__item-title product-info__list-title toogles__item-title--active" data-toogles="1">Overview</div>
-        <div class="toogles__item-title product-info__list-title" data-toogles="2">Specs</div>
+        <div class="toogles__item-title product-info__list-title toogles__item-title--active" data-toogles="1">Overview<span></span></div>
+        <div class="toogles__item toogles__item--active toogles__item--mobile" data-toogles="1">
+          <div class="toogles__item-content" style="display: block;">
+            <div>
+              <div class="product-info__bg img-wrap"> 
+                <div><img src="assets/images/png/product-info__img.png" alt=""></div>
+              </div>
+              <div class="product-info__body">
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img1.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>The APF-1100 water filter by Arrowpure.</h6>
+                        <p>This high-quality water filter replacement provides you with consistently clean, healthy and delicious water. Install in 60 seconds and eliminate any chlorine, bacteria, chemicals and dangerous elements that might be found in your water source. Simple as that. No leaks, no complications, just a steady flow of healthy and tasty water!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap product-info__img-wrap--100"> <img src="assets/images/png/product__wrap-img2.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>advanced filtration</h6>
+                        <ol> 
+                          <li>advanced filtration Get rids from cysts, chlorine & harmful chemicals</li>
+                          <li>Keeps the healthy minerals & improves taste</li>
+                          <li>Compatible with most Kenmore, Viking, Maytag refrigerators</li>
+                          <li>Installs in seconds, perfect fit, no leaks</li>
+                          <li>WQA certification according to NSF 42, NSF 372</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__btn"> 
+                  <div class="btn">shop wholehouse</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="toogles__item-title product-info__list-title" data-toogles="2">Specs<span></span></div>
+        <div class="toogles__item toogles__item--mobile" data-toogles="2">
+          <div class="toogles__item-content">
+            <div>
+              <p>CONTENT</p>
+            </div>
+          </div>
+        </div>
         <div class="toogles__item-title product-info__list-title" data-toogles="3">
-           FAQ</div>
-        <div class="toogles__item-title product-info__list-title" data-toogles="4">Reviews</div>
-      </div>
-      <div class="toogles__item toogles__item--active" data-toogles="1">
-        <div class="toogles__item-content" style="display: block;">
-          <div>
-            <div class="product-info__bg img-wrap"> 
-              <div><img src="assets/images/png/product-info__img.png" alt=""></div>
+           FAQ<span></span></div>
+        <div class="toogles__item toogles__item--mobile" data-toogles="3">
+          <div class="toogles__item-content">
+            <div>
+              <p>CONTENT</p>
             </div>
-            <div class="product-info__body">
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img1.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>The APF-1100 water filter by Arrowpure.</h6>
-                      <p>This high-quality water filter replacement provides you with consistently clean, healthy and delicious water. Install in 60 seconds and eliminate any chlorine, bacteria, chemicals and dangerous elements that might be found in your water source. Simple as that. No leaks, no complications, just a steady flow of healthy and tasty water!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap product-info__img-wrap--100"> <img src="assets/images/png/product__wrap-img2.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>advanced filtration</h6>
-                      <ol> 
-                        <li>advanced filtration Get rids from cysts, chlorine & harmful chemicals</li>
-                        <li>Keeps the healthy minerals & improves taste</li>
-                        <li>Compatible with most Kenmore, Viking, Maytag refrigerators</li>
-                        <li>Installs in seconds, perfect fit, no leaks</li>
-                        <li>WQA certification according to NSF 42, NSF 372</li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img3.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>Compatible with the following refrigerator models:</h6>
-                      <p>4396395, 4396395P, 4396395T, 46-9005-750, 46-9006, 46-9006-750, 46-9992, 469006, 469006-750, 67003523, 67003523-750, 67003591, 67003727, 67006470, 8001, 8001P, 8171249, 9006, 9006P, 9992, AFF3, AP4343647, EFF-6007A, EFF6007A, FILTER4</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img4.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>WQA certification according to NSF 42</h6>
-                      <p>WQA certification according to NSF 42* means reducing aesthetic impurities such as chlorine and taste/odor from your water. Enjoy tastier and healthier water with a refreshing taste.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img5.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>WQA certification according to NSF 372</h6>
-                      <p>means that the Arrowpure water filter is made of lead-free material giving you a completely safe water.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img6.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>coconut activated carbon </h6>
-                      <p>Enjoy advanced filtration with coconut activated carbon that is super-absorbent and completely natural. Get rid of the harmful chlorine, cysts, lead, and other similar harmful chemicals, and keep the healthy minerals.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img7.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>premium fridge filters  </h6>
-                      <p>Our premium fridge filters come with easy to understand instructions so you can have yours ready in under a minute. You'll love that installation takes no tools, no time and no effort!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-info__row">
-                <div class="product-info__img">
-                  <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img8.png" alt=""></div>
-                </div>
-                <div class="product-info__content">
-                  <div class="product-info__content-wrap"> 
-                    <div class="content">
-                      <h6>healthier and tastier </h6>
-                      <p> Drink healthier and tastier water with your family every day. Our ultimate goal is to enhance your health and overall wellbeing with perfect filtration. For best results change our replacement filters every 6 months.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="toogles__item-title product-info__list-title" data-toogles="4">Reviews<span></span></div>
+        <div class="toogles__item toogles__item--mobile" data-toogles="4">
+          <div class="toogles__item-content">
+            <div>
+              <p>CONTENT</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="toogles__item" data-toogles="2">
-        <div class="toogles__item-content">
-          <div>
-            <p>CONTENT</p>
+      <div class="product-info__list-tabs">
+        <div class="toogles__item toogles__item--active" data-toogles="1">
+          <div class="toogles__item-content" style="display: block;">
+            <div>
+              <div class="product-info__bg img-wrap"> 
+                <div><img src="assets/images/png/product-info__img.png" alt=""></div>
+              </div>
+              <div class="product-info__body">
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img1.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>The APF-1100 water filter by Arrowpure.</h6>
+                        <p>This high-quality water filter replacement provides you with consistently clean, healthy and delicious water. Install in 60 seconds and eliminate any chlorine, bacteria, chemicals and dangerous elements that might be found in your water source. Simple as that. No leaks, no complications, just a steady flow of healthy and tasty water!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap product-info__img-wrap--100"> <img src="assets/images/png/product__wrap-img2.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>advanced filtration</h6>
+                        <ol> 
+                          <li>advanced filtration Get rids from cysts, chlorine & harmful chemicals</li>
+                          <li>Keeps the healthy minerals & improves taste</li>
+                          <li>Compatible with most Kenmore, Viking, Maytag refrigerators</li>
+                          <li>Installs in seconds, perfect fit, no leaks</li>
+                          <li>WQA certification according to NSF 42, NSF 372</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img3.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>Compatible with the following refrigerator models:</h6>
+                        <p>4396395, 4396395P, 4396395T, 46-9005-750, 46-9006, 46-9006-750, 46-9992, 469006, 469006-750, 67003523, 67003523-750, 67003591, 67003727, 67006470, 8001, 8001P, 8171249, 9006, 9006P, 9992, AFF3, AP4343647, EFF-6007A, EFF6007A, FILTER4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img4.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>WQA certification according to NSF 42</h6>
+                        <p>WQA certification according to NSF 42* means reducing aesthetic impurities such as chlorine and taste/odor from your water. Enjoy tastier and healthier water with a refreshing taste.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img5.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>WQA certification according to NSF 372</h6>
+                        <p>means that the Arrowpure water filter is made of lead-free material giving you a completely safe water.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img6.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>coconut activated carbon </h6>
+                        <p>Enjoy advanced filtration with coconut activated carbon that is super-absorbent and completely natural. Get rid of the harmful chlorine, cysts, lead, and other similar harmful chemicals, and keep the healthy minerals.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img7.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>premium fridge filters  </h6>
+                        <p>Our premium fridge filters come with easy to understand instructions so you can have yours ready in under a minute. You'll love that installation takes no tools, no time and no effort!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-info__row">
+                  <div class="product-info__img">
+                    <div class="product-info__img-wrap"> <img src="assets/images/png/product__wrap-img8.png" alt=""></div>
+                  </div>
+                  <div class="product-info__content">
+                    <div class="product-info__content-wrap"> 
+                      <div class="content">
+                        <h6>healthier and tastier </h6>
+                        <p> Drink healthier and tastier water with your family every day. Our ultimate goal is to enhance your health and overall wellbeing with perfect filtration. For best results change our replacement filters every 6 months.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="toogles__item" data-toogles="3">
-        <div class="toogles__item-content">
-          <div>
-            <p>CONTENT</p>
+        <div class="toogles__item" data-toogles="2">
+          <div class="toogles__item-content">
+            <div>
+              <p>CONTENT</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="toogles__item" data-toogles="4">
-        <div class="toogles__item-content">
-          <div>
-            <p>CONTENT</p>
+        <div class="toogles__item" data-toogles="3">
+          <div class="toogles__item-content">
+            <div>
+              <p>CONTENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="toogles__item" data-toogles="4">
+          <div class="toogles__item-content">
+            <div>
+              <p>CONTENT</p>
+            </div>
           </div>
         </div>
       </div>
@@ -907,11 +987,11 @@
                 <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
                 <p>SKU: <strong>APF-1100</strong></p>
               </div>
-              <div class="amount"><span class="amount__minus">
+              <div class="amount"><span class="amount__btn">
                   <svg viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.458336" width="13" height="1.08333"></rect>
                   </svg></span>
-                <input class="amount__input" type="text" value="1"><span class="amount__plus">
+                <input class="amount__value" type="text" value="1"><span class="amount__btn">
                   <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="5.49961" width="12" height="1"></rect>
                     <rect x="5.5" y="12" width="12" height="1" transform="rotate(-90 5.5 12)"></rect>
@@ -938,11 +1018,11 @@
                 <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
                 <p>SKU: <strong>APF-1100</strong></p>
               </div>
-              <div class="amount"><span class="amount__minus">
+              <div class="amount"><span class="amount__btn">
                   <svg viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.458336" width="13" height="1.08333"></rect>
                   </svg></span>
-                <input class="amount__input" type="text" value="1"><span class="amount__plus">
+                <input class="amount__value" type="text" value="1"><span class="amount__btn">
                   <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="5.49961" width="12" height="1"></rect>
                     <rect x="5.5" y="12" width="12" height="1" transform="rotate(-90 5.5 12)"></rect>
@@ -975,5 +1055,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="js/app.js?v=1626760166445"></script></body>
+  <script type="text/javascript" src="js/app.js?v=1626786017088"></script></body>
 </html>

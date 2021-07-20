@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&amp;family=PT+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <link href="assets/css/app.css?v=1626760167028" rel="stylesheet"></head>
+  <link href="assets/css/app.css?v=1626786017130" rel="stylesheet"></head>
   <body id="catalog-page">
 <header class="header">
   <div class="center-wrap">
@@ -84,6 +84,29 @@
     <div class="catalog__wrap">
       <div class="catalog__sidebar">
         <div class="catalog__sidebar-title"><img src="assets/images/svg/filter.svg" alt="">FILTER</div>
+        <div class="catalog__sidebar-title catalog__sidebar-title--mobile">Selected filters
+          <div class="catalog__sidebar-close">   
+            <svg viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="5.12635" height="0.488224" transform="matrix(0.708321 0.705891 -0.708321 0.705891 0.345703 0)"></rect>
+              <rect width="5.12635" height="0.488224" transform="matrix(0.708322 -0.70589 0.708322 0.70589 0.101074 3.65527)"></rect>
+            </svg>
+          </div>
+        </div>
+        <div class="catalog__value catalog__value--mobile">
+          <div class="catalog__value-item">
+             Whole House filter
+            <svg viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="5.12635" height="0.488224" transform="matrix(0.708321 0.705891 -0.708321 0.705891 0.345703 0)"></rect>
+              <rect width="5.12635" height="0.488224" transform="matrix(0.708322 -0.70589 0.708322 0.70589 0.101074 3.65527)"></rect>
+            </svg>
+          </div>
+          <div class="catalog__value-item">10 x 4.5
+            <svg viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="5.12635" height="0.488224" transform="matrix(0.708321 0.705891 -0.708321 0.705891 0.345703 0)"></rect>
+              <rect width="5.12635" height="0.488224" transform="matrix(0.708322 -0.70589 0.708322 0.70589 0.101074 3.65527)"></rect>
+            </svg>
+          </div>
+        </div>
         <div class="catalog__filter-list">
           <div class="catalog__filter-row"> 
             <div class="catalog__filter">Product type</div>
@@ -441,6 +464,10 @@
             </div>
           </div>
         </div>
+        <div class="catalog__sidebar-btns"> 
+          <div class="btn btn--empty">clear filters</div>
+          <div class="btn">show 315 results</div>
+        </div>
       </div>
       <div class="catalog__body">
         <div class="catalog-slider"> 
@@ -517,6 +544,12 @@
         </div>
         <div class="catalog__row"> 
           <div class="catalog__result">1 - 7 of 7 Results</div>
+          <div class="catalog__row-filter btn">
+            <svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.56913 3.81492C3.65385 3.90711 3.70036 4.02755 3.70036 4.15214V7.82336C3.70036 8.04431 3.96698 8.15644 4.12479 8.00111L5.14891 6.82748C5.28596 6.66302 5.36155 6.58162 5.36155 6.41883V4.15297C5.36155 4.02838 5.40889 3.90794 5.49278 3.81574L8.43141 0.627098C8.65152 0.387887 8.48209 0 8.15649 0H0.905405C0.579812 0 0.40954 0.387057 0.630478 0.627098L3.56913 3.81492Z"></path>
+            </svg>
+            <div class="catalog__row-title">filter <span>(2)</span></div>
+          </div>
           <div class="catalog__sort"> 
             <div class="catalog__sort-title">Sort By:</div>
             <div class="catalog__select"> 
@@ -1187,11 +1220,11 @@
                 <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
                 <p>SKU: <strong>APF-1100</strong></p>
               </div>
-              <div class="amount"><span class="amount__minus">
+              <div class="amount"><span class="amount__btn">
                   <svg viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.458336" width="13" height="1.08333"></rect>
                   </svg></span>
-                <input class="amount__input" type="text" value="1"><span class="amount__plus">
+                <input class="amount__value" type="text" value="1"><span class="amount__btn">
                   <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="5.49961" width="12" height="1"></rect>
                     <rect x="5.5" y="12" width="12" height="1" transform="rotate(-90 5.5 12)"></rect>
@@ -1218,11 +1251,11 @@
                 <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
                 <p>SKU: <strong>APF-1100</strong></p>
               </div>
-              <div class="amount"><span class="amount__minus">
+              <div class="amount"><span class="amount__btn">
                   <svg viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.458336" width="13" height="1.08333"></rect>
                   </svg></span>
-                <input class="amount__input" type="text" value="1"><span class="amount__plus">
+                <input class="amount__value" type="text" value="1"><span class="amount__btn">
                   <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="5.49961" width="12" height="1"></rect>
                     <rect x="5.5" y="12" width="12" height="1" transform="rotate(-90 5.5 12)"></rect>
@@ -1255,5 +1288,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="js/app.js?v=1626760166445"></script></body>
+  <script type="text/javascript" src="js/app.js?v=1626786017088"></script></body>
 </html>
