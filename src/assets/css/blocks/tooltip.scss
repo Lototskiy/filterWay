@@ -13,6 +13,12 @@
         color: $secondary-c;
         text-align: center;
         padding-top: 0.3rem;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 1.3rem;
+            width: 1.6rem;
+            height: 1.6rem;
+        }
     }
 
     &__title[attr] {

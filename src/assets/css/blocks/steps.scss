@@ -32,6 +32,10 @@
                 align-items: center;
                 justify-content: center;
                 min-height: 5rem;
+
+                @media screen and (max-width:$large_mobile) {
+                    padding: 0rem 29%;
+                }
             }
         }
     }

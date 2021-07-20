@@ -1,6 +1,7 @@
 .product {
     padding-top: 2.5rem;
     padding-bottom: 4.5rem;
+    
 
     &__wrap {
         display: flex;
@@ -181,6 +182,20 @@
     &__radio {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
+
+        .radio {
+            @media screen and (max-width:$large_tablet) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .radio__box {
+                @media screen and (max-width:$large_tablet) {
+                    margin-left: 0rem;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
     }
 
     &__select {
