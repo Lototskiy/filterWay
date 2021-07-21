@@ -14,6 +14,16 @@
 
     }
 
+
+    &__toggles {
+        .cabinet__sidebar {
+            @media screen and (max-width:$large_tablet) {
+                display: none;
+            }
+        }
+        
+    }
+
     .back {
         font-weight: 600;
         font-size: 1.3rem;
@@ -125,6 +135,12 @@
                 }
             }
 
+            &.loguout {
+                &:before {
+                    content: none;
+                }
+            }
+
             &:first-child {
                 .cabinet__sidebar-link {
                     padding-top: 0;
@@ -190,8 +206,7 @@
             width: 100%;
             margin-left: 0;
             background-color: #fff;
-            padding-left: 6rem;
-            padding-bottom: 5rem;
+            padding: 1.8rem 1.8rem 1.8rem 5rem;
         }
 
         &--desktop {

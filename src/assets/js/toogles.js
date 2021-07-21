@@ -75,6 +75,11 @@ if (document.querySelector('[data-toogles]')) {
         $('.back-wizard').on('click', function () {
             $(this).closest('.wizard').find('.toogles__item-title--active').prev().trigger('click')
         })
+
+        $('.cabinet__sidebar-item').on('click', function () {
+            $('.cabinet__sidebar-item').find('.cabinet__sidebar-link').removeClass('cabinet__sidebar-link--active')
+            $(this).find('.cabinet__sidebar-link').addClass('cabinet__sidebar-link--active')
+        })
     });
 
 
@@ -106,4 +111,12 @@ if (document.querySelector('[data-toogles]')) {
         $(need_i).addClass('toogles__item--active');
         window.allow = true;
     }
+    $('.table-toogles__item-title').on('click', function () {
+        $('.table-toogles__item-title').removeClass('table-toogles__item-title--active')
+        $('.table-toogles__item-title').next().removeClass('table-toogles__item--active')
+        $(this).addClass('table-toogles__item-title--active')
+        var huy = $(this).next().addClass('table-toogles__item--active')
+        console.log(huy)
+    })
 }
+

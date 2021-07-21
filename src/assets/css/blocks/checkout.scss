@@ -265,10 +265,14 @@
 }
 .orders {
     .main-forms__form {
-        order: 2;
+        @media screen and (max-width:$large_tablet) {
+              order: 2;
+        }
     }
     .right {
-        order: 1;
+        @media screen and (max-width:$large_tablet) {
+                 order: 1;
+        }
     }
 }
 

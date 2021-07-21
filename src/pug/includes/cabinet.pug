@@ -9,8 +9,8 @@ section.cabinet
                                 svg(viewBox='0 0 8 9' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M6.62171 5.776L5.372 5.52571C5.23943 5.49943 5.14286 5.38171 5.14286 5.24571V4.95886C5.22514 4.84457 5.30229 4.692 5.38229 4.53257C5.44343 4.412 5.53543 4.23029 5.57657 4.18743C5.81886 3.95029 6.07714 3.656 6.156 3.27257C6.22743 2.92514 6.156 2.74457 6.07314 2.60171C6.07314 2.32229 6.07314 1.81086 5.976 1.44229C5.96629 0.997143 5.88457 0.745714 5.67943 0.521714C5.53429 0.365143 5.32057 0.328571 5.14914 0.299429C5.08114 0.288 4.988 0.272 4.95543 0.254286C4.65886 0.0902857 4.35771 0.00914286 3.98914 0C3.23486 0.0285714 2.30914 0.506857 1.99943 1.36686C1.90514 1.628 1.91429 2.05657 1.92114 2.40114L1.91314 2.60171C1.84057 2.74457 1.76914 2.92514 1.84114 3.272C1.92 3.65714 2.17829 3.95086 2.41943 4.18686C2.46114 4.23029 2.55429 4.41314 2.616 4.53371C2.69714 4.69257 2.77486 4.84514 2.85714 4.95943V5.24571C2.85714 5.38171 2.76057 5.49943 2.62743 5.52571L1.37771 5.776C0.579429 5.93543 0 6.64229 0 7.45657V8C0 8.31486 0.256571 8.57143 0.571429 8.57143H7.42857C7.74343 8.57143 8 8.31486 8 8V7.45657C8 6.64229 7.42057 5.93543 6.62171 5.776Z')
                                 | Profile
-                        .toogles__item(data-toogles='1')
-                            .toogles__item-content
+                        .toogles__item.toogles__item--active(data-toogles='1')
+                            .toogles__item-content(style="display: block;")
                                 div
                                     .cabinet__body
                                         .cabinet__information
@@ -40,7 +40,7 @@ section.cabinet
                         .toogles__item(data-toogles='2')
                             .toogles__item-content
                                 div
-                                    p 2
+                                    include ./cabinet2
                         li.cabinet__sidebar-item.toogles__item-title(data-toogles='3')
                             a(href="/cabinet3.html").cabinet__sidebar-link
                                 svg(viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -49,7 +49,7 @@ section.cabinet
                         .toogles__item(data-toogles='3')
                             .toogles__item-content
                                 div
-                                    p 3
+                                    include ./cabinet3
                         li.cabinet__sidebar-item.toogles__item-title(data-toogles='4')
                             a(href="/cabinet4.html").cabinet__sidebar-link
                                 svg(viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -59,99 +59,7 @@ section.cabinet
                         .toogles__item(data-toogles='4')
                             .toogles__item-content
                                 div
-                                    .cabinet__body
-                                        .content
-                                            h2 MY address book
-                                        .cabinet__address
-                                            .cabinet__address-wrap
-                                                .cabinet__address-item
-                                                    .radio
-                                                        label.radio__label
-                                                            input.radio__input(type='radio' name='radio-address' checked)
-                                                            .radio__content
-                                                                span
-                                                            | adress 1
-                                                    .cabinet__address-content 
-                                                        p Kiev 
-                                                        p Kiev, AL 35242
-                                                        a.cabinet__address-tel(href="tel:2229999999") 222-999-9999
-                                                        .cabinet__address-edit
-                                                            a(href="").edit
-                                                                svg(width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                                                    path(d='M9.03556 5.49991C8.81859 5.49991 8.6427 5.6758 8.6427 5.89277V9.82127C8.6427 10.0382 8.46681 10.2141 8.24984 10.2141H1.17855C0.961579 10.2141 0.785694 10.0382 0.785694 9.82127V1.96426C0.785694 1.74728 0.961579 1.5714 1.17855 1.5714H5.89276C6.10973 1.5714 6.28562 1.39551 6.28562 1.17854C6.28562 0.961568 6.10973 0.785706 5.89276 0.785706H1.17855C0.527655 0.785706 0 1.31336 0 1.96426V9.82127C0 10.4722 0.527655 10.9998 1.17855 10.9998H8.24986C8.90076 10.9998 9.42842 10.4722 9.42842 9.82127V5.89275C9.42842 5.6758 9.25253 5.49991 9.03556 5.49991Z' fill='#0166B0')
-                                                                    path(d='M10.5597 0.440536C10.2776 0.15842 9.89505 -3.98219e-05 9.49612 6.21528e-06C9.09695 -0.00114471 8.71397 0.157591 8.43268 0.440789L3.25803 5.615C3.2151 5.65825 3.18272 5.71083 3.16336 5.7686L2.37766 8.12571C2.30909 8.33156 2.42039 8.55402 2.62624 8.62257C2.66618 8.63587 2.708 8.64266 2.75008 8.64271C2.79225 8.64264 2.83417 8.63587 2.87422 8.62268L5.23133 7.83699C5.28922 7.81765 5.34181 7.7851 5.38493 7.74192L10.5596 2.56729C11.1469 1.98004 11.1469 1.02786 10.5597 0.440536Z' fill='#0166B0')
-                                                                .edit__title edit
-                                                .cabinet__address-item
-                                                    .radio
-                                                        label.radio__label
-                                                            input.radio__input(type='radio' name='radio-address')
-                                                            .radio__content
-                                                                span
-                                                            | adress 2
-                                                    .cabinet__address-content 
-                                                        p Kiev 
-                                                        p Kiev, AL 35242
-                                                        a.cabinet__address-tel(href="tel:2229999999") 222-999-9999
-                                                        .cabinet__address-edit
-                                                            a(href="").edit
-                                                                svg(width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                                                    path(d='M9.03556 5.49991C8.81859 5.49991 8.6427 5.6758 8.6427 5.89277V9.82127C8.6427 10.0382 8.46681 10.2141 8.24984 10.2141H1.17855C0.961579 10.2141 0.785694 10.0382 0.785694 9.82127V1.96426C0.785694 1.74728 0.961579 1.5714 1.17855 1.5714H5.89276C6.10973 1.5714 6.28562 1.39551 6.28562 1.17854C6.28562 0.961568 6.10973 0.785706 5.89276 0.785706H1.17855C0.527655 0.785706 0 1.31336 0 1.96426V9.82127C0 10.4722 0.527655 10.9998 1.17855 10.9998H8.24986C8.90076 10.9998 9.42842 10.4722 9.42842 9.82127V5.89275C9.42842 5.6758 9.25253 5.49991 9.03556 5.49991Z' fill='#0166B0')
-                                                                    path(d='M10.5597 0.440536C10.2776 0.15842 9.89505 -3.98219e-05 9.49612 6.21528e-06C9.09695 -0.00114471 8.71397 0.157591 8.43268 0.440789L3.25803 5.615C3.2151 5.65825 3.18272 5.71083 3.16336 5.7686L2.37766 8.12571C2.30909 8.33156 2.42039 8.55402 2.62624 8.62257C2.66618 8.63587 2.708 8.64266 2.75008 8.64271C2.79225 8.64264 2.83417 8.63587 2.87422 8.62268L5.23133 7.83699C5.28922 7.81765 5.34181 7.7851 5.38493 7.74192L10.5596 2.56729C11.1469 1.98004 11.1469 1.02786 10.5597 0.440536Z' fill='#0166B0')
-                                                                .edit__title edit
-                                        .content
-                                            h2 add new address
-                                        form.inputs
-                                            .inputs__field-wrap.required
-                                                label.inputs__label
-                                                    |ADDRESS 1
-                                                input.inputs__field(type='text' required)
-                                            .inputs__field-row 
-                                                .inputs__field-wrap.required.inputs__field-wrap--50
-                                                    label.inputs__label
-                                                        |COUNTRY
-                                                    .radio__tooltip
-                                                        .tooltip
-                                                            span.tooltip__title(attr="Каскадные таблицы стилей") ?
-                                                    .inputs__select-wrap
-                                                        span.arrow
-                                                        .placeholder
-                                                            |Please Select
-                                                        select.inputs__select(name='select')
-                                                            option(value='value1' disabled selected hidden)
-                                                                |val
-                                                            option(value='value1')
-                                                                |USA
-                                                            option(value='value2')
-                                                                |EUR
-                                                            option(value='value3')
-                                                                |UAH
-                                                .inputs__field-wrap.required.inputs__field-wrap--50
-                                                    label.inputs__label
-                                                        |STATE
-                                                    .inputs__select-wrap
-                                                        span.arrow
-                                                        .placeholder
-                                                            |Please Select
-                                                        select.inputs__select(name='select')
-                                                            option(value='value1' disabled selected hidden)
-                                                                |val
-                                                            option(value='value1')
-                                                                |Alabama
-                                                            option(value='value2')
-                                                                |Arizona
-                                                            option(value='value3')
-                                                                |Ternopil
-                                            .inputs__field-row 
-                                                .inputs__field-wrap.required.inputs__field-wrap--50
-                                                    label.inputs__label
-                                                        |City
-                                                    input.inputs__field(type='text' required)
-                                                .inputs__field-wrap.required.inputs__field-wrap--50
-                                                    label.inputs__label
-                                                        |Zip code
-                                                    input.inputs__field(type='text' required)
-                                            .cabinet__body-btn
-                                                .btn.btn--size Save
+                                    include ./cabinet4
                         li.cabinet__sidebar-item.toogles__item-title(data-toogles='5')
                             a(href="/cabinet5.html").cabinet__sidebar-link
                                 svg(viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -162,18 +70,18 @@ section.cabinet
                         .toogles__item(data-toogles='5')
                             .toogles__item-content
                                 div
-                                    p 5
+                                    include ./cabinet5
                         li.cabinet__sidebar-item.toogles__item-title(data-toogles='6')
                             a(href="/cabinet6.html").cabinet__sidebar-link
                                 svg(viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M6.75 4.71875H1.25C0.56075 4.71875 0 5.2795 0 5.96875C0 6.658 0.56075 7.21875 1.25 7.21875H6.75C7.43925 7.21875 8 6.658 8 5.96875C8 5.2795 7.43925 4.71875 6.75 4.71875ZM1.65625 6.35938C1.44052 6.35938 1.26562 6.18448 1.26562 5.96875C1.26562 5.75302 1.44052 5.57812 1.65625 5.57812C1.87198 5.57812 2.04688 5.75302 2.04688 5.96875C2.04688 6.18448 1.87198 6.35938 1.65625 6.35938ZM3.21875 6.35938C3.00302 6.35938 2.82812 6.18448 2.82812 5.96875C2.82812 5.75302 3.00302 5.57812 3.21875 5.57812C3.43448 5.57812 3.60938 5.75302 3.60938 5.96875C3.60938 6.18448 3.43448 6.35938 3.21875 6.35938ZM4.78125 6.35938C4.56552 6.35938 4.39062 6.18448 4.39062 5.96875C4.39062 5.75302 4.56552 5.57812 4.78125 5.57812C4.99698 5.57812 5.17188 5.75302 5.17188 5.96875C5.17188 6.18448 4.99698 6.35938 4.78125 6.35938ZM6.34375 6.35938C6.12802 6.35938 5.95312 6.18448 5.95312 5.96875C5.95312 5.75302 6.12802 5.57812 6.34375 5.57812C6.55948 5.57812 6.73438 5.75302 6.73438 5.96875C6.73438 6.18448 6.55948 6.35938 6.34375 6.35938Z')
                                     path(d='M5.48438 1.59375H5.17188V1.17188C5.17188 0.525703 4.64617 0 4 0C3.35383 0 2.82812 0.525703 2.82812 1.17188V1.59375H2.51562C2.38619 1.59375 2.28125 1.69869 2.28125 1.82812V3.6875C2.28125 3.81694 2.38619 3.92188 2.51562 3.92188H5.48438C5.61381 3.92188 5.71875 3.81694 5.71875 3.6875V1.82812C5.71875 1.69869 5.61381 1.59375 5.48438 1.59375ZM4.23438 2.83013V2.92188C4.23438 3.05131 4.12944 3.15625 4 3.15625C3.87056 3.15625 3.76562 3.05131 3.76562 2.92188V2.83013C3.67466 2.79792 3.60938 2.71137 3.60938 2.60938C3.60938 2.47994 3.71431 2.375 3.84375 2.375H4.15625C4.28569 2.375 4.39062 2.47994 4.39062 2.60938C4.39062 2.71137 4.32534 2.79792 4.23438 2.83013ZM4.70312 1.59375H3.29688V1.17188C3.29688 0.784172 3.6123 0.46875 4 0.46875C4.3877 0.46875 4.70312 0.784172 4.70312 1.17188V1.59375Z')
                                 | Password
-                        .toogles__item(data-toogles='6')
+                        .toogles__item
                             .toogles__item-content
                                 div
-                                    p 6
-                        li.cabinet__sidebar-item.toogles__item-title(data-toogles='7')
+                                    include ./cabinet6
+                        li.cabinet__sidebar-item.loguout
                             a(href="check-in.html").cabinet__sidebar-link
                                 svg(viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg')
                                     path(d='M4.99995 4.33327C4.81563 4.33327 4.66664 4.48262 4.66664 4.66658V5.99994C4.66664 6.1836 4.51729 6.33325 4.33327 6.33325H3.33328V1.3333C3.33328 1.04864 3.15195 0.794304 2.87931 0.699639L2.78061 0.66662H4.33327C4.51729 0.66662 4.66664 0.816276 4.66664 0.999991V1.99998C4.66664 2.18394 4.81563 2.33329 4.99995 2.33329C5.18428 2.33329 5.33326 2.18394 5.33326 1.99998V0.999991C5.33326 0.448665 4.8846 0 4.33327 0H0.749993C0.737298 0 0.726678 0.00567622 0.714349 0.00732415C0.698297 0.00598139 0.682977 0 0.666681 0C0.299008 0 0 0.298947 0 0.66662V6.66656C0 6.95123 0.181334 7.20556 0.453975 7.30022L2.46 7.96892C2.52799 7.98991 2.59562 7.99992 2.66666 7.99992C3.03433 7.99992 3.33328 7.70092 3.33328 7.33324V6.99993H4.33327C4.8846 6.99993 5.33326 6.55127 5.33326 5.99994V4.66658C5.33326 4.48262 5.18428 4.33327 4.99995 4.33327Z')

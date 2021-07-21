@@ -1,4 +1,4 @@
-section.cabinet
+section.cabinet.cabinet__toggles
     .center-wrap 
         .cabinet__wrap 
             .cabinet__sidebar
@@ -68,9 +68,9 @@ section.cabinet
                                             |val2
                                         option(value='value3')
                                             |val3
-                    table 
+                    table.table-toogles
                         tbody 
-                            tr 
+                            tr.table-toogles__item-title
                                 td Order #56777
                                 td
                                     .date 
@@ -86,7 +86,57 @@ section.cabinet
                                                 |buy again
                                         span.green 
                                             |Deliverу
-                            tr 
+                                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+                                            </svg>
+                            tr.table-toogles__item
+                                td(colspan="3")
+                                    .order-tab__info.table-toogles__item-content
+                                        .img-wrap 
+                                            div 
+                                                img(src="assets/images/png/product__img--small1.png" alt="")
+                                        .order-tab__info-content 
+                                            .order-tab__info-item
+                                                h3 Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                                            .order-tab__info-item
+                                                .order-tab__info-item-wrap
+                                                    div 
+                                                        |SKU: <strong>APF-1100</strong>
+                                                    div 
+                                                        |2 Filter — $19.99
+                                                    div 
+                                                        |Qty: <strong>1</strong>
+                                                div.fix-price 
+                                                    |$19.99
+                                            .order-tab__info-item
+                                                ul
+                                                    li 
+                                                        |kjbhbsl Per
+                                                    li 
+                                                        |Sadove tovarystvo MVS vulytsia
+                                                    li 
+                                                        |Simii Sosninih 3, 420
+                                                    li 
+                                                        |Kiev, BC A0A 0A0
+                                                    li 
+                                                        |(099) 999-9999
+                                                .order-tab__info-total 
+                                                    .item 
+                                                        span
+                                                            |sales tax
+                                                        span
+                                                            |tbd
+                                                    .item 
+                                                        span
+                                                            |estimated shipping cost 
+                                                        span
+                                                            |$4.99
+                                                    .item 
+                                                        span.item-title
+                                                            |Estimated Total:
+                                                        span.item-price
+                                                            |$234.93
+                            tr.table-toogles__item-title(data-toogles="2") 
                                 td Order #56777
                                 td
                                     .date 
@@ -102,7 +152,57 @@ section.cabinet
                                                 |buy again
                                         span.red 
                                             |Awaiting Delivery
-                            tr 
+                                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+                                            </svg>
+                            tr.table-toogles__item
+                                td(colspan="3")
+                                    .order-tab__info.table-toogles__item-content()
+                                        .img-wrap 
+                                            div 
+                                                img(src="assets/images/png/product__img--small1.png" alt="")
+                                        .order-tab__info-content 
+                                            .order-tab__info-item
+                                                h3 Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                                            .order-tab__info-item
+                                                .order-tab__info-item-wrap
+                                                    div 
+                                                        |SKU: <strong>APF-1100</strong>
+                                                    div 
+                                                        |2 Filter — $19.99
+                                                    div 
+                                                        |Qty: <strong>1</strong>
+                                                div.fix-price 
+                                                    |$19.99
+                                            .order-tab__info-item
+                                                ul
+                                                    li 
+                                                        |kjbhbsl Per
+                                                    li 
+                                                        |Sadove tovarystvo MVS vulytsia
+                                                    li 
+                                                        |Simii Sosninih 3, 420
+                                                    li 
+                                                        |Kiev, BC A0A 0A0
+                                                    li 
+                                                        |(099) 999-9999
+                                                .order-tab__info-total 
+                                                    .item 
+                                                        span
+                                                            |sales tax
+                                                        span
+                                                            |tbd
+                                                    .item 
+                                                        span
+                                                            |estimated shipping cost 
+                                                        span
+                                                            |$4.99
+                                                    .item 
+                                                        span.item-title
+                                                            |Estimated Total:
+                                                        span.item-price
+                                                            |$234.93
+                            tr.table-toogles__item-title.table-toogles__item-title--active 
                                 td Order #56777
                                 td
                                     .date 
@@ -117,49 +217,54 @@ section.cabinet
                                             span.edit__title 
                                                 |buy again
                                         span.green 
-                                            |Delivery
-                    .order-tab__info
-                        .img-wrap 
-                            div 
-                                img(src="assets/images/png/product__img--small1.png" alt="")
-                        .order-tab__info-content 
-                            .order-tab__info-item
-                                h3 Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
-                            .order-tab__info-item
-                                .order-tab__info-item-wrap
-                                    div 
-                                        |SKU: <strong>APF-1100</strong>
-                                    div 
-                                        |2 Filter — $19.99
-                                    div 
-                                        |Qty: <strong>1</strong>
-                                div 
-                                    |$19.99
-                            .order-tab__info-item
-                                ul
-                                    li 
-                                        |kjbhbsl Per
-                                    li 
-                                        |Sadove tovarystvo MVS vulytsia
-                                    li 
-                                        |Simii Sosninih 3, 420
-                                    li 
-                                        |Kiev, BC A0A 0A0
-                                    li 
-                                        |(099) 999-9999
-                                .order-tab__info-total 
-                                    .item 
-                                        span
-                                            |sales tax
-                                        span
-                                            |tbd
-                                    .item 
-                                        span
-                                            |estimated shipping cost 
-                                        span
-                                            |$4.99
-                                    .item 
-                                        span.item-title
-                                            |Estimated Total:
-                                        span.item-price
-                                            |$234.93
+                                            |Delivery 
+                                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+                                            </svg>
+                            tr.table-toogles__item.table-toogles__item--active
+                                td(colspan="3")
+                                    .order-tab__info.table-toogles__item-content
+                                        .img-wrap 
+                                            div 
+                                                img(src="assets/images/png/product__img--small1.png" alt="")
+                                        .order-tab__info-content 
+                                            .order-tab__info-item
+                                                h3 Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
+                                            .order-tab__info-item
+                                                .order-tab__info-item-wrap
+                                                    div 
+                                                        |SKU: <strong>APF-1100</strong>
+                                                    div 
+                                                        |2 Filter — $19.99
+                                                    div 
+                                                        |Qty: <strong>1</strong>
+                                                div.fix-price 
+                                                    |$19.99
+                                            .order-tab__info-item
+                                                ul
+                                                    li 
+                                                        |kjbhbsl Per
+                                                    li 
+                                                        |Sadove tovarystvo MVS vulytsia
+                                                    li 
+                                                        |Simii Sosninih 3, 420
+                                                    li 
+                                                        |Kiev, BC A0A 0A0
+                                                    li 
+                                                        |(099) 999-9999
+                                                .order-tab__info-total 
+                                                    .item 
+                                                        span
+                                                            |sales tax
+                                                        span
+                                                            |tbd
+                                                    .item 
+                                                        span
+                                                            |estimated shipping cost 
+                                                        span
+                                                            |$4.99
+                                                    .item 
+                                                        span.item-title
+                                                            |Estimated Total:
+                                                        span.item-price
+                                                            |$234.93
