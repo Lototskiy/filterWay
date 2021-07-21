@@ -204,8 +204,11 @@
         margin-left: 8.5rem;
 
         .btn {
-            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1.7rem;
             padding: 0 7rem;
+            display: block;
+            max-width: fit-content;
 
             @media screen and (max-width:$large_tablet) {
                 margin: 1.7rem auto 0rem;

@@ -14,8 +14,14 @@
     font-size: 1.3rem;
     line-height: 1.6rem;
 
+    .btn {
+        margin-top: 0.7rem;
+        padding: 0 2rem;
+    }
+
     &__container {
         display: flex;
+        justify-content: space-between;
         width: 100%;
         max-width: 74.4rem;
         margin: 0rem auto;
@@ -28,16 +34,17 @@
     }
 
     &__title {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 1.3rem;
         line-height: 1.6rem;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         margin-bottom: 1.3rem;
+        color: #0166B0;
     }
 
     &__item {
         margin-bottom: 0.7rem;
-        text-decoration: underline;
+        // text-decoration: underline;
         transition: all 0.5s;
 
         &:last-child {
@@ -50,11 +57,19 @@
     }
 
     &__content {
+        width: 100%;
+        max-width: 25rem;
+        .name {
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            color: #0166B0;
+        }
         .img-wrap {
-            width: 34.5rem;
+            border: 1px solid #E5E5E5;
 
             >div {
-                padding-bottom: 38.55%;
+                padding-bottom:  64.57%;
             }
         }
     }
