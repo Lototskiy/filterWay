@@ -2,7 +2,17 @@
     display: flex;
     // margin-bottom: 2rem;
     border-bottom: 1px solid #E5E5E5;
+    .date-item {
+        background: #F7F7F7;
+        padding: 0.3rem 0.7rem;
 
+        .edit {
+            margin-top: -3px;
+        }
+    }
+    .btn {
+        margin-top: 1.7rem;
+    }
     &.my-subscription {
         .img-wrap {
             max-width: 9.3rem;
@@ -16,11 +26,24 @@
             text-transform: uppercase;
             max-width: 29rem;
 
+            @media screen and (max-width:$large_tablet) {
+                // white-space: nowrap;
+                width: 100%;
+                max-width: none;
+                margin-bottom: 1rem;
+            }
+
         }
         .order-tab__info-item-wrap {
             justify-content: space-between;
             width: 100%;
             max-width: 29rem;
+
+            @media screen and (max-width:$large_tablet) {
+                // white-space: nowrap;
+                width: 100%;
+                max-width: none;
+            }
             >div {
                 margin-right: 0rem;
             }
@@ -31,6 +54,11 @@
         .order-tab__info-total {
             width: 100%;
             max-width: 29rem;
+            @media screen and (max-width:$large_tablet) {
+                // white-space: nowrap;
+                width: 100%;
+                max-width: none;
+            }
         }
     }
     .img-wrap {
@@ -88,9 +116,10 @@
         margin-bottom: 1.3rem;
 
         @media screen and (max-width:$large_tablet) {
-            font-size: 1.3rem;
-            line-height: 1.6rem;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
             margin-bottom: 0.8rem;
+            // width: 100%;
         }
         .fix-price {
             @media screen and (max-width:$large_tablet) {

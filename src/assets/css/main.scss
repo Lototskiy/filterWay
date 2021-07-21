@@ -162,6 +162,13 @@ h4 {
 
 .desktop-block {
 	@media screen and (max-width:$large_tablet) {
-		display: none;
+		display: none !important;
+	}
+}
+
+.mobil-block {
+	display: none !important;
+	@media screen and (max-width:$large_tablet) {
+		display: block !important;
 	}
 }

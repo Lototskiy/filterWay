@@ -47,6 +47,7 @@
         @media screen and (max-width:$large_tablet) {
             flex-direction: column;
         }
+
     }
 
     &__sidebar {
@@ -202,6 +203,37 @@
         width: calc(100% - 23.5rem - 8.5rem);
         margin-left: 8.5rem;
 
+        .btn {
+            margin-left: auto;
+            padding: 0 7rem;
+
+            @media screen and (max-width:$large_tablet) {
+                margin: 1.7rem auto 0rem;
+                display: block;
+                padding: 0 0.5rem;
+                max-width: 30rem;
+                width: 100%;
+            }
+        }
+
+        >.content {
+            h3 {
+                @media screen and (max-width:$large_tablet) {
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                }
+            }
+        }
+
+        &.padding--18 {
+            @media screen and (max-width:$large_tablet) {
+                width: 100%;
+                margin-left: 0;
+                background-color: #fff;
+                padding: 1.8rem;
+            }
+        }
+
         @media screen and (max-width:$large_tablet) {
             width: 100%;
             margin-left: 0;
@@ -250,7 +282,6 @@
                     max-width: 30rem;
                     width: 100%;
                 }
-
             }
         }
 

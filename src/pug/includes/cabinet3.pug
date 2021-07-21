@@ -57,7 +57,7 @@ section.cabinet.cabinet__toggles
                     .order-tab__info-content 
                         .order-tab__info-item
                             h3 Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge
-                            .order-tab__info-item-wrap
+                            .order-tab__info-item-wrap.desktop-block
                                 ul 
                                     li 
                                         |next shipment
@@ -69,7 +69,7 @@ section.cabinet.cabinet__toggles
                                     |SKU: <strong>APF-1100</strong>
                                 div 
                                     |Qty: <strong>1</strong>
-                            div 
+                            div.desktop-block 
                                 |$19.99
                         .order-tab__info-item
                             .order-tab__info-total 
@@ -82,10 +82,19 @@ section.cabinet.cabinet__toggles
                                         |Item Total:
                                         span.item-price 
                                             |$19.99
-                            a(href="#").edit 
+                            a(href="#").edit.desktop-block 
                                 img(src="assets/images/svg/icon-edit.svg" alt="")
                                 span.edit__title 
                                     |edit
-                .cabinet__
-                a(href="catalog.html").cabinet__body-btn 
-                    .btn Add product      
+                        .order-tab__info-item.date-item.mobil-block
+                            .order-tab__info-item-wrap
+                                div
+                                    |next shipment: <strong>October 16</strong>
+                                div
+                                    a(href="#").edit 
+                                        img(src="assets/images/svg/icon-edit.svg" alt="")
+                                        span.edit__title 
+                                            |edit
+                            
+                a(href="catalog.html").btn 
+                    |Add product

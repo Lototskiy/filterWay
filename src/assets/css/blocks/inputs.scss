@@ -418,5 +418,14 @@
 
     &__btn {
         text-align: right;
+
+        .btn {
+            width: 100%;
+            max-width: 300px;
+        }
+        @media screen and (max-width:$large_tablet) {
+            text-align: center;
+            
+        }
     }
 }
