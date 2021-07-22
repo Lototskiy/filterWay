@@ -136,3 +136,31 @@
         }
     }
 }
+
+// .product__radio {
+//     .radio__tooltip {
+//         @media screen and (max-width:$large_tablet) {
+//             top: 50%;
+//             transform: translateY(-50%);
+//         }
+//         .tooltip__title {
+//             width: 1.6rem;
+//             height: 1.6rem;
+//         }
+//     }
+// }
+
+.inputs__field-wrap {
+    .radio__tooltip {
+        @media screen and (max-width:$large_tablet) {
+            top: 0%;
+            transform: translateY(0%);
+        }
+        .tooltip__title {
+            width: 1.6rem;
+            height: 1.6rem;
+            font-size: 1.3rem;
+            line-height: 0rem;
+        }
+    }
+}

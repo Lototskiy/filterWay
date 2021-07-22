@@ -73,24 +73,26 @@ section.cabinet.cabinet__toggles
                                                         span.edit__title 
                                                             |buy again
                                                 a(href="#").edit
-                                                        img(src="assets/images/svg/icon-edit-basket.svg" alt="")
+                                                        img(src="assets/images/svg/icon-close-edit.svg" alt="")
                                                         span.edit__title 
-                                                            |buy again
+                                                            |delete
                                                 span.arrows 
                                                     <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
                                                     </svg>
                             .inner 
                                 table
-                                    thead 
+                                    thead.desktop-block 
                                         tr 
-                                            th Name on card HEADER
-                                            th Billing address HEADER
-                                            th  |Marina Perepelychna HEADER
+                                            td.head Name on card
+                                            td.head Billing address
+                                            td.head 
                                     tbody   
                                         tr 
+                                            td.head.mobil-block Name on card
                                             td 
                                                 |Marina Perepelychna 4
+                                            td.head.mobil-block Billing address
                                             td(rowspan="2")
                                                  ul 
                                                     li Marina Perepelychna
@@ -101,13 +103,18 @@ section.cabinet.cabinet__toggles
                                             td
                                                  
                                         tr 
-                                            td 
+                                            td.desktop-block 
                                                 ul 
                                                     li 
                                                         |<a href='#'>Set as Default</a> payment method. 
                                                     li 
                                                         |<a href='#'>What's Tthis</a> Lost or stolen? <a href='#'>Replace This Csard.</a>
-                                            td
+                                .table-info.mobil-block 
+                                    ul 
+                                        li 
+                                            |<a href='#'>Set as Default</a> payment method. 
+                                        li 
+                                            |<a href='#'>What's Tthis</a> Lost or stolen? <a href='#'>Replace This Csard.</a>
                         li 
                             table.toggle
                                 tbody   
@@ -118,7 +125,7 @@ section.cabinet.cabinet__toggles
                                                     input.radio__input(type='radio' name='dfdg' checked)
                                                     .radio__content
                                                         span
-                                                    |Mastercard ending in 3112
+                                                    |visa ending in 3100
                                         td
                                             .expires
                                                 span.expires__title Expires: 
@@ -130,9 +137,9 @@ section.cabinet.cabinet__toggles
                                                         span.edit__title 
                                                             |buy again
                                                 a(href="#").edit
-                                                        img(src="assets/images/svg/icon-edit-basket.svg" alt="")
+                                                        img(src="assets/images/svg/icon-close-edit.svg" alt="")
                                                         span.edit__title 
-                                                            |buy again
+                                                            |delete
                                                 span.arrows 
                                                     <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>

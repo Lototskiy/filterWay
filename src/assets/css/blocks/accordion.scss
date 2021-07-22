@@ -11,23 +11,60 @@
 
         thead {
             tr {
-                th {
+                .head {
                     text-align: left;
                     font-size: 1.3rem;
                     line-height: 1.6rem;
+                    font-weight: 600;
                 }
-                th:first-child{
+                .head:first-child{
                     width: 45%;
+                    @media screen and (max-width:$large_tablet) {
+                        width: auto;
+                    }
                 }
             }
         }
         tbody {
             tr {
-                
+                .head {
+                    text-align: left;
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                    font-weight: 600;
+                    @media screen and (max-width:$large_tablet) {
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                        vertical-align: top;
+                    }
+                }
+                .head:first-child{
+                    width: 45%;
+                    @media screen and (max-width:$large_tablet) {
+                        width: auto;
+                    }
+                }
                 td {
                     text-align: left;
                     font-size: 1.3rem;
                     line-height: 1.6rem;
+
+                    @media screen and (max-width:$large_tablet) {
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                        vertical-align: top;
+                    }
+
+                    .buttons {
+                        a:first-child {
+                            margin-left: 0rem;
+                        }
+                    }
+                    .radio__box {
+                        @media screen and (max-width:$large_tablet) {
+                            padding-right: 0rem;
+                        }
+                    }
                     .expires {
                         display: flex;
                         flex-direction: column;
@@ -45,12 +82,6 @@
                                 margin-left: 1.9rem;
                             transition: all 0.5s;
                             }
-                            
-                            &--active {
-                               svg {
-                                transform: rotate(180deg);
-                               }
-                            }
                         }
                     }
                     ul {
@@ -67,10 +98,16 @@
                     }
                 }
                 td:last-child {
-                    text-align: right;
+                    text-align: left;
+                    @media screen and (max-width:$large_tablet) {
+                        text-align: left;
+                    }
                 }
                 td:first-child{
                     width: 45%;
+                    @media screen and (max-width:$large_tablet) {
+                        width: auto;
+                    }
                 }
             }
         }
@@ -96,6 +133,27 @@
         // overflow: hidden;
         display: none;
 
+        .table-info {
+            ul {
+                        
+                li {
+                    margin: 0rem;
+
+                    a {
+                        text-transform: capitalize;
+                        color: #037FC9;
+                        text-decoration-line: underline;
+                        font-size: 1.3rem;
+                        line-height: 1.6rem;
+                        @media screen and (max-width:$large_tablet) {
+                            font-size: 1.8rem;
+                            line-height: 2.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
         &.show {
             /*display: block;*/
         }
@@ -118,6 +176,16 @@
         }
     }
 
+    .list-active {
+        .buttons {
+            .arrows {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
     .toggle {
         position: relative;
         min-height: 4.8rem;
@@ -129,18 +197,26 @@
         // justify-content: space-between;
         // width: 100%;
 
-        &--active {
-            .buttons {
-                .arrows {
-                    svg {
-                        transform: rotate(180deg);
-                    }
-                }
-            }
-        }
+    
 
         @media screen and (max-width:$large_tablet) {
             min-height: 6.6rem; 
+            padding: 0rem 0.6rem 0rem 1.2rem;
+        }
+        tbody {
+            tr {
+                td {
+                    @media screen and (max-width:$large_tablet) {
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                        vertical-align: middle;
+                    }
+                }
+
+                td:last-child {
+                    text-align: right;
+                }
+            }
         }
 
         .footer__bottom-item {
