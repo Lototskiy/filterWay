@@ -52,21 +52,91 @@ section.cabinet.cabinet__toggles
                 .pay-tabs
                     ul.accordion
                         li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' checked)
-                                    .radio__content
-                                        span
-                                    |	Credit card
-                                ul.footer__bottom-list
-                                    li.footer__bottom-item
-                                        img(src="assets/images/png/pay-1.png" alt="")
-                                    li.footer__bottom-item 
-                                        img(src="assets/images/png/pay-2.png" alt="")
-                                    li.footer__bottom-item  
-                                        img(src="assets/images/png/pay-3.png" alt="")
-                                    li.footer__bottom-item  
-                                        img(src="assets/images/png/pay-4.png" alt="")
+                            table.toggle
+                                tbody   
+                                    tr 
+                                        td 
+                                            .radio__box
+                                                label.radio__label
+                                                    input.radio__input(type='radio' name='dfdg')
+                                                    .radio__content
+                                                        span
+                                                    |Mastercard ending in 3112
+                                        td
+                                            .expires
+                                                span.expires__title Expires: 
+                                                span 06/2024
+                                        td 
+                                            .buttons 
+                                                a(href="#").edit
+                                                        img(src="assets/images/svg/icon-edit-basket.svg" alt="")
+                                                        span.edit__title 
+                                                            |buy again
+                                                a(href="#").edit
+                                                        img(src="assets/images/svg/icon-edit-basket.svg" alt="")
+                                                        span.edit__title 
+                                                            |buy again
+                                                span.arrows 
+                                                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+                                                    </svg>
+                            .inner 
+                                table
+                                    thead 
+                                        tr 
+                                            th Name on card HEADER
+                                            th Billing address HEADER
+                                            th  |Marina Perepelychna HEADER
+                                    tbody   
+                                        tr 
+                                            td 
+                                                |Marina Perepelychna 4
+                                            td(rowspan="2")
+                                                 ul 
+                                                    li Marina Perepelychna
+                                                    li Kiev
+                                                    li Kiev, Alabama, 35242
+                                                    li United States
+                                                    li 2229999999
+                                            td
+                                                 
+                                        tr 
+                                            td 
+                                                ul 
+                                                    li 
+                                                        |<a href='#'>Set as Default</a> payment method. 
+                                                    li 
+                                                        |<a href='#'>What's Tthis</a> Lost or stolen? <a href='#'>Replace This Csard.</a>
+                                            td
+                        li 
+                            table.toggle
+                                tbody   
+                                    tr 
+                                        td 
+                                            .radio__box
+                                                label.radio__label
+                                                    input.radio__input(type='radio' name='dfdg' checked)
+                                                    .radio__content
+                                                        span
+                                                    |Mastercard ending in 3112
+                                        td
+                                            .expires
+                                                span.expires__title Expires: 
+                                                span 06/2024
+                                        td 
+                                            .buttons 
+                                                a(href="#").edit
+                                                        img(src="assets/images/svg/icon-edit-basket.svg" alt="")
+                                                        span.edit__title 
+                                                            |buy again
+                                                a(href="#").edit
+                                                        img(src="assets/images/svg/icon-edit-basket.svg" alt="")
+                                                        span.edit__title 
+                                                            |buy again
+                                                span.arrows 
+                                                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+                                                    </svg>
                             .inner
                                 form.inputs
                                     .inputs__field-wrap.required
@@ -111,23 +181,5 @@ section.cabinet.cabinet__toggles
                                                 .tooltip
                                                     span.tooltip__title(attr="Каскадные таблицы стилей") ?
                                             input.inputs__field(type='text' required)
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' )
-                                    .radio__content
-                                        span
-                                    img(src="assets/images/svg/icon-paypal-1.svg" alt="sss")
-                            .inner 
-                                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
-                        li 
-                            .radio__box.toggle
-                                label.radio__label
-                                    input.radio__input(type='radio' name='dfdg' )
-                                    .radio__content
-                                        span
-                                    img(src="assets/images/png/icon-paypal-2.png" alt="sss")
-                            .inner 
-                                |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae error tempora recusandae. Cumque, adipisci eligendi ducimus corrupti quis velit minima beatae excepturi voluptates praesentium sed. Praesentium qui unde ea ipsum facere. Enim molestias, voluptatem impedit harum ullam repellat itaque ea dolor, similique quod autem accusantium iusto eligendi. Nobis, fugiat.
                 .cabinet__body-btn
                     .btn Save

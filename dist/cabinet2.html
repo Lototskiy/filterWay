@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&amp;family=PT+Sans:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <link href="assets/css/app.css?v=1626787446012" rel="stylesheet"></head>
+  <link href="assets/css/app.css?v=1626890955874" rel="stylesheet"></head>
   <body id="cabinet-page">
 <header class="header">
   <div class="center-wrap">
@@ -35,7 +35,7 @@
           <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.1646 13.6626L9.86921 9.94962C10.7165 8.85844 11.1808 7.48552 11.1808 6.05624C11.1808 2.71688 8.67287 0 5.59038 0C2.50789 0 0 2.71688 0 6.05624C0 9.3956 2.50789 12.1125 5.59038 12.1125C6.74759 12.1125 7.85035 11.7344 8.79318 11.0166L12.1136 14.7578C12.2524 14.9139 12.4391 15 12.6391 15C12.8285 15 13.0081 14.9218 13.1444 14.7796C13.4342 14.4776 13.4434 13.9768 13.1646 13.6626ZM5.59038 1.57989C7.86882 1.57989 9.7224 3.58793 9.7224 6.05624C9.7224 8.52456 7.86882 10.5326 5.59038 10.5326C3.31194 10.5326 1.45836 8.52456 1.45836 6.05624C1.45836 3.58793 3.31194 1.57989 5.59038 1.57989Z"></path>
           </svg>
-        </div><a class="header__icons-item" href="/cabinet.html">
+        </div><a class="header__icons-item" href="#" onclick="show_popup(&quot;popup-account&quot;)">
           <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.588 10.108L9.401 9.67C9.169 9.624 9 9.418 9 9.18V8.678C9.144 8.478 9.279 8.211 9.419 7.932C9.526 7.721 9.687 7.403 9.759 7.328C10.183 6.913 10.635 6.398 10.773 5.727C10.898 5.119 10.773 4.803 10.628 4.553C10.628 4.064 10.628 3.169 10.458 2.524C10.441 1.745 10.298 1.305 9.939 0.913C9.685 0.639 9.311 0.575 9.011 0.524C8.892 0.504 8.729 0.476 8.672 0.445C8.153 0.158 7.626 0.016 6.981 0C5.661 0.05 4.041 0.887 3.499 2.392C3.334 2.849 3.35 3.599 3.362 4.202L3.348 4.553C3.221 4.803 3.096 5.119 3.222 5.726C3.36 6.4 3.812 6.914 4.234 7.327C4.307 7.403 4.47 7.723 4.578 7.934C4.72 8.212 4.856 8.479 5 8.679V9.18C5 9.418 4.831 9.624 4.598 9.67L2.411 10.108C1.014 10.387 0 11.624 0 13.049V14C0 14.551 0.449 15 1 15H13C13.551 15 14 14.551 14 14V13.049C14 11.624 12.986 10.387 11.588 10.108Z"></path>
           </svg></a><a class="header__icons-item" href="#" onclick="show_popup(&quot;popup-basket&quot;)"> 
@@ -52,14 +52,14 @@
     <div class="drop-down__container">
       <div class="drop-down__aside"> 
         <h6 class="drop-down__title">
-           whole house system</h6>
+           Whole house system</h6>
         <ul> 
           <li class="drop-down__item"><a href="#">10 x 4.5 </a></li>
           <li class="drop-down__item"><a href="#">20 x 4.5 </a></li>
-        </ul><a class="drop-down__all" href="#">See all whole house systems </a>
+        </ul><a class="btn" href="#">See all whole house systems </a>
       </div>
-      <div class="drop-down__content">
-        <div class="img-wrap"> 
+      <div class="drop-down__content"><span class="name">10x4,5</span>
+        <div class="img-wrap img-wrap--contain">
           <div> <img src="assets/images/png/all-system.png" alt=""></div>
         </div>
       </div>
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-<section class="cabinet">
+<section class="cabinet cabinet__toggles">
   <div class="center-wrap"> 
     <div class="cabinet__wrap"> 
       <div class="cabinet__sidebar">
@@ -144,9 +144,9 @@
               </div>
             </div>
           </div>
-          <table> 
+          <table class="table-toogles">
             <tbody> 
-              <tr> 
+              <tr class="table-toogles__item-title">
                 <td>Order #56777</td>
                 <td>
                   <div class="date"> <span>23.09.2021</span><span>08:20 </span></div>
@@ -154,10 +154,57 @@
                 <td> 
                   <div class="status"><a class="edit" href="#"><img src="assets/images/svg/icon-edit-basket.svg" alt=""><span class="edit__title">
                          buy again</span></a><span class="green">
-                       Deliverу</span></div>
+                       Deliverу<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+</svg></span></div>
                 </td>
               </tr>
-              <tr> 
+              <tr class="table-toogles__item">
+                <td colspan="3">
+                  <div class="order-tab__info table-toogles__item-content">
+                    <div class="img-wrap"> 
+                      <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                    </div>
+                    <div class="order-tab__info-content"> 
+                      <div class="order-tab__info-item">
+                        <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
+                      </div>
+                      <div class="order-tab__info-item">
+                        <div class="order-tab__info-item-wrap">
+                          <div>
+                             SKU: <strong>APF-1100</strong></div>
+                          <div>
+                             2 Filter — $19.99</div>
+                          <div>
+                             Qty: <strong>1</strong></div>
+                        </div>
+                        <div class="fix-price">
+                           $19.99</div>
+                      </div>
+                      <div class="order-tab__info-item">
+                        <ul>
+                          <li>
+                             kjbhbsl Per</li>
+                          <li>
+                             Sadove tovarystvo MVS vulytsia</li>
+                          <li>
+                             Simii Sosninih 3, 420</li>
+                          <li>
+                             Kiev, BC A0A 0A0</li>
+                          <li>
+                             (099) 999-9999</li>
+                        </ul>
+                        <div class="order-tab__info-total"> 
+                          <div class="item"> <span>sales tax</span><span>tbd</span></div>
+                          <div class="item"> <span>estimated shipping cost </span><span>$4.99</span></div>
+                          <div class="item"> <span class="item-title">Estimated Total:</span><span class="item-price">$234.93</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-toogles__item-title" data-toogles="2"> 
                 <td>Order #56777</td>
                 <td>
                   <div class="date"> <span>23.09.2021</span><span>08:20 </span></div>
@@ -165,10 +212,57 @@
                 <td> 
                   <div class="status"><a class="edit" href="#"><img src="assets/images/svg/icon-edit-basket.svg" alt=""><span class="edit__title">
                          buy again</span></a><span class="red">
-                       Awaiting Delivery</span></div>
+                       Awaiting Delivery<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+</svg></span></div>
                 </td>
               </tr>
-              <tr> 
+              <tr class="table-toogles__item">
+                <td colspan="3">
+                  <div class="order-tab__info table-toogles__item-content">
+                    <div class="img-wrap"> 
+                      <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                    </div>
+                    <div class="order-tab__info-content"> 
+                      <div class="order-tab__info-item">
+                        <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
+                      </div>
+                      <div class="order-tab__info-item">
+                        <div class="order-tab__info-item-wrap">
+                          <div>
+                             SKU: <strong>APF-1100</strong></div>
+                          <div>
+                             2 Filter — $19.99</div>
+                          <div>
+                             Qty: <strong>1</strong></div>
+                        </div>
+                        <div class="fix-price">
+                           $19.99</div>
+                      </div>
+                      <div class="order-tab__info-item">
+                        <ul>
+                          <li>
+                             kjbhbsl Per</li>
+                          <li>
+                             Sadove tovarystvo MVS vulytsia</li>
+                          <li>
+                             Simii Sosninih 3, 420</li>
+                          <li>
+                             Kiev, BC A0A 0A0</li>
+                          <li>
+                             (099) 999-9999</li>
+                        </ul>
+                        <div class="order-tab__info-total"> 
+                          <div class="item"> <span>sales tax</span><span>tbd</span></div>
+                          <div class="item"> <span>estimated shipping cost </span><span>$4.99</span></div>
+                          <div class="item"> <span class="item-title">Estimated Total:</span><span class="item-price">$234.93</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-toogles__item-title table-toogles__item-title--active"> 
                 <td>Order #56777</td>
                 <td>
                   <div class="date"> <span>23.09.2021</span><span>08:20 </span></div>
@@ -176,52 +270,58 @@
                 <td> 
                   <div class="status"><a class="edit" href="#"><img src="assets/images/svg/icon-edit-basket.svg" alt=""><span class="edit__title">
                          buy again</span></a><span class="green">
-                       Delivery</span></div>
+                       Delivery <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.21517 6C6.42252 6 6.62985 5.92797 6.78793 5.78422L11.7627 1.25832C12.0791 0.970413 12.0791 0.503627 11.7627 0.21584C11.4463 -0.0719466 10.9333 -0.0719464 10.6169 0.215841L6.21517 4.22061L1.81344 0.215983C1.49699 -0.0718036 0.984058 -0.0718034 0.667755 0.215984C0.351144 0.503771 0.351144 0.970557 0.667755 1.25846L5.6424 5.78436C5.80056 5.92814 6.00789 6 6.21517 6Z" fill="#313131"/>
+</svg></span></div>
+                </td>
+              </tr>
+              <tr class="table-toogles__item table-toogles__item--active">
+                <td colspan="3">
+                  <div class="order-tab__info table-toogles__item-content">
+                    <div class="img-wrap"> 
+                      <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
+                    </div>
+                    <div class="order-tab__info-content"> 
+                      <div class="order-tab__info-item">
+                        <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
+                      </div>
+                      <div class="order-tab__info-item">
+                        <div class="order-tab__info-item-wrap">
+                          <div>
+                             SKU: <strong>APF-1100</strong></div>
+                          <div>
+                             2 Filter — $19.99</div>
+                          <div>
+                             Qty: <strong>1</strong></div>
+                        </div>
+                        <div class="fix-price">
+                           $19.99</div>
+                      </div>
+                      <div class="order-tab__info-item">
+                        <ul>
+                          <li>
+                             kjbhbsl Per</li>
+                          <li>
+                             Sadove tovarystvo MVS vulytsia</li>
+                          <li>
+                             Simii Sosninih 3, 420</li>
+                          <li>
+                             Kiev, BC A0A 0A0</li>
+                          <li>
+                             (099) 999-9999</li>
+                        </ul>
+                        <div class="order-tab__info-total"> 
+                          <div class="item"> <span>sales tax</span><span>tbd</span></div>
+                          <div class="item"> <span>estimated shipping cost </span><span>$4.99</span></div>
+                          <div class="item"> <span class="item-title">Estimated Total:</span><span class="item-price">$234.93</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="order-tab__info">
-            <div class="img-wrap"> 
-              <div> <img src="assets/images/png/product__img--small1.png" alt=""></div>
-            </div>
-            <div class="order-tab__info-content"> 
-              <div class="order-tab__info-item">
-                <h3>Arrowpure UKF8001 Refrigerator Water Filter Replacement Cartridge</h3>
-              </div>
-              <div class="order-tab__info-item">
-                <div class="order-tab__info-item-wrap">
-                  <div>
-                     SKU: <strong>APF-1100</strong></div>
-                  <div>
-                     2 Filter — $19.99</div>
-                  <div>
-                     Qty: <strong>1</strong></div>
-                </div>
-                <div>
-                   $19.99</div>
-              </div>
-              <div class="order-tab__info-item">
-                <ul>
-                  <li>
-                     kjbhbsl Per</li>
-                  <li>
-                     Sadove tovarystvo MVS vulytsia</li>
-                  <li>
-                     Simii Sosninih 3, 420</li>
-                  <li>
-                     Kiev, BC A0A 0A0</li>
-                  <li>
-                     (099) 999-9999</li>
-                </ul>
-                <div class="order-tab__info-total"> 
-                  <div class="item"> <span>sales tax</span><span>tbd</span></div>
-                  <div class="item"> <span>estimated shipping cost </span><span>$4.99</span></div>
-                  <div class="item"> <span class="item-title">Estimated Total:</span><span class="item-price">$234.93</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -572,7 +672,7 @@
             <path d="M11.588 10.108L9.401 9.67C9.169 9.624 9 9.418 9 9.18V8.678C9.144 8.478 9.279 8.211 9.419 7.932C9.526 7.721 9.687 7.403 9.759 7.328C10.183 6.913 10.635 6.398 10.773 5.727C10.898 5.119 10.773 4.803 10.628 4.553C10.628 4.064 10.628 3.169 10.458 2.524C10.441 1.745 10.298 1.305 9.939 0.913C9.685 0.639 9.311 0.575 9.011 0.524C8.892 0.504 8.729 0.476 8.672 0.445C8.153 0.158 7.626 0.016 6.981 0C5.661 0.05 4.041 0.887 3.499 2.392C3.334 2.849 3.35 3.599 3.362 4.202L3.348 4.553C3.221 4.803 3.096 5.119 3.222 5.726C3.36 6.4 3.812 6.914 4.234 7.327C4.307 7.403 4.47 7.723 4.578 7.934C4.72 8.212 4.856 8.479 5 8.679V9.18C5 9.418 4.831 9.624 4.598 9.67L2.411 10.108C1.014 10.387 0 11.624 0 13.049V14C0 14.551 0.449 15 1 15H13C13.551 15 14 14.551 14 14V13.049C14 11.624 12.986 10.387 11.588 10.108Z"></path>
           </svg>
           <div class="content">
-            <h2>periodicity</h2>
+            <h2>My Account </h2>
           </div>
         </div>
       </div>
@@ -670,5 +770,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="js/app.js?v=1626787445966"></script></body>
+  <script type="text/javascript" src="js/app.js?v=1626890955648"></script></body>
 </html>

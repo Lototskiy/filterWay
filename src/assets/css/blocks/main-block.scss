@@ -1,6 +1,10 @@
 .main-block {
     display: flex;
     background: #F7F7F7;
+
+    @media screen and (max-width:$large_tablet) {
+        flex-direction: column;
+    }
     
 
     &__left {
@@ -10,11 +14,21 @@
         padding: 1.6rem 2.8rem;
         width: 100%;
 
+        @media screen and (max-width:$large_tablet) {
+            padding: 2.6rem 2.1rem;
+        }
+
         .content {
             max-width: 46.9rem;
-            font-size: 1.3rem;
-            line-height: 1.6rem;
-
+            font-size: 2.4rem;
+            line-height: 2.9rem;
+            
+            @media screen and (max-width:$large_tablet) {
+                font-size: 2.3rem;
+                line-height: 2.8rem;
+                text-align: center;
+                max-width: none;
+            }
             h4 {
                 text-transform: uppercase;
                 margin-bottom: 2.5rem;
@@ -29,6 +43,9 @@
         .img-wrap {
             div {
                 padding-bottom:  71.82%;
+                @media screen and (max-width:$large_tablet) {
+                    padding-bottom:  44.84%;
+                }
             }
         }
     }

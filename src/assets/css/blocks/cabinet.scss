@@ -290,9 +290,20 @@
 
         .cabinet__3-1--btn {
             text-align: right;
+            display: flex;
+            justify-content: flex-end;
+
+            @media screen and (max-width:$large_tablet) {
+                align-items: center;
+                flex-direction: column;
+            }
 
             .btn {
                 margin-left: 1.7rem;
+                margin-right: 0rem;
+                @media screen and (max-width:$large_tablet) {
+                    margin: 0rem auto 1.7rem auto;
+                }
             }
         }
 

@@ -6,6 +6,76 @@
         padding: 0rem;
     }
 
+    table {
+        width: 100%;
+
+        thead {
+            tr {
+                th {
+                    text-align: left;
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                }
+                th:first-child{
+                    width: 45%;
+                }
+            }
+        }
+        tbody {
+            tr {
+                
+                td {
+                    text-align: left;
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                    .expires {
+                        display: flex;
+                        flex-direction: column;
+
+                        &__title {
+                            font-weight: 600;
+                        }
+                    }
+                    .buttons {
+                        a {
+                            margin-left: 2.5rem;
+                        }
+                        .arrows {
+                            svg {
+                                margin-left: 1.9rem;
+                            transition: all 0.5s;
+                            }
+                            
+                            &--active {
+                               svg {
+                                transform: rotate(180deg);
+                               }
+                            }
+                        }
+                    }
+                    ul {
+                        
+                        li {
+                            margin: 0rem;
+
+                            a {
+                                text-transform: capitalize;
+                                color: #037FC9;
+                                text-decoration-line: underline;
+                            }
+                        }
+                    }
+                }
+                td:last-child {
+                    text-align: right;
+                }
+                td:first-child{
+                    width: 45%;
+                }
+            }
+        }
+    }
+
 
 
     .radio__content {
@@ -54,9 +124,20 @@
         padding: 0rem 1.2rem;
         background: #E9F4FA;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        // width: 100%;
+
+        &--active {
+            .buttons {
+                .arrows {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
 
         @media screen and (max-width:$large_tablet) {
             min-height: 6.6rem; 
